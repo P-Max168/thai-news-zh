@@ -5,6 +5,7 @@
 - 공유 코드(index.html·assets/·tools/ 등)는 한국판 커밋에서 `tools/dev/sync_core.sh <ko커밋> <이 저장소>` 로만 가져온다. 여기서 직접 고치지 않는다(`.core-version` 에 기준 커밋).
 - 이 저장소 전용(동기화가 건드리지 않음): `site/LANG`(=zh)·`site/zh.json`·`site/topics.zh.json`·`i18n/zh.json`·`tools/sources.zh.json`·`tools/fetch_china.py`·`tools/TRANSLATION_RULES.zh.md`·`tools/DISCUSSION_PERSONA.zh.md`·`data/`·`ads/`·`CNAME`·`robots.txt`·`.github/`.
 - 판: 하루 1번 점심판(md, 13:00 BKK). 금지 구간(push 안 함): 07:00–08:10·18:00–18:40 BKK(한국판 빌드), 13:00–13:40(zh 빌드).
+- 13:00 빌드 절차: `ROUTINE_MD.md`(루틴 프롬프트 초안, 아직 예약 안 함) · `bash tools/lang_build.sh prep|build|publish|draft|end` · 템플릿 `tools/editions/_template.py`
 - 화폐: `1,234泰铢（约247元）` (THB_CNY, tools/fetch_ticker.py). 헤더 숫자 칸만 ฿.
 - Firestore: 같은 프로젝트, `zh_` 접두사 컬렉션, 운영자 문서 `config/admins_zh`.
 - 광고: `data/ads.json` enabled:false — 드래곤 중국어 문구 Mingoo 확인 뒤 켬.
