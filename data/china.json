@@ -1,42 +1,60 @@
 {
- "updated_at": "2026-10-19T00:21:45+07:00",
+ "updated_at": "2026-10-19T03:40:19+07:00",
  "lang": "zh-Hans",
  "items": [
+  {
+   "headline": "亚洲文化遗产保护联盟新增1观察员国1伙伴国",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-18/10716841.shtml",
+   "published": "2026-10-18T19:49:57+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 49.296
+  },
   {
    "headline": "第五届亚洲残疾人运动会在日本名古屋开幕",
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/ty/2026/10-18/10716891.shtml",
    "published": "2026-10-18T21:45:11+07:00",
    "outlets": 6,
-   "hot": true,
-   "score": 56.434
+   "hot": false,
+   "score": 46.449
   },
   {
-   "headline": "亚洲文化遗产保护联盟新增1观察员国1伙伴国",
+   "headline": "黑山总统米拉托维奇会见王毅",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-18/10716841.shtml",
-   "published": "2026-10-18T19:49:57+07:00",
-   "outlets": 3,
+   "url": "https://www.chinanews.com.cn/gn/2026/10-18/10716748.shtml",
+   "published": "2026-10-18T19:37:54+07:00",
+   "outlets": 2,
    "hot": true,
-   "score": 47.282
+   "score": 41.176
   },
   {
-   "headline": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
+   "headline": "尼泊尔一客运吉普车坠河致3人遇难3人失踪",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10716911.shtml",
-   "published": "2026-10-18T23:54:55+07:00",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10716912.shtml",
+   "published": "2026-10-19T00:52:32+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 41.732
+   "score": 40.322
   },
   {
-   "headline": "“良渚论坛”配套双展开幕：“艺汇丝路”与“源浚者流长”绘文明互鉴",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/tp/2026/10-18/10716882.shtml",
-   "published": "2026-10-18T22:32:00+07:00",
+   "headline": "海关总署发布风险警示：SWISSE部分产品被检出铅超标",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/19/ARTITbO6lzN6YhIPVm8Hf7p4261018.shtml",
+   "published": "2026-10-19T02:56:24+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 40.902
+   "score": 38.561
+  },
+  {
+   "headline": "今年前三季度全国铁路发送旅客超37亿人次",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOEl5YWpqeHI5N2xOS09oYlVCZXkzMG5DY0gtbllfQ3YxVEUxdmdGTkp2UThqc1lsTGswV0I4ZHJPeUZZZEg0dHU0d2NMbmVaRUZzRWx6OUIzUTJFREdrRmZrUkVoTzZwbVRfQ0VSSnplRzVUNGFMYmNIRHlwRmNLYlFSSQ?oc=5",
+   "published": "2026-10-18T13:17:29+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 38.372
   },
   {
    "headline": "日媒民调：高市内阁支持率跌至新低",
@@ -45,7 +63,16 @@
    "published": "2026-10-18T17:16:24+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 38.746
+   "score": 36.761
+  },
+  {
+   "headline": "黑龙江大兴安岭多地气象部门发布暴雪、道路结冰预警",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/18/ARTIeiZLTakaghdjLctaXeJf261018.shtml",
+   "published": "2026-10-18T15:48:17+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 35.88
   },
   {
    "headline": "“张雪机车”首个WSBK赛季斩获年度车手亚军、制造商季军",
@@ -54,43 +81,16 @@
    "published": "2026-10-18T21:44:29+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 37.427
+   "score": 35.442
   },
   {
-   "headline": "科学与健康丨重阳话健康：社交是老年健康“刚需”",
+   "headline": "韩国监狱人满为患 获假释囚犯人数骤增",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHJtSkdkblczb0N4bm40VGVSVU1zU2Zaa056YW5MTG5FZzJFT0c3QXdqLUNnelJPWUtITk9LRXBNbW1pNVowT1Y1Z3JnNUZ5WDl4S2c3M1c0eTg2R0JZMHdRanJJWUVWMHZ2ci1sRTQ5SXh6NkZOYllXS09QMDBlUkl3Yw?oc=5",
-   "published": "2026-10-18T16:51:42+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 34.499
-  },
-  {
-   "headline": "广西壮族自治区政协原副主席黄日波接受监察调查",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YUXdfRE1KTVFJLUIwbHJ1YmhxTkVaVk9IS0VINEFIMDV1ejNwV0MwVEJ2X0ZxQzVxcTJFUEM2RTVSMEZTVkFoQXVmSUc2SGQ5cnB3dWozcUM4TTdSeU5rR3NJelM3VGVFWmR0VkpUN1FrZDRNTVJGS1dET0pFanc?oc=5",
-   "published": "2026-10-18T10:01:58+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 34.402
-  },
-  {
-   "headline": "内蒙古甘其毛都口岸前三季度过货量超3800万吨",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/18/ARTIuRzdmnlGylnlMbjlEwl9261018.shtml",
-   "published": "2026-10-18T15:49:45+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XOGFrQWJaZHpQeEhjZkNIZnVpWW81TU9xY1JQaUl5UlZVN1BOVnkxREE1TWFoWDNZcmM2bHdmMlNTeFk3VDZEenQyX0taWGJOZDl3TU5KRHBRVHZETUhOYnNSdTlNTGxzTEtTWlRhaDdpZ1RqbE91WlFJQVlnb28?oc=5",
+   "published": "2026-10-18T20:38:53+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 33.88
-  },
-  {
-   "headline": "中国体育代表团亮相亚残运会欢迎仪式",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/18/ARTIaKJuCVuLLyaStGqgj6AF261018.shtml",
-   "published": "2026-10-18T20:38:09+07:00",
-   "outlets": 2,
-   "hot": false,
-   "score": 32.764
+   "score": 34.786
   }
  ]
 }
