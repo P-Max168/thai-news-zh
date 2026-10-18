@@ -1,0 +1,46 @@
+{
+ "_principle": "시스템 공유·편집 기준 분리(Mingoo 2026-10-17 18:33). topic id 체계·화면 로직(assets/topics.js)은 공유하고, 이 파일의 이름·순서·힌트·페르소나·지역·관심사·지명 정규식만 zh 전용. Claude 요청 R-zh-1: topics.js 가 이 데이터를 site/<lang>.json → topics 로 읽게.",
+ "MAX_TOPICS": 8,
+ "TOPICS": [
+  {"id": "cn",      "label": "涉华·中国人", "emoji": "🇨🇳", "color": "#c92a2a", "hint": "中国游客·在泰华人·中泰关系·使馆提醒", "new": true},
+  {"id": "visa",    "label": "签证·移民",   "emoji": "🛂", "color": "#6741d9", "hint": "签证·移民局·工作证·90天报到"},
+  {"id": "bangkok", "label": "曼谷",        "emoji": "🏙️", "color": "#495057", "hint": "曼谷市区·素万那普·廊曼"},
+  {"id": "east",    "label": "东部(芭提雅·罗勇)", "emoji": "🏖️", "color": "#0b7285", "hint": "芭提雅·春武里·是拉差·罗勇"},
+  {"id": "north",   "label": "北部",        "emoji": "⛰️", "color": "#5c940d", "hint": "清迈·清莱"},
+  {"id": "south",   "label": "南部",        "emoji": "🏝️", "color": "#1971c2", "hint": "普吉·甲米·苏梅·合艾"},
+  {"id": "poleco",  "label": "政经·汇率",   "emoji": "🏛️", "color": "#3b5bdb", "hint": "政府·经济·投资·泰铢汇率"},
+  {"id": "society", "label": "社会·治安",   "emoji": "🚨", "color": "#d9480f", "hint": "案件·诈骗·事故·灾害"},
+  {"id": "life",    "label": "生活·物价",   "emoji": "🛒", "color": "#0c8f6a", "hint": "物价·油价·租房·教育"},
+  {"id": "travel",  "label": "旅游·美食",   "emoji": "🍜", "color": "#e67700", "hint": "景点·酒店·航班·美食"},
+  {"id": "weather", "label": "天气·交通",   "emoji": "🌦️", "color": "#0ca678", "hint": "降雨·洪水·道路·机场"},
+  {"id": "ent",     "label": "娱乐·体育",   "emoji": "💬", "color": "#c2255c", "hint": "泰剧·体育·热门话题"}
+ ],
+ "PERSONAS": [
+  {"id": "bangkok",  "emoji": "🏙️", "label": "曼谷居民",     "desc": "曼谷及周边",          "topics": ["bangkok", "cn", "visa", "life", "society"]},
+  {"id": "pattaya",  "emoji": "🏖️", "label": "芭提雅/东部居民", "desc": "芭提雅·是拉差·罗勇", "topics": ["east", "cn", "visa", "life", "society"]},
+  {"id": "biz",      "emoji": "💼", "label": "经商·投资",     "desc": "企业外派·开店·投资",   "topics": ["poleco", "cn", "visa", "life", "bangkok"]},
+  {"id": "student",  "emoji": "🎓", "label": "留学·陪读",     "desc": "留学生·家长",          "topics": ["visa", "life", "bangkok", "north", "cn"]},
+  {"id": "traveler", "emoji": "🧳", "label": "游客",          "desc": "短期旅游·计划出行",    "topics": ["travel", "weather", "visa", "cn", "south"]}
+ ],
+ "REGIONS": [
+  {"id": "bangkok", "topic": "bangkok", "emoji": "🏙️", "label": "曼谷", "hint": "曼谷市区·周边", "wx": "bangkok"},
+  {"id": "east",    "topic": "east",    "emoji": "🏖️", "label": "东部", "sub": "(芭提雅·罗勇)", "hint": "芭提雅·是拉差·罗勇", "wx": "pattaya"},
+  {"id": "north",   "topic": "north",   "emoji": "⛰️", "label": "北部", "hint": "清迈·清莱", "wx": null},
+  {"id": "south",   "topic": "south",   "emoji": "🏝️", "label": "南部", "hint": "普吉·苏梅·合艾", "wx": null},
+  {"id": "other",   "topic": null,      "emoji": "🧳", "label": "其他·旅行中", "hint": "以全国新闻为主", "wx": null}
+ ],
+ "INTERESTS": [
+  {"id": "cn",     "emoji": "🇨🇳", "label": "华人相关", "hint": "中国游客·诈骗提醒·使馆通知", "topics": ["cn", "society"]},
+  {"id": "visa",   "emoji": "🛂", "label": "签证·居留", "hint": "签证·90天报到·移民局新规",   "topics": ["visa"]},
+  {"id": "biz",    "emoji": "💼", "label": "经商·投资", "hint": "经济·房产·汇率·税务",        "topics": ["poleco", "life"]},
+  {"id": "life",   "emoji": "🏠", "label": "生活·安家", "hint": "物价·医院·租房·学校",        "topics": ["life", "weather", "society"]},
+  {"id": "travel", "emoji": "✈️", "label": "旅游·美食", "hint": "景点·节庆·美食·交通",        "topics": ["travel", "weather", "ent"]}
+ ],
+ "REGION_PATTERNS": {
+  "_note": "zh 판 데이터(간체)에서 지역을 찾는 정규식. 한국판 RX_* 의 zh 버전",
+  "east": "芭提雅|宗天|帕塔亚|春武里|是拉差|林查班|罗勇|沙美岛|梭桃邑|万佛岁",
+  "bangkok": "曼谷|素万那普|廊曼|素坤逸|是隆|拉差达|汇权|暖武里|北榄",
+  "north": "清迈|清莱|南邦|南奔|夜丰颂|彭世洛|素可泰|美索|美赛|拜县",
+  "south": "普吉|芭东|甲米|攀牙|苏梅|帕岸|涛岛|宋卡|合艾|洛坤|董里|沙敦|春蓬|拉廊|北大年|也拉|陶公|泰南"
+ }
+}

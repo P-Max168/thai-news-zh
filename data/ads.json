@@ -1,0 +1,84 @@
+{
+ "_principle": "광고 렌더러(assets/ads/massage/dragon-ad.js 등)는 공유 시스템, 문구·자리 구성은 zh 전용. Mingoo 10-17 결정: 시험 기간 광고 = 드래곤 스웨디시 중국어 배너 하나만.",
+ "_status": "초안 — enabled:false. 중국어 문구 Mingoo 확인 뒤 enabled:true + mid 자리 켜기(DESIGN 5-4). 중국어 가게 이름·문구는 Mingoo 확인 전 게시 금지(DESIGN 5-4). 사실은 assets/ads/massage/ad.json facts(Google 지도 2026-10-03)만 사용, 가격·평점·중국어 응대 여부는 확인 안 됨 → 쓰지 않음.",
+ "enabled": false,
+ "label": "广告",
+ "slots": [
+  {
+   "id": "top",
+   "size": "strip",
+   "enabled": false,
+   "items": []
+  },
+  {
+   "id": "mid",
+   "size": "large",
+   "enabled": true,
+   "unit": "responsive",
+   "adsense_slot": "",
+   "items": [
+    {
+     "render": "dragon",
+     "variant": "large",
+     "lang": "zh",
+     "ref": "dragon_zh"
+    }
+   ]
+  },
+  {
+   "id": "home-mid",
+   "size": "strip",
+   "enabled": false,
+   "items": [],
+   "_note": "한국판 korea-mid 자리의 zh 이름(중국 요闻 칸 중간). 시험 기간 비움"
+  },
+  {
+   "id": "infeed",
+   "size": "medium",
+   "enabled": false,
+   "items": []
+  }
+ ],
+ "dragon_zh": {
+  "id": "dragon-massage-pattaya-zh",
+  "title": "Dragon 瑞典式按摩（芭提雅）",
+  "subtitle": "芭提雅三路 · 11:30–23:30 · ☎ 080-736-5211",
+  "alt": "广告：Dragon 瑞典式按摩 – 芭提雅三路，营业时间11:30–23:30，电话080-736-5211",
+  "display": {
+   "brand_en": "DRAGON SWEDISH · PATTAYA",
+   "name_lead": "Dragon",
+   "name_main": "瑞典式按摩",
+   "copy": "芭提雅瑞典式按摩 · 舒缓一天的疲惫",
+   "copy_short": "舒缓一天的疲惫",
+   "hours_short": "11:30–23:30",
+   "area_short": "芭提雅三路",
+   "area_city": "芭提雅",
+   "phone_display": "080-736-5211",
+   "phone_intl": "+66 80 736 5211",
+   "cta": "导航前往",
+   "btn_map": "地图",
+   "btn_map_aria": "在 Google 地图查看位置",
+   "btn_tel": "电话",
+   "btn_tel_aria": "拨打电话 ",
+   "btn_line": "LINE 咨询",
+   "btn_line_aria": "通过 LINE 咨询",
+   "cover_aria": " – 查看 Google 地图"
+  },
+  "link": "https://maps.app.goo.gl/sxwzECaxPxkANutE9",
+  "tel": "tel:+66807365211",
+  "rel": "sponsored noopener",
+  "alternatives_for_mingoo": {
+   "name": [
+    "Dragon 瑞典式按摩（芭提雅）",
+    "龙·瑞典式按摩（芭提雅）",
+    "Dragon 按摩（芭提雅）"
+   ],
+   "copy": [
+    "舒缓一天的疲惫",
+    "芭提雅三路 · 放松身心的好去处",
+    "忙碌一天，来这里好好放松"
+   ]
+  },
+  "font_needed": "Noto Sans SC (OFL) — 지금 배너 글꼴엔 한자 없음, R-zh-8 공유 카드와 같이 처리"
+ }
+}

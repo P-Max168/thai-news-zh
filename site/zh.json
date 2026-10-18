@@ -1,0 +1,169 @@
+{
+ "_principle": "시스템(코드·도구·자동화)은 한국어판과 공유, 편집 기준(기사 선정·번역 규칙·카테고리·질문/댓글 톤·페르소나)은 언어별 분리 — Mingoo 2026-10-17 18:33 BKK. 이 파일은 공유 코드가 언어를 고를 때 읽는 zh 설정(형식은 ko/ru 공통, 로더 = tools/siteconf.py(R-zh-2, 2026-10-18 Grok)).",
+ "lang": "zh",
+ "htmlLang": "zh-Hans",
+ "brand": "泰国新闻速览",
+ "brand_sub": "泰国新闻一览·中文",
+ "domain": "zh.pmaxone.com",
+ "repo": "P-Max168/thai-news-zh",
+ "schedule": {
+  "test": [
+   {
+    "slot": "md",
+    "build": "13:00",
+    "push_by": "13:50",
+    "hard_stop": "17:50"
+   }
+  ],
+  "full": [
+   {
+    "slot": "am",
+    "build": "06:00"
+   },
+   {
+    "slot": "md",
+    "build": "12:30"
+   },
+   {
+    "slot": "pm",
+    "build": "19:00"
+   }
+  ],
+  "no_push_windows": [
+   "07:00-08:10",
+   "18:00-18:40"
+  ],
+  "tz": "Asia/Bangkok"
+ },
+ "home_section": {
+  "id": "china",
+  "fetcher": "tools/fetch_china.py --standalone",
+  "data": "data/china.json",
+  "global": "CHINA_NEWS",
+  "cron": "17 */2 * * *",
+  "key": "china_top",
+  "script": "data/china.js",
+  "flag": "cn"
+ },
+ "editorial": {
+  "sources": "tools/sources.zh.json",
+  "translation_rules": "tools/TRANSLATION_RULES.zh.md",
+  "topics": "site/topics.zh.json",
+  "discussion_persona": "tools/DISCUSSION_PERSONA.zh.md",
+  "i18n": "i18n/zh.json",
+  "ads": "data/ads.json (zh 저장소 — 초안 ads/ads.zh.json)"
+ },
+ "currency": {
+  "pair": "THB_CNY",
+  "unit": "元",
+  "format": "{thb}泰铢（约{cny}元）",
+  "check": "cny_check",
+  "header_symbol": "฿"
+ },
+ "validate": {
+  "forbid_scripts": [
+   "thai",
+   "hangul"
+  ],
+  "forbid_body_symbols": [
+   "฿"
+  ],
+  "punct": "fullwidth"
+ },
+ "ticker": [
+  "THB_CNY",
+  "USD_THB",
+  "GOLD",
+  "USDT",
+  "FUEL"
+ ],
+ "firestore_prefix": "zh_",
+ "firestore_collections": [
+  "zh_comments",
+  "zh_rx",
+  "zh_reports",
+  "zh_adclicks"
+ ],
+ "admins_doc": "config/admins_zh",
+ "share": {
+  "font": "Noto Sans SC",
+  "channels": [
+   "wechat",
+   "line",
+   "copy"
+  ],
+  "priority": [
+   "cn",
+   "east",
+   "visa"
+  ],
+  "brief_badge": {
+   "am": "早间简报",
+   "md": "午间简报",
+   "pm": "晚间简报"
+  },
+  "text": {
+   "brand": "泰国新闻速览",
+   "brand_sub": "每天中文整理泰国本地新闻",
+   "html_lang": "zh-CN",
+   "og_locale": "zh_CN",
+   "date_long": "{m}月{d}日 星期{wd}",
+   "date_short": "{m}月{d}日（周{wd}）",
+   "time": "{m}月{d}日 {hh}:{mm}",
+   "wd": "一二三四五六日",
+   "tz_line": "曼谷时间",
+   "spot": "本期关注",
+   "brief_title": "本期要闻 <span class=\"bcount\">{n}</span>条",
+   "og_brief_title": "中文整理的泰国本地新闻",
+   "brief_badge": "今日简报",
+   "msg_head": "📰 泰国新闻速览 {m}月{d}日（周{wd}）{edn}。泰国本地报道中文整理。",
+   "msg_edition": "👉 查看本期：",
+   "msg_home": "🏠 最新新闻（{upd}）：",
+   "update_line": "每天午间更新",
+   "title": "泰国新闻速览 — {m}月{d}日（周{wd}）{edn}",
+   "font": "\"Noto Sans SC\",\"Noto Sans CJK SC\",\"Source Han Sans SC\",\"PingFang SC\",\"Microsoft YaHei\""
+  }
+ },
+ "hidden_sections": [
+  "places",
+  "rentals",
+  "jobs"
+ ],
+ "script_variants": {
+  "default": "zh-Hans",
+  "toggle": "zh-Hant via OpenCC (2단계)"
+ },
+ "site_url": "https://zh.pmaxone.com/",
+ "short_name": "泰国新闻",
+ "slots": [
+  "am",
+  "md",
+  "pm"
+ ],
+ "edition_label": {
+  "am": "早间版",
+  "md": "午间版",
+  "pm": "晚间版"
+ },
+ "label_format": "{m}月{d}日 {slot}",
+ "watch_slots": [
+  [
+   "md",
+   13,
+   0
+  ]
+ ],
+ "impacts": [
+  "签证·居留",
+  "汇率·物价",
+  "交通·事故",
+  "治安",
+  "天气·灾害"
+ ],
+ "seo": {
+  "title": "泰国新闻速览 — 每天中文整理泰国本地新闻",
+  "description": "泰国本地媒体新闻中文整理：曼谷·芭提雅·清迈·普吉等地消息，签证·移民、生活·物价、天气·交通，以及涉华新闻。",
+  "og_locale": "zh_CN",
+  "verification": {}
+ }
+}

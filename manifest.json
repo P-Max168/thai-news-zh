@@ -1,0 +1,70 @@
+{
+ "name": "泰国新闻速览",
+ "short_name": "泰国新闻",
+ "description": "泰国新闻一览·中文",
+ "lang": "zh-Hans",
+ "dir": "ltr",
+ "id": "./",
+ "start_url": "./?source=pwa",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#F2F4F6",
+ "theme_color": "#ffffff",
+ "categories": [
+  "news"
+ ],
+ "icons": [
+  {
+   "src": "assets/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/icons/maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "assets/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "하트한 기사",
+   "short_name": "하트",
+   "url": "./?source=pwa-shortcut#hearts",
+   "icons": [
+    {
+     "src": "assets/icons/icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  },
+  {
+   "name": "내 주변 맛집·마사지·병원",
+   "short_name": "내 주변",
+   "url": "./?source=pwa-shortcut#nearby/food",
+   "icons": [
+    {
+     "src": "assets/icons/icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  }
+ ],
+ "prefer_related_applications": false
+}

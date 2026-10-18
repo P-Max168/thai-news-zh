@@ -1,0 +1,45 @@
+/* 📍 내 주변(2026-10-03) — 헤더 셋째 줄(.subbar, 예전 탭 줄 자리) + 카테고리 화면 #nearby/<id>. JS: assets/nearby.js */
+.subbar.subbar--nearby{height:auto;min-height:40px;display:flex;align-items:center}
+.nearby{display:flex;align-items:center;gap:8px;width:100%;min-width:0;padding-top:4px;padding-bottom:4px}
+.nb-lab{flex:0 0 auto;display:inline-flex;align-items:center;gap:3px;font-size:min(.8125rem,14.3px);font-weight:800;color:#ffe08a;white-space:nowrap;letter-spacing:-.2px;cursor:default;user-select:none}
+.nb-cats{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:6px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.nb-cats::-webkit-scrollbar{display:none}
+.nb-cat{flex:0 0 auto;display:inline-flex;align-items:center;gap:4px;height:34px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;font-size:min(.8438rem,14.85px);font-weight:700;line-height:1;white-space:nowrap;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.nb-cat:hover,.nb-cat[aria-current]{background:rgba(255,255,255,.24)}
+.nb-cat:active{transform:scale(.97)}
+.nb-cat:focus-visible{outline:2px solid #74c0fc;outline-offset:1px}
+.nb-cat__e{font-size:min(.9375rem,16.5px)}
+.nb-cat__t{display:inline-block}
+/* 오른쪽 끝 흐림 — JS 가 버튼이 넘칠 때만 .nearby--scroll(끝까지 밀면 .nearby--end 로 없앰) */
+.nearby{position:relative}
+.nearby.nearby--scroll:not(.nearby--end)::after{content:"";position:absolute;top:0;right:0;bottom:0;width:28px;pointer-events:none;background:linear-gradient(90deg,rgba(18,58,99,0),var(--navy-2,#123a63) 85%)}
+/* 휴대폰(2026-10-03 v2, 버튼 5개): 버튼 = 그림 위 · 글자 아래 두 줄(높이 42px, 터치 ≥34px) → 360~430px 에 5개 다 들어감. 이름표도 두 줄 */
+@media (max-width:640px){
+  .subbar.subbar--nearby{min-height:50px}
+  .nearby{padding:4px 8px 4px 8px;gap:6px}
+  .nb-lab{flex-direction:column;gap:1px;font-size:min(.6875rem,12.1px);line-height:1.1;letter-spacing:-.3px;min-width:34px;text-align:center}
+  .nb-lab__e{font-size:min(.9375rem,16.5px);line-height:1}
+  .nb-cats{gap:4px;flex:1 1 auto}
+  .nb-cat{flex:1 0 auto;flex-direction:column;justify-content:center;gap:2px;height:42px;min-width:46px;padding:0 6px;border-radius:12px;font-size:min(.7188rem,12.65px);letter-spacing:-.3px}
+  .nb-cat__e{font-size:min(1rem,17.6px);line-height:1}
+  .nb-cat__t{line-height:1.1}
+}
+@media (max-width:370px){
+  .nearby{padding-left:6px;padding-right:6px;gap:4px}
+  .nb-cats{gap:3px}
+  .nb-cat{padding:0 4px;min-width:42px;font-size:min(.6875rem,12.1px);letter-spacing:-.4px}
+}
+
+/* 카테고리 화면 틀만(나머지 모양은 assets/late.css — 첫 기사 카드 뒤에 받음) */
+body.nb-open{overflow:hidden}
+.nb-page{position:fixed;inset:0;z-index:62;background:var(--bg,#f4f5f7);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.nb-page[hidden]{display:none}
+/* 360px 이하 다듬기(2026-10-03 16:20): 헤더 줄·종류 바꾸기 칸 = 모두 같은 너비, 글자 안 잘림(긴 이름 '피부·뷰티' → '뷰티', 화면 읽기 프로그램엔 전체 이름) */
+@media (max-width:600px){
+  .nb-cat{flex:1 1 0;min-width:0}
+  .nb-cat__t{max-width:100%;overflow:visible;white-space:nowrap}
+}
+@media (max-width:370px){ .nb-cat{font-size:min(.75rem,13.2px);letter-spacing:-.3px} }
+/* 속도(2026-10-03 18:25): 첫 기사 카드 전 자리표시 — 같은 크기 빈 칸(글자·그림 없음) */
+.nb-ph-lab{min-width:34px;height:30px}
+.nb-ph{pointer-events:none}

@@ -1,0 +1,11 @@
+# 中文版 검색 노출 허용(한국판과 같은 기준, 2026-10-18 Grok R-zh 준비). offline·404 쪽만 noindex
+User-agent: *
+Allow: /
+Disallow: /drafts/
+Disallow: /raw/
+Disallow: /backups/
+Disallow: /screenshots/
+Disallow: /tools/
+Disallow: /collab/
+
+Sitemap: https://zh.pmaxone.com/sitemap.xml

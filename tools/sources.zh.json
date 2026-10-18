@@ -1,0 +1,57 @@
+{
+ "updated": "2026-10-17",
+ "edition": "zh",
+ "principle": "시스템(코드·도구·자동화)은 한국어판과 공유하고, 편집 기준(기사 선정·번역 규칙·카테고리·질문/댓글 톤·페르소나)은 언어별로 따로 둔다 (Mingoo 2026-10-17 18:33 BKK). 이 파일은 중국어판 '편집 기준' 쪽 데이터다. 수집 코드(collect.py·newslib.py·fetch_china.py)는 공유 시스템이다.",
+ "decision": "Mingoo 2026-10-17 18:33: 본토 주류(中新网·央视·新华·人民·新浪) + 联合早报. BBC·RFI 등 해외 중문 매체는 쓰지 않는다.",
+ "china_news": {
+  "_note": "🇨🇳 中国要闻 칸(제목·출처·시각·링크만, 번역 없음). tools/fetch_china.py 가 읽는다. weight 가 클수록 우선. type: rss | cctv_jsonp | sina_roll | gnews",
+  "sources": [
+   {"id": "chinanews_scroll", "name": "中国新闻网", "type": "rss", "url": "https://www.chinanews.com.cn/rss/scroll-news.xml", "weight": 10, "verified": "2026-10-17"},
+   {"id": "chinanews_china", "name": "中国新闻网", "type": "rss", "url": "https://www.chinanews.com.cn/rss/china.xml", "weight": 10, "verified": "2026-10-17"},
+   {"id": "chinanews_finance", "name": "中国新闻网", "type": "rss", "url": "https://www.chinanews.com.cn/rss/finance.xml", "weight": 8, "verified": "2026-10-17"},
+   {"id": "cctv_china", "name": "央视新闻", "type": "cctv_jsonp", "url": "https://news.cctv.com/2019/07/gaiban/cmsdatainterface/page/china_1.jsonp", "weight": 9, "verified": "2026-10-17", "fragile": "비공식 JSONP 경로 — 깨지면 GN site:cctv.com 로 대체"},
+   {"id": "sina_roll", "name": "新浪新闻", "type": "sina_roll", "url": "https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2509&k=&num=50&page=1", "weight": 7, "verified": "2026-10-17", "fragile": "비공식 API"},
+   {"id": "gn_xinhua", "name": "新华网", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:news.cn+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 9, "verified": "2026-10-17"},
+   {"id": "gn_people", "name": "人民网", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:people.com.cn+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 8, "verified": "2026-10-17"},
+   {"id": "gn_zaobao", "name": "联合早报", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:zaobao.com.sg+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 8, "verified": "2026-10-17"},
+   {"id": "gn_cn_top", "name": "Google 新闻 中国", "type": "gnews", "url": "https://news.google.com/rss?hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 6, "role": "화제성 신호(여러 매체가 다루는 사건 가산점)", "verified": "2026-10-17"},
+   {"id": "gn_cn_nation", "name": "Google 新闻 中国", "type": "gnews", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 6, "role": "화제성 신호", "verified": "2026-10-17"}
+  ],
+  "fallback": [
+   {"id": "gn_thepaper", "name": "澎湃新闻", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:thepaper.cn+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 6},
+   {"id": "gn_cctv", "name": "央视网", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:cctv.com+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "weight": 8}
+  ],
+  "priority_queries": {
+   "_note": "태국에 사는 중국어 독자에게 직접 영향 있는 중국 쪽 소식(편집 모드에서 먼저 본다). 독립 모드(--standalone)는 가중치 없이 결정적으로 고름",
+   "queries": ["泰国 签证 when:2d", "中泰 when:2d", "驻泰国使馆 when:7d", "人民币 泰铢 when:2d", "曼谷 航班 when:2d", "中国游客 泰国 when:2d"]
+  },
+  "excluded": [
+   {"name": "BBC中文", "reason": "Mingoo 10-17 결정: 해외 중문 매체 제외"},
+   {"name": "RFI 中文", "reason": "Mingoo 10-17 결정"},
+   {"name": "DW 中文", "reason": "Mingoo 10-17 결정"},
+   {"name": "纽约时报中文网", "reason": "Mingoo 10-17 결정"},
+   {"name": "美国之音", "reason": "Mingoo 10-17 결정 + 빈 응답"},
+   {"name": "FT中文网", "reason": "하루 1건 수준"},
+   {"name": "CGTN·SCMP", "reason": "영어"},
+   {"name": "财新", "reason": "403"},
+   {"name": "中国日报", "reason": "404"}
+  ]
+ },
+ "thai_news_zh": {
+  "_note": "본문 판 보강용(태국 소식을 중국어로 쓰는 매체). 본문 판 핵심 소스는 한국판과 같은 tools/sources.json(태국 매체, 공유 수집). 여기는 중국인 관련 소식(관광객·사기·대사관 공지) 보강과 지명·용어 대조용.",
+  "sources": [
+   {"name": "Khaosod 中文", "type": "rss", "url": "https://www.khaosod.co.th/chinese/feed", "role": "main-supplement", "verified": "2026-10-17"},
+   {"name": "新中原报", "type": "rss", "url": "https://singtongnguanmedia.com/feed/", "role": "supplement", "note": "갱신 느림", "verified": "2026-10-17"},
+   {"name": "星暹日报", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:singsiandailynews.com&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "role": "supplement", "note": "직접 접속 실패, GN만", "verified": "2026-10-17"},
+   {"name": "泰国头条新闻", "type": "gnews", "url": "https://news.google.com/rss/search?q=site:thaiheadlines.com&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "role": "supplement", "verified": "2026-10-17"},
+   {"name": "GN 泰国 1일", "type": "gnews", "url": "https://news.google.com/rss/search?q=%E6%B3%B0%E5%9B%BD+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "role": "signal"},
+   {"name": "GN 芭提雅", "type": "gnews", "url": "https://news.google.com/rss/search?q=%E8%8A%AD%E6%8F%90%E9%9B%85+when:3d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "role": "signal"},
+   {"name": "GN 驻泰国使馆", "type": "gnews", "url": "https://news.google.com/rss/search?q=%E9%A9%BB%E6%B3%B0%E5%9B%BD%E4%BD%BF%E9%A6%86+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", "role": "safety-notice"}
+  ],
+  "banned": [
+   {"name": "世界日报 udnbkk.com", "reason": "홈 제목이 온라인 포커 광고, /feed 2026-05 이후 0건 — 도메인 상태 의심, 사용 금지"},
+   {"name": "泰华网 thaicn.net", "reason": "RSS 500, 최신 2024"}
+  ]
+ },
+ "fx": {"pair": "THB_CNY", "url": "https://open.er-api.com/v6/latest/THB", "sample": "1泰铢=0.2004元 (2026-10-17 18:12 BKK)"}
+}
