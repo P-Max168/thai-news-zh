@@ -1,42 +1,51 @@
 {
- "updated_at": "2026-10-20T02:54:53+07:00",
+ "updated_at": "2026-10-20T06:39:16+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "韩国总统李在明：必须尽快收回战时作战指挥权",
+   "headline": "推动高质量发展，总书记强调因地制宜",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10717535.shtml",
-   "published": "2026-10-19T22:05:41+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717431.shtml",
+   "published": "2026-10-19T20:41:08+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 47.108
+   "score": 44.019
   },
   {
-   "headline": "重庆市丰都县人大常委会党组书记陈金富接受审查调查",
+   "headline": "哥伦比亚一非法金矿塌方 至少9人死",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717496.shtml",
-   "published": "2026-10-19T21:20:55+07:00",
-   "outlets": 2,
+   "url": "https://www.chinanews.com.cn/gj/2026/10-20/10717556.shtml",
+   "published": "2026-10-20T06:15:32+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 42.66
+   "score": 41.763
   },
   {
-   "headline": "何以中国·当惊世界殊｜长江之畔，这位老院士以毕生求索，作答“何以中国”",
+   "headline": "泽连斯基称俄无人机袭击哈尔科夫州一公园致6死14伤",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717424.shtml",
-   "published": "2026-10-19T20:00:36+07:00",
-   "outlets": 2,
+   "url": "https://www.chinanews.com.cn/gj/2026/10-20/10717550.shtml",
+   "published": "2026-10-20T04:58:44+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 41.857
+   "score": 40.995
   },
   {
-   "headline": "第140届广交会第一期线下展：18.9万名境外采购商到会 - 人民网-图片频道",
-   "source": "人民网-图片频道",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5uR0lBWmpqejAzLW42bW9IOVRkZ0JEMDRCeWxrbUp2Z3JPdHZqb2xWS2NEX0R3RW5hSXhndEZsSnhlaWpwcEJBaHF3SWlRWnlUS3BtazdnT3FkUEd6ZV8zLVNsNy1xbjZ5?oc=5",
-   "published": "2026-10-19T22:17:00+07:00",
+   "headline": "法国总统马克龙出访海湾国家 聚焦能源供应",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-20/10717544.shtml",
+   "published": "2026-10-20T04:46:27+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 40.872
+  },
+  {
+   "headline": "前三季度GDP同比增长4.6% 高质量发展取得新成效",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/19/ARTIthOStHFxGFDSKUBfDOo3261019.shtml",
+   "published": "2026-10-19T19:10:14+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 41.221
+   "score": 40.11
   },
   {
    "headline": "医保钱包2.0版上线 个人账户跨省共济落地全国",
@@ -45,25 +54,16 @@
    "published": "2026-10-19T23:45:13+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 41.103
+   "score": 38.859
   },
   {
-   "headline": "亚残运会首日：崔哲获中国代表团首金 郭玲玲刷新世界纪录",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/ty/2026/10-20/10717542.shtml",
-   "published": "2026-10-20T00:37:16+07:00",
+   "headline": "纽约股市三大股指19日涨跌不一",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9WdjJuV0w0dnRSTDFvYUN6Q0lPQ3dpTEw5UGlwLV9Ta2NCbjJwMk9kalFtXzd3Tk9mWlRfYmZ2UmhNYUJmMnVhOERmX29xY19TSmFQem9JYkREem80ZW5HMkZ6R21tM25RSlhaaEJ4VUk4X2duS25J?oc=5",
+   "published": "2026-10-20T03:47:16+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 40.624
-  },
-  {
-   "headline": "全国秋粮收获超七成 秋粮旺季收购有序开展，已收购中晚稻1800万吨",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS1ktZ0VWczR1bHEyTHlhN2o0ZjRlOGFWbjhrTC0yV3J4cUttbEVSUnRIdlRjTlFLTmlmMnNvakd1bTBNVjNjZ25fbHNvZDM3ZXhVOXI5RHg0S256QTM4SFRFazIwMjFFU1htbUg5Nlc2ZFI5Sm1WMUdMeGtKa0RzeUtfQQ?oc=5",
-   "published": "2026-10-19T08:09:58+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 39.751
+   "score": 37.28
   },
   {
    "headline": "赓续长征精神 奋进复兴征程｜长征中，这支队伍最先到达陕北",
@@ -72,7 +72,7 @@
    "published": "2026-10-19T19:04:19+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 38.294
+   "score": 36.05
   },
   {
    "headline": "商务部新闻发言人就英方称将共同应对中国汽车产业占主导地位事答记者问",
@@ -81,7 +81,7 @@
    "published": "2026-10-19T21:21:16+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 35.664
+   "score": 33.42
   },
   {
    "headline": "铸牢共同体 中华一家亲丨“和和美美一家人”共住多民族互嵌式社区",
@@ -90,7 +90,7 @@
    "published": "2026-10-19T20:47:38+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 35.327
+   "score": 33.084
   }
  ]
 }
