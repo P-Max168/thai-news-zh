@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-19T20:10:18+07:00",
+ "updated_at": "2026-10-20T02:54:53+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "我国多措并举加快推进科技兴商",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTIutwOgEnarBzB7GEVXpjQ261019.shtml",
-   "published": "2026-10-19T19:13:10+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 46.429
-  },
-  {
-   "headline": "赓续长征精神 奋进复兴征程｜长征中，这支队伍最先到达陕北",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdi00UlZ4NHJVOTIxOFdvU3RIQ3d5MzVQUXlxNy1XMTE0OEd6SDVxZVNOVHpTdzJ0YjhTV3J2b3ZVc1BYWWRyQVJYa3YxODVNYXo3ejVJX2J5QTJySEtTMVBBaXVPU1RnRV9ORlpTZi1CNWtOT3UzTWVySGt6LUlPTDBhYw?oc=5",
-   "published": "2026-10-19T19:04:19+07:00",
+   "headline": "韩国总统李在明：必须尽快收回战时作战指挥权",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10717535.shtml",
+   "published": "2026-10-19T22:05:41+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 46.34
+   "score": 47.108
   },
   {
-   "headline": "三部门公布优化调整无人机相关物项出口管制措施",
+   "headline": "重庆市丰都县人大常委会党组书记陈金富接受审查调查",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717218.shtml",
-   "published": "2026-10-19T15:02:24+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717496.shtml",
+   "published": "2026-10-19T21:20:55+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 42.921
+   "score": 42.66
   },
   {
-   "headline": "外交部：严厉谴责日方涉靖国神社消极动向",
+   "headline": "何以中国·当惊世界殊｜长江之畔，这位老院士以毕生求索，作答“何以中国”",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717190.shtml",
-   "published": "2026-10-19T14:22:48+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 42.525
-  },
-  {
-   "headline": "【赓续长征精神 奋进复兴征程】初心如磐 精神永续 书写新长征路上的崭新答卷",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTIQHGhK1kxVcenVpUijDP3261019.shtml",
-   "published": "2026-10-19T19:08:52+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717424.shtml",
+   "published": "2026-10-19T20:00:36+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 42.386
+   "score": 41.857
   },
   {
-   "headline": "10月19日新闻夜读",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/iframe/2026/10-19/10717415.shtml",
-   "published": "2026-10-19T19:44:47+07:00",
+   "headline": "第140届广交会第一期线下展：18.9万名境外采购商到会 - 人民网-图片频道",
+   "source": "人民网-图片频道",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5uR0lBWmpqejAzLW42bW9IOVRkZ0JEMDRCeWxrbUp2Z3JPdHZqb2xWS2NEX0R3RW5hSXhndEZsSnhlaWpwcEJBaHF3SWlRWnlUS3BtazdnT3FkUEd6ZV8zLVNsNy1xbjZ5?oc=5",
+   "published": "2026-10-19T22:17:00+07:00",
    "outlets": 3,
-   "hot": false,
-   "score": 41.745
+   "hot": true,
+   "score": 41.221
   },
   {
-   "headline": "吴清：全力维护资本市场安全稳定",
+   "headline": "医保钱包2.0版上线 个人账户跨省共济落地全国",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/20/ARTIFqQwygTdmG4hayAWBLbD261020.shtml",
+   "published": "2026-10-19T23:45:13+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 41.103
+  },
+  {
+   "headline": "亚残运会首日：崔哲获中国代表团首金 郭玲玲刷新世界纪录",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717410.shtml",
-   "published": "2026-10-19T19:39:37+07:00",
+   "url": "https://www.chinanews.com.cn/ty/2026/10-20/10717542.shtml",
+   "published": "2026-10-20T00:37:16+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 41.693
-  },
-  {
-   "headline": "中央档案馆向社会集中开放一批长征专题档案",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNN1RIX0ZtSDJQM0NCZy04MVVlaWxoaU5SdGtod0NIN3oxemRyTXFsZ1Z5OHl0Q09XcVpfZUd2QmNGTnNHalduQWtMWGlEVUpWNHRhOU5PRzFMaWVJNDlKVnVCZGtLUTdBSVJfWXRfV0FpV2M3ZGRlbTUyV2NobUxxOF9rYw?oc=5",
-   "published": "2026-10-19T16:11:15+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 40.609
+   "score": 40.624
   },
   {
    "headline": "全国秋粮收获超七成 秋粮旺季收购有序开展，已收购中晚稻1800万吨",
    "source": "新华网",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS1ktZ0VWczR1bHEyTHlhN2o0ZjRlOGFWbjhrTC0yV3J4cUttbEVSUnRIdlRjTlFLTmlmMnNvakd1bTBNVjNjZ25fbHNvZDM3ZXhVOXI5RHg0S256QTM4SFRFazIwMjFFU1htbUg5Nlc2ZFI5Sm1WMUdMeGtKa0RzeUtfQQ?oc=5",
    "published": "2026-10-19T08:09:58+07:00",
-   "outlets": 3,
+   "outlets": 4,
    "hot": true,
-   "score": 39.797
+   "score": 39.751
   },
   {
-   "headline": "前三季度GDP同比增长4.6% 高质量发展取得新成效",
+   "headline": "赓续长征精神 奋进复兴征程｜长征中，这支队伍最先到达陕北",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdi00UlZ4NHJVOTIxOFdvU3RIQ3d5MzVQUXlxNy1XMTE0OEd6SDVxZVNOVHpTdzJ0YjhTV3J2b3ZVc1BYWWRyQVJYa3YxODVNYXo3ejVJX2J5QTJySEtTMVBBaXVPU1RnRV9ORlpTZi1CNWtOT3UzTWVySGt6LUlPTDBhYw?oc=5",
+   "published": "2026-10-19T19:04:19+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 38.294
+  },
+  {
+   "headline": "商务部新闻发言人就英方称将共同应对中国汽车产业占主导地位事答记者问",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTIthOStHFxGFDSKUBfDOo3261019.shtml",
-   "published": "2026-10-19T19:10:14+07:00",
+   "url": "https://jingji.cctv.com/2026/10/19/ARTI7vFOLdnFaT3oizOxo4PG261019.shtml",
+   "published": "2026-10-19T21:21:16+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 35.664
+  },
+  {
+   "headline": "铸牢共同体 中华一家亲丨“和和美美一家人”共住多民族互嵌式社区",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XZjNBTTVSN0E2U3lUcFF2Q3FaaTlnR1p2RDNyWHdRc2VRWHlHckRQdDNJT1E4Z2xMdlBQbmUzVk1wNDdLZTRJaXZ2TW1zR2pzRVczWGF5OFlCcVIwNlIxZVNkdHBLaEpiWkZobzBsbVZHdGE4Nzd3?oc=5",
+   "published": "2026-10-19T20:47:38+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.399
+   "score": 35.327
   }
  ]
 };
