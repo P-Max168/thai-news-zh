@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-19T11:38:14+07:00",
+ "updated_at": "2026-10-19T20:10:18+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "前三季度中国GDP同比增长4.6%",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717087.shtml",
-   "published": "2026-10-19T11:19:10+07:00",
+   "headline": "我国多措并举加快推进科技兴商",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/19/ARTIutwOgEnarBzB7GEVXpjQ261019.shtml",
+   "published": "2026-10-19T19:13:10+07:00",
    "outlets": 5,
+   "hot": false,
+   "score": 46.429
+  },
+  {
+   "headline": "赓续长征精神 奋进复兴征程｜长征中，这支队伍最先到达陕北",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdi00UlZ4NHJVOTIxOFdvU3RIQ3d5MzVQUXlxNy1XMTE0OEd6SDVxZVNOVHpTdzJ0YjhTV3J2b3ZVc1BYWWRyQVJYa3YxODVNYXo3ejVJX2J5QTJySEtTMVBBaXVPU1RnRV9ORlpTZi1CNWtOT3UzTWVySGt6LUlPTDBhYw?oc=5",
+   "published": "2026-10-19T19:04:19+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 57.809
+   "score": 46.34
+  },
+  {
+   "headline": "三部门公布优化调整无人机相关物项出口管制措施",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717218.shtml",
+   "published": "2026-10-19T15:02:24+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.921
+  },
+  {
+   "headline": "外交部：严厉谴责日方涉靖国神社消极动向",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717190.shtml",
+   "published": "2026-10-19T14:22:48+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 42.525
+  },
+  {
+   "headline": "【赓续长征精神 奋进复兴征程】初心如磐 精神永续 书写新长征路上的崭新答卷",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/19/ARTIQHGhK1kxVcenVpUijDP3261019.shtml",
+   "published": "2026-10-19T19:08:52+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.386
+  },
+  {
+   "headline": "10月19日新闻夜读",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/iframe/2026/10-19/10717415.shtml",
+   "published": "2026-10-19T19:44:47+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 41.745
+  },
+  {
+   "headline": "吴清：全力维护资本市场安全稳定",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717410.shtml",
+   "published": "2026-10-19T19:39:37+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 41.693
+  },
+  {
+   "headline": "中央档案馆向社会集中开放一批长征专题档案",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNN1RIX0ZtSDJQM0NCZy04MVVlaWxoaU5SdGtod0NIN3oxemRyTXFsZ1Z5OHl0Q09XcVpfZUd2QmNGTnNHalduQWtMWGlEVUpWNHRhOU5PRzFMaWVJNDlKVnVCZGtLUTdBSVJfWXRfV0FpV2M3ZGRlbTUyV2NobUxxOF9rYw?oc=5",
+   "published": "2026-10-19T16:11:15+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.609
   },
   {
    "headline": "全国秋粮收获超七成 秋粮旺季收购有序开展，已收购中晚稻1800万吨",
    "source": "新华网",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS1ktZ0VWczR1bHEyTHlhN2o0ZjRlOGFWbjhrTC0yV3J4cUttbEVSUnRIdlRjTlFLTmlmMnNvakd1bTBNVjNjZ25fbHNvZDM3ZXhVOXI5RHg0S256QTM4SFRFazIwMjFFU1htbUg5Nlc2ZFI5Sm1WMUdMeGtKa0RzeUtfQQ?oc=5",
    "published": "2026-10-19T08:09:58+07:00",
-   "outlets": 6,
-   "hot": true,
-   "score": 52.917
-  },
-  {
-   "headline": "辽宁省大连市人大常委会副主任刘士武接受审查调查",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717027.shtml",
-   "published": "2026-10-19T09:31:30+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 48.733
+   "score": 39.797
   },
   {
-   "headline": "加快推进科技兴商 商务部等9部门发布18条举措",
+   "headline": "前三季度GDP同比增长4.6% 高质量发展取得新成效",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTIi9YD7LPE6bjGmyAVYGAG261019.shtml",
-   "published": "2026-10-19T10:22:20+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 46.241
-  },
-  {
-   "headline": "海关总署发布风险警示：SWISSE部分产品被检出铅超标",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XNER2M0o2RUFaUmxsOVdaeUFqenBiR2Z6bkFOVW5PSVVER3JGWHhoSHVRaV80Qzl1Sk5xcGRjM1ZsbE1mRGV6cGtNZGsxYkNjakZlWDdFRzItUzN2WExDTHNldTFGWV83OGFBLWpqbUFzNmwyUUdR?oc=5",
-   "published": "2026-10-19T07:50:17+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 44.72
-  },
-  {
-   "headline": "国产卫星互联网首次实现北极、南极、青藏高原联网通信",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717026.shtml",
-   "published": "2026-10-19T09:28:18+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.701
-  },
-  {
-   "headline": "黑山总理斯帕伊奇会见王毅",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-19/10716961.shtml",
-   "published": "2026-10-19T08:28:31+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.103
-  },
-  {
-   "headline": "今年前三季度全国铁路发送旅客超37亿人次",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOEl5YWpqeHI5N2xOS09oYlVCZXkzMG5DY0gtbllfQ3YxVEUxdmdGTkp2UThqc1lsTGswV0I4ZHJPeUZZZEg0dHU0d2NMbmVaRUZzRWx6OUIzUTJFREdrRmZrUkVoTzZwbVRfQ0VSSnplRzVUNGFMYmNIRHlwRmNLYlFSSQ?oc=5",
-   "published": "2026-10-18T13:17:29+07:00",
-   "outlets": 5,
-   "hot": true,
-   "score": 41.592
-  },
-  {
-   "headline": "人民币市场汇价（10月19日）",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBWOEFLbHNJR0llTDhXNjhlcnZzUE5BQmhPUlV4Qm9XLUs5RHFUaFBQVm9IUGw1eVR5a0czN1JGdTVSU2ExMXJyQmRDcWhaZzk0aUtDcmpfV1ZKUEFCNmNLRVZ4MzBhQi10N0N3TkV5clRLbzJUUmxZ?oc=5",
-   "published": "2026-10-19T09:03:42+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 41.455
-  },
-  {
-   "headline": "学习卡丨“弘扬伟大长征精神，走好今天的长征路”",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTIHUoA3ycgFxTp4oLUgCNv261019.shtml",
-   "published": "2026-10-19T09:34:53+07:00",
+   "url": "https://news.cctv.com/2026/10/19/ARTIthOStHFxGFDSKUBfDOo3261019.shtml",
+   "published": "2026-10-19T19:10:14+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 37.766
+   "score": 38.399
   }
  ]
 };
