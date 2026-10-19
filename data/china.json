@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-19T03:40:19+07:00",
+ "updated_at": "2026-10-19T08:10:12+07:00",
  "lang": "zh-Hans",
  "items": [
   {
@@ -7,90 +7,90 @@
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-18/10716841.shtml",
    "published": "2026-10-18T19:49:57+07:00",
-   "outlets": 4,
+   "outlets": 5,
    "hot": true,
-   "score": 49.296
+   "score": 50.597
+  },
+  {
+   "headline": "日媒：日本首相高市早苗向靖国神社供奉“玉串料”",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10716925.shtml",
+   "published": "2026-10-19T06:32:54+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 49.027
   },
   {
    "headline": "第五届亚洲残疾人运动会在日本名古屋开幕",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/ty/2026/10-18/10716891.shtml",
-   "published": "2026-10-18T21:45:11+07:00",
-   "outlets": 6,
-   "hot": false,
-   "score": 46.449
-  },
-  {
-   "headline": "黑山总统米拉托维奇会见王毅",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-18/10716748.shtml",
-   "published": "2026-10-18T19:37:54+07:00",
-   "outlets": 2,
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSEJ6d0pOM3NFbGlaUmpaSFJfQWRISVB6UXhhc1U2dll0elB3aEhhWVctRWNQNV9YSFZFdThrbzc0QlN1aGlXbFlUN0xMNEdaSTQ2eW9qUVktLURQcEtUa0Z0THhNS1NiQTNrZW13UHlKRDJJM0JsSmYxQ0liXzRfdA?oc=5",
+   "published": "2026-10-18T19:52:47+07:00",
+   "outlets": 5,
    "hot": true,
-   "score": 41.176
-  },
-  {
-   "headline": "尼泊尔一客运吉普车坠河致3人遇难3人失踪",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10716912.shtml",
-   "published": "2026-10-19T00:52:32+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 40.322
+   "score": 47.626
   },
   {
    "headline": "海关总署发布风险警示：SWISSE部分产品被检出铅超标",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/19/ARTITbO6lzN6YhIPVm8Hf7p4261018.shtml",
-   "published": "2026-10-19T02:56:24+07:00",
-   "outlets": 3,
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XNER2M0o2RUFaUmxsOVdaeUFqenBiR2Z6bkFOVW5PSVVER3JGWHhoSHVRaV80Qzl1Sk5xcGRjM1ZsbE1mRGV6cGtNZGsxYkNjakZlWDdFRzItUzN2WExDTHNldTFGWV83OGFBLWpqbUFzNmwyUUdR?oc=5",
+   "published": "2026-10-19T07:50:17+07:00",
+   "outlets": 5,
    "hot": false,
-   "score": 38.561
+   "score": 46.801
+  },
+  {
+   "headline": "加拿大军事基地火灾致4人死数十人伤 总理卡尼发声",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-19/10716919.shtml",
+   "published": "2026-10-19T05:43:28+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 44.533
+  },
+  {
+   "headline": "10月19日新闻早报",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/iframe/2026/10-19/10716918.shtml",
+   "published": "2026-10-19T05:41:58+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 44.518
   },
   {
    "headline": "今年前三季度全国铁路发送旅客超37亿人次",
    "source": "新华网",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOEl5YWpqeHI5N2xOS09oYlVCZXkzMG5DY0gtbllfQ3YxVEUxdmdGTkp2UThqc1lsTGswV0I4ZHJPeUZZZEg0dHU0d2NMbmVaRUZzRWx6OUIzUTJFREdrRmZrUkVoTzZwbVRfQ0VSSnplRzVUNGFMYmNIRHlwRmNLYlFSSQ?oc=5",
    "published": "2026-10-18T13:17:29+07:00",
-   "outlets": 3,
+   "outlets": 6,
    "hot": true,
-   "score": 38.372
+   "score": 43.673
   },
   {
-   "headline": "日媒民调：高市内阁支持率跌至新低",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LanFnTzdBWjk2enhSZnFBX1Z3U3RTVnEwUnNtX3cxejUyVEpXWGFQODRjaEwwNm9iTVpONXVlbG9UandXM0pSUW5uUDRLWXV0WHNjX3hJY1R2aWM3cDFKNVBBVWlreXhqMmJMSXZGM2ZQYzdodXRjbXB0RC1BZUE?oc=5",
-   "published": "2026-10-18T17:16:24+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 36.761
+   "headline": "全国秋粮收获超七成",
+   "source": "中国共产党新闻网",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GX0laM0VLamVzX3dUQzFvY3Z1V1E0Q1V2NTI4VE1lRThRSzdTX201N1FPRUdURThOSElNZFVnR3FxWi1QLVZCVGV1SWhBMzR6Wlc1aTZrYmg3VDFWaGd4RzFLMFRIMTlLaGc?oc=5",
+   "published": "2026-10-19T07:37:00+07:00",
+   "outlets": 5,
+   "hot": false,
+   "score": 43.668
   },
   {
-   "headline": "黑龙江大兴安岭多地气象部门发布暴雪、道路结冰预警",
+   "headline": "黄土塬上通山海（赓续长征精神 奋进复兴征程）",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/18/ARTIeiZLTakaghdjLctaXeJf261018.shtml",
-   "published": "2026-10-18T15:48:17+07:00",
+   "url": "https://news.cctv.com/2026/10/19/ARTIpmU114CsRWCR6jtcAU3Y261019.shtml",
+   "published": "2026-10-19T05:28:41+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 35.88
+   "score": 41.385
   },
   {
-   "headline": "“张雪机车”首个WSBK赛季斩获年度车手亚军、制造商季军",
+   "headline": "多名日本议员参拜靖国神社 高市早苗供奉祭祀费",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX3pLb2FsU2V3V0VHMkJzSE5Qbmt0SVpBTVNyWlNvWkdlTHBlejVrcGxnYW9wejhIWFFQVnNKOENjaUQ5RlBHNWRZTUJiUk9RNTh3elQtTmY5Ry1kQnpSMmZwd1dFVVZvRUtfYjZFZmUydDE2M2trck0ta2I4U002Uw?oc=5",
-   "published": "2026-10-18T21:44:29+07:00",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9LZmc0VUthTVJ3SEhFQXNJVFc5c2NKNHZLMlRkSXRkTld1UmdLLWdqQ3ltNk5QNWhCMzB1RE1BdFpmWDNUVGxaTElkUGhfRGJBQWYwQkJpaFFZblJ0OUNYVjRiSlQ4UXpIcklBbm8xNmZSRkZGRkIw?oc=5",
+   "published": "2026-10-19T08:01:48+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 35.442
-  },
-  {
-   "headline": "韩国监狱人满为患 获假释囚犯人数骤增",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XOGFrQWJaZHpQeEhjZkNIZnVpWW81TU9xY1JQaUl5UlZVN1BOVnkxREE1TWFoWDNZcmM2bHdmMlNTeFk3VDZEenQyX0taWGJOZDl3TU5KRHBRVHZETUhOYnNSdTlNTGxzTEtTWlRhaDdpZ1RqbE91WlFJQVlnb28?oc=5",
-   "published": "2026-10-18T20:38:53+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 34.786
+   "score": 38.916
   }
  ]
 }
