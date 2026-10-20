@@ -1,69 +1,78 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-20T18:41:17+07:00",
+ "updated_at": "2026-10-21T00:01:26+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "韩国决定撤回驻乌克兰使馆部分人员",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBxUS10N0ZMTnFNaE1Uemd0N29DWmxrSE14REM5b28tS2pzckhqU1BJRVl3VHhCZFZHQ2dJRGJ0bTQ4SlhrOC01eHk3bVlUcmZlQ19nRmNQUXZFbGw3a05aVTFfcUxxclNydkpldnFjQ21mdnA2aHJN?oc=5",
-   "published": "2026-10-20T13:56:27+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 48.152
-  },
-  {
-   "headline": "海南省三亚市人民政府副市长陈克伯接受审查调查",
+   "headline": "新华社政论：献给中国工农红军长征胜利90周年",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10717868.shtml",
-   "published": "2026-10-20T15:09:33+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718116.shtml",
+   "published": "2026-10-20T21:14:37+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 47.883
+   "score": 48.332
   },
   {
-   "headline": "赓续长征精神 奋进复兴征程·长征壮歌丨六盘山上红旗漫卷",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/20/ARTIJJ5rKzDCstg0wowAMxrj261020.shtml",
-   "published": "2026-10-20T14:58:51+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 44.776
+   "headline": "长征文物资源家底基本摸清",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718191.shtml",
+   "published": "2026-10-20T21:42:31+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 44.611
   },
   {
-   "headline": "淄博市委常委、副市长沙向东接受纪律审查和监察调查",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Mb0dXd1hjWGJZVzhyQmxva2RJTTR1WFlMa2hEc0plYzJiQ0FOekk3bUJFeWtyNTMzOG5ZSnhpR1VPYk9yWTJudzRqRlhTenJVYnc0bldvWWpaVVA3MTd5aUlnYmxfNVlFUFU0WVVBSHhJajNEblRia0FmRHdUVnM?oc=5",
-   "published": "2026-10-20T15:58:12+07:00",
+   "headline": "四川省攀枝花市公安局党委委员、副局长蒋光红接受纪律审查和监察调查",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718079.shtml",
+   "published": "2026-10-20T19:24:47+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 41.369
+   "score": 43.233
   },
   {
-   "headline": "十四届全国政协教科卫体委员会原副主任杨小伟受贿案一审宣判",
+   "headline": "弘扬伟大长征精神 走好今天的长征路",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/20/ARTIej1IelQ6DCbb1bjD8qkz261020.shtml",
+   "published": "2026-10-20T19:41:31+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.401
+  },
+  {
+   "headline": "四川省南充市嘉陵区人民政府原党组成员、副区长任毅被“双开”",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10717919.shtml",
-   "published": "2026-10-20T16:01:00+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718089.shtml",
+   "published": "2026-10-20T19:32:46+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 40.397
+   "score": 39.313
   },
   {
-   "headline": "美方禁止联邦民用机构使用DeepSeek的产品服务 中方回应",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10717833.shtml",
-   "published": "2026-10-20T14:26:49+07:00",
+   "headline": "达喀尔青奥会中国体育代表团成立",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMXZXRHVXNHAtb0drbk5VaEpUSXhyNDd3TTRneHdLUzY0RjRqNERhbkV0RThLdmNvNXg1SWNvUVNTcFZEUDUwLV9OOTFVYjRKeUJ4NmU0WGNDMlVLdnBIbGYwa2JINEtZeUFTYUFsOGljeHBZVGJWeUdCTlg4Tk5nQw?oc=5",
+   "published": "2026-10-20T08:31:59+07:00",
    "outlets": 3,
-   "hot": false,
-   "score": 39.455
+   "hot": true,
+   "score": 37.705
   },
   {
-   "headline": "外交部：中方一贯反对将科技经贸问题政治化",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10717825.shtml",
-   "published": "2026-10-20T14:16:56+07:00",
-   "outlets": 3,
+   "headline": "朝中社：日本执政者散布军国主义毒素",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xOXB4T0dUdDNkRHlPZlhNOXcwSTh4Ti02VHhtdHhiYjZWdld3VTd2MEdUUjA5Q3hMX05FbHZpa2tUUFNCVkR1cXIwMm8wdktLb0llSlgzdHk2TlRIYkFma0NyUVBfYThkVDlva0hMWm9mV3paSkdPOTdhZXdnU1k?oc=5",
+   "published": "2026-10-20T20:57:52+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 37.164
+  },
+  {
+   "headline": "韩国决定撤回驻乌克兰使馆部分人员",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BQUVVejFyR0Q5TXMycGFlSngwQjVPMHlma1pfU1RPMlBqeDB4OVljUnlyMjVJYk53ckVEM0tHSUxzRnk1WnpDVE1nZjVUYVlHMWVIek5GZXlpcEdONkR6enhOcHRaSnhDbmJ2TlhIU1BHY2tkQTQ2MnNtZmNfd1U?oc=5",
+   "published": "2026-10-20T13:56:28+07:00",
+   "outlets": 4,
    "hot": false,
-   "score": 39.356
+   "score": 36.95
   },
   {
    "headline": "习近平致信祝贺中央社会主义学院建院70周年",
@@ -72,25 +81,16 @@ window.CHINA_NEWS = {
    "published": "2026-10-20T18:38:52+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.976
+   "score": 35.774
   },
   {
-   "headline": "港股20日跌1.32% 收报23867.74点",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41azN3T291SGNDdktRTFpOUDNDcG9nMlZkcWpETGcycHM3Y1ctLTktTW55bE5CNE5ld1g5cVVfYWdJcGFsSWdHUmFKNEsybDF0YXgyUUFOR3J6U2xoRzBaSnpJckU0djFybUVVdEVNU3ItS0o5RnY0?oc=5",
-   "published": "2026-10-20T16:32:27+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.712
-  },
-  {
-   "headline": "泽连斯基称与鲁比奥通话讨论“星链”和“星盾”",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HUTFMcFlueUtIb3pHc0U1ZXJkWDBZWnROcFlQaGkwVUtyRS1rSHVvN29OX0lGQ256OXpaZjVBNEpNVEpVeXFycmYtMWNHY0d5N1BDZ3lzcm9VUlk0NG16UGQ5TlFxT3ZhelFRZmlyWU1YcEl2eV9ZMTdSS2k3YzQ?oc=5",
-   "published": "2026-10-20T16:17:30+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.562
+   "headline": "136块“试金石”！首批标志性重大应用场景项目发布",
+   "source": "央视新闻",
+   "url": "https://jingji.cctv.com/2026/10/21/ARTIETLUBVnxgFn56x3bcom7261021.shtml",
+   "published": "2026-10-20T23:47:34+07:00",
+   "outlets": 2,
+   "hot": false,
+   "score": 34.861
   }
  ]
 };
