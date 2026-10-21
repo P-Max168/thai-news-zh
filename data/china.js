@@ -1,7 +1,34 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-21T04:35:55+07:00",
+ "updated_at": "2026-10-21T08:10:56+07:00",
  "lang": "zh-Hans",
  "items": [
+  {
+   "headline": "刘海星分别会见意大利、阿联酋客人",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
+   "published": "2026-10-20T22:37:38+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 48.267
+  },
+  {
+   "headline": "威胁刺杀特朗普 美国一男子遭逮捕",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718244.shtml",
+   "published": "2026-10-21T06:57:13+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 45.263
+  },
+  {
+   "headline": "胡塞武装称过去24小时也门遭沙特空袭93次",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718222.shtml",
+   "published": "2026-10-21T04:58:41+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 44.077
+  },
   {
    "headline": "长征文物资源家底基本摸清",
    "source": "中国新闻网",
@@ -9,34 +36,25 @@ window.CHINA_NEWS = {
    "published": "2026-10-20T21:42:31+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 45.866
+   "score": 43.716
   },
   {
-   "headline": "新华社政论：献给中国工农红军长征胜利90周年",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718116.shtml",
-   "published": "2026-10-20T21:14:37+07:00",
+   "headline": "商务部新闻发言人就美以窃取商业秘密为由制裁中国企业答记者问",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiLXpDNi1TSk9tMlpqb1c0VWd4WEhvX1U4WVBVWUdNVmxJZUQxOHkwQm84dEtLcmNPcEpNMk5Jd21MN19uT1VzVHExa0pKYmIzN21sSHZfUUNYaFJJMlVYbzZoNmJQNmtwYkV4NXFaZ1d5R3JXaF9peFpCVzlEV00?oc=5",
+   "published": "2026-10-20T21:12:31+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 45.587
+   "score": 40.416
   },
   {
-   "headline": "美以窃取商业秘密为由制裁中企 中国商务部回应",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718214.shtml",
-   "published": "2026-10-20T23:14:06+07:00",
-   "outlets": 2,
+   "headline": "医保钱包升级！个人账户资金如何跨省供亲属使用？一文看懂",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTIp4wkNNH2bmYnBuurFKHR261021.shtml",
+   "published": "2026-10-21T05:04:43+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 42.782
-  },
-  {
-   "headline": "刘海星分别会见意大利、阿联酋客人",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
-   "published": "2026-10-20T22:37:38+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 42.417
+   "score": 37.138
   },
   {
    "headline": "美元指数20日下跌",
@@ -45,16 +63,16 @@ window.CHINA_NEWS = {
    "published": "2026-10-21T02:44:53+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 37.89
+   "score": 35.739
   },
   {
-   "headline": "弘扬伟大长征精神 走好今天的长征路",
+   "headline": "【赓续长征精神 奋进复兴征程】传承红色血脉 打好实现建军一百年奋斗目标攻坚战",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/20/ARTIej1IelQ6DCbb1bjD8qkz261020.shtml",
-   "published": "2026-10-20T19:41:31+07:00",
+   "url": "https://news.cctv.com/2026/10/20/ARTIcPvCQgu15kHYFD23RaxQ261020.shtml",
+   "published": "2026-10-20T19:20:44+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 37.656
+   "score": 35.298
   },
   {
    "headline": "习近平致信祝贺中央社会主义学院建院70周年",
@@ -63,34 +81,16 @@ window.CHINA_NEWS = {
    "published": "2026-10-20T18:38:52+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 37.029
+   "score": 34.879
   },
   {
-   "headline": "136块“试金石”！首批标志性重大应用场景项目发布",
-   "source": "央视新闻",
-   "url": "https://jingji.cctv.com/2026/10/21/ARTIETLUBVnxgFn56x3bcom7261021.shtml",
-   "published": "2026-10-20T23:47:34+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 36.116
-  },
-  {
-   "headline": "朝中社：日本执政者散布军国主义毒素",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xOXB4T0dUdDNkRHlPZlhNOXcwSTh4Ti02VHhtdHhiYjZWdld3VTd2MEdUUjA5Q3hMX05FbHZpa2tUUFNCVkR1cXIwMm8wdktLb0llSlgzdHk2TlRIYkFma0NyUVBfYThkVDlva0hMWm9mV3paSkdPOTdhZXdnU1k?oc=5",
-   "published": "2026-10-20T20:57:52+07:00",
+   "headline": "中方呼吁加大力度落实生物多样性保护政策--国际",
+   "source": "人民网",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVcU51UlctaW1pQWhTT1k4Um9wN3dRZ09HMEM2VEI1WjE0OWwwWkZiZHRULThiUzVXbXI1MExmWjhHN2s0d3JyT1g1SG9qTHczZjE3Q3hsUmg5Q1lpeTgxc29BbktNOXJvWHBzeg?oc=5",
+   "published": "2026-10-21T05:14:00+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 34.419
-  },
-  {
-   "headline": "韩国决定撤回驻乌克兰使馆部分人员",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BQUVVejFyR0Q5TXMycGFlSngwQjVPMHlma1pfU1RPMlBqeDB4OVljUnlyMjVJYk53ckVEM0tHSUxzRnk1WnpDVE1nZjVUYVlHMWVIek5GZXlpcEdONkR6enhOcHRaSnhDbmJ2TlhIU1BHY2tkQTQ2MnNtZmNfd1U?oc=5",
-   "published": "2026-10-20T13:56:28+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 34.205
+   "score": 34.231
   }
  ]
 };
