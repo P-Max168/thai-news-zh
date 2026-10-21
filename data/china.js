@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-21T14:37:12+07:00",
+ "updated_at": "2026-10-21T20:46:22+07:00",
  "lang": "zh-Hans",
  "items": [
+  {
+   "headline": "中国海警局新闻发言人发表谈话",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718735.shtml",
+   "published": "2026-10-21T20:10:52+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 53.645
+  },
+  {
+   "headline": "蓝佛安：第33届APEC财长会达成一系列务实成果",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718743.shtml",
+   "published": "2026-10-21T20:18:20+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 49.72
+  },
+  {
+   "headline": "科技部解读《关于推动科技创新和产业创新深度融合的意见》",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718734.shtml",
+   "published": "2026-10-21T20:07:46+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 45.614
+  },
+  {
+   "headline": "巴基斯坦东部一客车翻车致10人死亡",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718717.shtml",
+   "published": "2026-10-21T20:01:01+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 45.546
+  },
+  {
+   "headline": "中国人民银行定于10月22日发行中国工农红军长征胜利90周年金银纪念币一套",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTIfIMdAkONpCw9RM9OWdlM261021.shtml",
+   "published": "2026-10-21T17:03:14+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 44.769
+  },
+  {
+   "headline": "国务院新闻办举行“新征程上的奋斗者”中外记者见面会",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTILT2aBRvzrY7pMVeZeaoF261021.shtml",
+   "published": "2026-10-21T19:13:27+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.071
+  },
   {
    "headline": "全国碳排放权交易市场成交量突破10亿吨",
    "source": "央视新闻",
    "url": "https://news.cctv.com/2026/10/21/ARTIjyfOeCdAgBQ0oKFtaAXM261021.shtml",
    "published": "2026-10-21T11:07:52+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 48.907
-  },
-  {
-   "headline": "谷神星一号海射型遥八运载火箭发射成功",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1TMzdLUTh3UGpmZFBCY2VYdjJvazAxcFRlQi1tUUZKSFNtY3BPdXFXTDhrUlgwRHJIcEJrS2g2VTRsaVoxM2lBNzBPZ3k1dHZSb0d0UzVVVGJiVVgtanVDOFRKMk44bEc2VW5IZldNN3ZvUm9teThN?oc=5",
-   "published": "2026-10-21T11:05:45+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 44.885
+   "score": 41.215
   },
   {
-   "headline": "内蒙古自治区赤峰市政协副主席郭玉强接受审查调查",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718389.shtml",
-   "published": "2026-10-21T11:57:53+07:00",
+   "headline": "王毅将出席2026全球治理论坛（雄安）开幕式",
+   "source": "中国共产党新闻网",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBudGNQYndWUS0wMDZkYkdrUmlITFowUXRabDVtUFVqdlBSajJpWEluaHNXUDdwQUxrclRNQ0dTenFlQ29XT1VsM05jT3BfdGZSYi1sMF95T3pNVG9ITGo4amNPMGhZb2FmUmc?oc=5",
+   "published": "2026-10-21T17:50:00+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 44.407
+   "score": 38.236
   },
   {
-   "headline": "外交部：敦促美方立即停止对古巴的封锁和任何形式的胁迫施压",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718507.shtml",
-   "published": "2026-10-21T14:22:19+07:00",
+   "headline": "见证伟大远征印记 一组数据看长征文物资源家底",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOLVdndlZBSGh5NGtVaW9YVFRTNTRWSXN5X3hzcXd1LXBlN0F3UGV2R2wzU3MySjBLRThxVFVUeUxhamRzXzNRdjRpT2lZX2VFbmNaYWdZWGNlaFZZX2ZybmdBT3lrMWFLV2JTU1JtZ0xSYjdKZXR0MTRYaUY1R3dCaktaNA?oc=5",
+   "published": "2026-10-21T14:45:58+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 41.851
+   "score": 35.396
   },
   {
-   "headline": "国台办回应大陆在东沙海域执法巡查",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718399.shtml",
-   "published": "2026-10-21T12:08:00+07:00",
+   "headline": "防范“蔷琵” 福建启动防台风四级应急响应",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lcDJJTnpvZVBkTHRjZ2JuUmRaUjNrQlVrU1B4MkpPaTd0XzN1RXRjM3JCOG14b3h4LXludXJvUl96N2V4Rm5reVQ1QUlCZi1aZ19BR25CeVlWMFZwX3JsU0ZFcGNsVnNzMV9QUzdtUGRnZTVSZHR5TTU3RHNtV0U?oc=5",
+   "published": "2026-10-21T14:28:52+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 40.508
-  },
-  {
-   "headline": "深刻认识中国经济运行的三个突出特点",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/21/ARTIBkhOZpSbxaMrII2UNdoF261021.shtml",
-   "published": "2026-10-21T10:10:22+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 40.332
-  },
-  {
-   "headline": "加强文化遗产保护，推动文化遗产事业高质量发展（权威发布·开局起步“十五五”）",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/21/ARTIjTxcPHX1brq7Qo7D7ZYP261021.shtml",
-   "published": "2026-10-21T10:05:16+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 40.281
-  },
-  {
-   "headline": "约六成台湾青年支持主动与大陆对话谈判 国台办回应",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718418.shtml",
-   "published": "2026-10-21T12:52:22+07:00",
-   "outlets": 2,
-   "hot": false,
-   "score": 36.952
-  },
-  {
-   "headline": "公安部网安局：“肖某演唱会第一排门票25万元”不实",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTNkdvaEE0WHc1dGRNTTdZbmVlWlJhMkMySVY4VkItYkUxeXprU3lLdXZJNlV6QUpPc1ROTWhVUDVJTFNuZDVMaG1DQTFzN3FKdDV6NjFFc3o4eld1bVJOQ094VVVtYUZUZW9ndlU1d2lsMmlRaHRr?oc=5",
-   "published": "2026-10-21T11:08:58+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 36.918
-  },
-  {
-   "headline": "浙江启动海上防台风应急响应",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yd3ZGUjFlZGQ5ZUhYYV8zb1dTVXc5QmphYTlQQWtYUUpJMl90SUZPU3o5R0UxWjR1cXlneENZT0t0eHBPZmRSUlpJcFhvV3R6d1JrUWplVkg1SERSSzJaa3U4bnlVaEozcUFhMG4xQW9vYWY0Qlg3Qm9Ud01HY0k?oc=5",
-   "published": "2026-10-21T10:33:50+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 36.566
+   "score": 35.225
   }
  ]
 };
