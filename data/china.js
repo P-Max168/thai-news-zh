@@ -1,15 +1,15 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-22T01:37:16+07:00",
+ "updated_at": "2026-10-22T06:17:40+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "法国一架“幻影-2000”战斗机坠毁 致1人丧生1人失踪",
+   "headline": "乌克兰首都基辅遭弹道导弹袭击",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718786.shtml",
-   "published": "2026-10-21T21:43:25+07:00",
-   "outlets": 2,
+   "url": "https://www.chinanews.com.cn/gj/2026/10-22/10718824.shtml",
+   "published": "2026-10-22T05:58:05+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 43.661
+   "score": 49.804
   },
   {
    "headline": "中国海警局新闻发言人发表谈话",
@@ -17,35 +17,62 @@ window.CHINA_NEWS = {
    "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718735.shtml",
    "published": "2026-10-21T20:10:52+07:00",
    "outlets": 4,
-   "hot": false,
-   "score": 42.736
-  },
-  {
-   "headline": "科技部解读《关于推动科技创新和产业创新深度融合的意见》",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718734.shtml",
-   "published": "2026-10-21T20:07:46+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 42.705
+   "hot": true,
+   "score": 47.932
   },
   {
    "headline": "纪念中国工农红军长征胜利90周年电视文艺晚会《长征颂歌》即将播出",
    "source": "央视新闻",
    "url": "https://news.cctv.com/2026/10/21/ARTI3VXcF1eKI23dqqAaPSy6261021.shtml",
    "published": "2026-10-21T21:44:19+07:00",
-   "outlets": 2,
+   "outlets": 3,
    "hot": true,
-   "score": 40.67
+   "score": 41.866
   },
   {
-   "headline": "多位司法行政一线代表共话平安中国、法治中国建设",
+   "headline": "俄总统助理：俄方原则同意下月重启俄美乌三方谈判",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718805.shtml",
-   "published": "2026-10-21T22:20:19+07:00",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-22/10718813.shtml",
+   "published": "2026-10-21T23:22:33+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 41.849
+  },
+  {
+   "headline": "10月22日新闻早报",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/iframe/2026/10-22/10718823.shtml",
+   "published": "2026-10-22T05:48:02+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 41.704
+  },
+  {
+   "headline": "在新长征路上阔步前行——写在长征胜利90周年之际",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/22/ARTIwVGcQrNE4ndtvJLRYWmS261022.shtml",
+   "published": "2026-10-22T06:04:03+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 40.03
+   "score": 38.864
+  },
+  {
+   "headline": "解码APEC财长会",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yUU1NeHBnYnlVd1JvaU9teE0wNEVjNGtaQ3NMMWJselQ2Z0lhaUdNdkxoLUlUbjZsSDU0aWxZVmFHeTNZM1J2LW9pdU80R01Md0JIZ0RmWlFUandXR3NfZ0FTM0JsSXNoTUI4SzhsWk5tLWFRbWpKUXBaaTE3QUU?oc=5",
+   "published": "2026-10-21T15:29:17+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 38.116
+  },
+  {
+   "headline": "国际油价21日涨跌不一",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ERHVoMl9RNDE0b25uVmk1YTZ2V1lPd29GWFFlRkNITUtlSnB6QzRucDkyNkZJRGhrOEp2TENSei1hSnl4TFR3ODhrbnd0QXhXZVJFdC0ybVh0enNfVC1BclF3N1R0ZmFpdElpYmY5aUJ4ZHZKMGhDWEVoX1puMEk?oc=5",
+   "published": "2026-10-22T03:19:25+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 37.217
   },
   {
    "headline": "【赓续长征精神 奋进复兴征程】在新的长征路上继续奋勇前进",
@@ -54,43 +81,16 @@ window.CHINA_NEWS = {
    "published": "2026-10-21T19:00:38+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 39.034
+   "score": 36.23
   },
   {
-   "headline": "谷神星一号海射型遥八运载火箭发射成功",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1TMzdLUTh3UGpmZFBCY2VYdjJvazAxcFRlQi1tUUZKSFNtY3BPdXFXTDhrUlgwRHJIcEJrS2g2VTRsaVoxM2lBNzBPZ3k1dHZSb0d0UzVVVGJiVVgtanVDOFRKMk44bEc2VW5IZldNN3ZvUm9teThN?oc=5",
-   "published": "2026-10-21T11:05:45+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 38.285
-  },
-  {
-   "headline": "台湾气象部门发布台风“蔷琵”海上警报",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RajJpLVUxY1dLRFYxdWVxX3JGZ0dLaWlaZ2ZSWHg0QVRhX1BpNENUX0w2cVdyMGVvSDdDYllIMHY0ZVczUTBqZXVqbFhFOG1McW5HM0xCVUgwS3BWenZmMVd2WUZ2dzUxQXhDalJFdEZuNU9xWUhJRVlaMA?oc=5",
-   "published": "2026-10-21T23:35:18+07:00",
+   "headline": "“十五五”如何做好现代化应急体系建设？多部门详解",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/22/ARTIEWxVzJELkWAeu9KZglr1261022.shtml",
+   "published": "2026-10-22T01:33:22+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 37.78
-  },
-  {
-   "headline": "泽连斯基说同意“冻结现状”开启和谈",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE95TTJkWS11OENjT2toQ09ydDZUWlF6WFZyMTJkelg2V29vQ295SWtDNG5WSzJqMW9oS0xyU3M2cUpKamw3enh3aXZ0d2pOSzFBbExfTWxWVXA5eXNKRS1wbzB2cllTY0U4bGFOMlQwSHhydDdfLXhkU1VBQ2JKQjg?oc=5",
-   "published": "2026-10-21T22:40:35+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.233
-  },
-  {
-   "headline": "王毅将出席2026全球治理论坛（雄安）开幕式",
-   "source": "中国共产党新闻网",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJR2xIVXJqN19DWVp2N2RxWVJVdWJlaWtGMG5uV1VvM1M1SnE3c2dya1ZUejZ4YXFNaG5nbld4QlpfMi1pTFd0UmhVd2ZaVGJHWDl0NGwzWmZoNWZNNWdoQlNJYWtxT3dUbUZZ?oc=5",
-   "published": "2026-10-21T17:50:00+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.327
+   "score": 36.157
   }
  ]
 };
