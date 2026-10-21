@@ -1,0 +1,276 @@
+{
+ "id": "2026-10-21-md",
+ "date": "2026-10-21",
+ "edition": "md",
+ "edition_label": "午间版",
+ "weekday": "星期三",
+ "timezone": "Asia/Bangkok (UTC+7)",
+ "coverage": "2026年10月20日15:00至10月21日16:30（曼谷时间）发布的泰国新闻；首期恢复测试版，仅保留已独立核对原文发布时间的6篇报道，另5篇待核实，暂不收录。",
+ "previous": "",
+ "briefing": [
+  {
+   "topic": "cn",
+   "text": "泰国外长呼吁中方让旅行警告**与风险相称**，旅游部长称正常游客不会被绑架",
+   "story_id": "cn1"
+  },
+  {
+   "topic": "cn",
+   "text": "廊开府**2人被捕**，涉嫌协助8名中国人从老挝非法入境",
+   "story_id": "cn4"
+  },
+  {
+   "topic": "poleco",
+   "text": "总理要求**年底前**完成全国名义持有人清查，涉及13088方",
+   "story_id": "pe1"
+  },
+  {
+   "topic": "weather",
+   "text": "10月23日朱拉隆功纪念日，曼谷**三条高速公路免费**通行",
+   "story_id": "wt3"
+  }
+ ],
+ "highlights": [
+  "cn1",
+  "cn4",
+  "wt3"
+ ],
+ "stories": [
+  {
+   "id": "cn1",
+   "topic": "cn",
+   "secondary": [
+    "poleco"
+   ],
+   "region": "曼谷",
+   "headline": "泰国外长呼吁中方：旅行提醒应与实际风险相称",
+   "summary": [
+    "泰国副总理兼外长西哈沙（Sihasak Phuangketkeow）10月21日在意大利罗马表示，中国驻泰使馆就虚假招聘诱骗中国公民发出提醒后，泰方希望旅行警告与风险程度相称，避免引发不必要的恐慌。",
+    "他说，泰国重视游客安全，将调查威胁游客安全的事件并追究责任；相关犯罪团伙并非只有泰国人。被问及有中国公民参与绑架的报道时，他说不想点名某一国籍，但现有信息显示确有此类情况。",
+    "西哈沙建议泰国旅游与体育部同中国使馆磋商，外交部愿意协助，并强调要从源头解决问题，而不是只处理后果。"
+   ],
+   "context": "💡 背景：中国驻泰使馆约在10月16日发布提醒，称近期有中国公民入境后失踪、被非法拘禁，或被诱骗前往泰缅边境。",
+   "source": "The Thaiger",
+   "url": "https://thethaiger.com/news/national/thailand-china-tourist-kidnapping-warning",
+   "title_th": "Thailand pushes back against China's tourist kidnapping warning",
+   "published": "2026-10-21T15:47:50+07:00",
+   "related": [],
+   "tags": [
+    "中国使馆",
+    "旅行提醒",
+    "泰国外长",
+    "游客安全"
+   ],
+   "impact": [
+    "治安"
+   ],
+   "for_me": "在泰华人和计划赴泰的中国游客：出行前核实招聘、投资、演艺邀约，按使馆提醒办理。",
+   "also": [],
+   "issue": null,
+   "quick_replies": [
+    "出行前先核实邀约",
+    "希望两国加强合作",
+    "关键是源头治理"
+   ]
+  },
+  {
+   "id": "cn2",
+   "topic": "cn",
+   "secondary": [
+    "travel"
+   ],
+   "region": "曼谷",
+   "headline": "泰国旅游部长：正常游客不会被绑架，受害者多在出境前已被骗",
+   "summary": [
+    "泰国旅游与体育部长素拉萨（Surasak Phancharoenworakul）10月20日在政府大楼内阁会议前表示，已知悉中国使馆的提醒，理解中方对公民安全的关切。",
+    "他说，真正来旅游的人不太可能被强行带到边境；受害者多是在中国国内被高薪工作等说法诱骗的人，被害案件确有发生，但案犯在检查站被拦下，受害者已获救。他承认提醒已影响泰国旅游形象和中国游客的信心。",
+    "他表示泰国不会让自己成为跨国犯罪的中转站，警方、旅游警察、移民局等将保持严格执法，并会同中方商谈进一步措施。"
+   ],
+   "context": "💡 使馆提醒称，犯罪团伙常以高薪工作、商务出差、投资机会、演艺拍摄等为诱饵。使馆建议核实邀约、乘坐正规交通、不搭陌生人顺风车、不把护照手机银行卡交给他人。",
+   "source": "The Pattaya News",
+   "url": "https://thepattayanews.com/2026/10/21/thai-tourism-minister-responds-to-chinese-embassy-safety-advisory-on-kidnapping-risks/",
+   "title_th": "Thai Tourism Minister Responds to Chinese Embassy Safety Advisory on Kidnapping Risks",
+   "published": "2026-10-21T03:39:01+07:00",
+   "related": [],
+   "tags": [
+    "旅游部长",
+    "中国使馆",
+    "绑架提醒",
+    "高薪诱骗",
+    "游客安全"
+   ],
+   "impact": [
+    "治安"
+   ],
+   "for_me": "收到“高薪工作”“演艺拍摄”类邀约，先通过家人和使馆核实再决定是否出行。",
+   "also": [
+    {
+     "source": "Thai PBS World",
+     "url": "https://www.thaipbsworld.com/around-thailand/571366"
+    }
+   ],
+   "issue": null,
+   "quick_replies": [
+    "高薪邀约要多核实",
+    "出发前告知家人行程",
+    "希望尽快见到具体措施"
+   ]
+  },
+  {
+   "id": "cn3",
+   "topic": "cn",
+   "secondary": [
+    "ent"
+   ],
+   "region": "曼谷",
+   "headline": "白鹿曼谷粉丝见面会取消，时间紧随使馆提醒",
+   "summary": [
+    "泰国公共广播（Thai PBS World）10月20日报道，原定10月25日在曼谷举行的演员白鹿粉丝见面会被取消，她同时是WeTV全球大使。",
+    "报道称主办方没有说明取消原因；取消发生在中国驻泰使馆发布安全提醒的几天之后。报道没有把二者直接联系起来，只指出了时间上的先后。",
+    "同一报道还提到，泰国旅游与体育部长素拉萨表示将正式向中国使馆询问提醒的具体关切，并认为提醒必然影响中国游客人数。"
+   ],
+   "context": "",
+   "source": "Thai PBS World",
+   "url": "https://www.thaipbsworld.com/around-thailand/571366",
+   "title_th": "Bai Lu meet-and-greet cancelled days after China's safety warning",
+   "published": "2026-10-20T15:19:15+07:00",
+   "related": [],
+   "tags": [
+    "白鹿",
+    "粉丝见面会",
+    "中国使馆",
+    "取消"
+   ],
+   "impact": [],
+   "for_me": "",
+   "also": [],
+   "issue": null,
+   "quick_replies": [
+    "主办方应说明原因",
+    "等待主办方说明原因",
+    "等官方进一步说明"
+   ]
+  },
+  {
+   "id": "cn4",
+   "topic": "cn",
+   "secondary": [
+    "visa",
+    "society"
+   ],
+   "region": "廊开",
+   "headline": "廊开府警方抓获2人，涉嫌协助8名中国人从老挝非法入境",
+   "summary": [
+    "泰国移民警察10月20日在廊开府拘捕一名泰国男子（59岁）和一名老挝男子（48岁），涉嫌协助8名中国籍男子从老挝渡过湄公河非法入境。",
+    "8名中国男子年龄在18至36岁之间，渡河后被皮卡接到一处度假村等待转运。泰国男子称受朋友雇佣，事成可得4000泰铢（约798元）；老挝男子称受一名泰国女子雇佣，负责安排食宿。",
+    "其中一名23岁中国男子对警方称，老挝境内的一名中国籍组织者向他提供高薪工作并安排渡河。警方核查发现他此前曾在素林府（Surin）因出入境违法被法院定罪。8名中国男子被控未经许可入境，泰国男子被控协助外国人非法入境并协助其逃避抓捕，老挝男子被控提供庇护等协助，警方正追查老挝的组织者和泰国相关人员。"
+   ],
+   "context": "",
+   "source": "The Thaiger",
+   "url": "https://thethaiger.com/hot-news/crime/thai-driver-lao-man-arrested-aiding-chinese-nationals",
+   "title_th": "Thai driver, Lao man arrested for aiding Chinese border crossers",
+   "published": "2026-10-21T14:07:21+07:00",
+   "related": [],
+   "tags": [
+    "廊开",
+    "非法入境",
+    "湄公河",
+    "移民警察",
+    "中国籍"
+   ],
+   "impact": [
+    "签证·居留",
+    "治安"
+   ],
+   "for_me": "经非正规渠道入境属违法，将被起诉；入境前请通过正规签证渠道办理。",
+   "also": [],
+   "issue": null,
+   "quick_replies": [
+    "别相信非正规入境渠道",
+    "务必走正规签证",
+    "高薪邀约要小心"
+   ]
+  },
+  {
+   "id": "pe1",
+   "topic": "poleco",
+   "secondary": [
+    "life"
+   ],
+   "region": "全国",
+   "headline": "阿努廷下令年底前完成全国非法外资持地清查",
+   "summary": [
+    "泰国总理兼内政部长阿努廷（Anutin Charnvirakul）10月19日在政府大楼启动“制止名义持有人”行动，要求各府府尹和土地厅在年底前逐案完成对外国人通过泰国名义人持有土地的清查。",
+    "土地厅初步调查发现，涉嫌可疑持有的有13088方，其中1550家公司涉嫌非法外资持股，11538起涉嫌替外国人代持土地。若证实，可能强制出售约5467莱（约874.7万平方米）、价值约140亿泰铢（约27.9亿元）的土地。",
+    "后续措施还可能包括驱逐出境、撤销权利或国籍，并防止名义持有人之间简单转手。行动分调查、强制出售和防止新安排三部分。"
+   ],
+   "context": "",
+   "source": "The Pattaya News",
+   "url": "https://thepattayanews.com/2026/10/21/thai-pm-orders-nationwide-review-of-illegal-foreign-land-ownership-by-end-of-december/",
+   "title_th": "Thai PM Orders Nationwide Review of Illegal Foreign Land Ownership by End of December",
+   "published": "2026-10-21T02:47:07+07:00",
+   "related": [],
+   "tags": [
+    "名义持有人",
+    "外国人土地",
+    "阿努廷",
+    "土地厅"
+   ],
+   "impact": [
+    "签证·居留"
+   ],
+   "for_me": "在泰国持有土地或房产的外国人：代持安排将成为重点清查对象。",
+   "also": [],
+   "issue": null,
+   "quick_replies": [
+    "合规持有最安全",
+    "年底前清查值得关注",
+    "关注后续细则"
+   ]
+  },
+  {
+   "id": "wt3",
+   "topic": "weather",
+   "secondary": [
+    "bangkok",
+    "life"
+   ],
+   "region": "曼谷",
+   "headline": "10月23日朱拉隆功纪念日，曼谷三条高速公路全天免费通行",
+   "summary": [
+    "泰国高速公路管理局（EXAT）10月20日宣布，10月23日（周五）朱拉隆功纪念日公休，曼谷周边三条高速公路的63个收费站全天免费，时间为当日0:01至24:00。",
+    "该措施依据EXAT与曼谷高速公路及地铁公司（BEM）、北曼谷高速公路公司（NECL）修订后的特许经营协议实施，仅限这三条高速公路。",
+    "另据报道，泰国计划修建缓解拉玛二路拥堵的8号高速公路（M8），总投资610亿泰铢（约121.6亿元），连接佛统府与叻丕府，预计2027年动工；向佛丕府延伸的路段因征地遇到反对，官员正重新考虑路线。"
+   ],
+   "context": "",
+   "source": "The Thaiger",
+   "url": "https://thethaiger.com/hot-news/transport/three-bangkok-expressways-drop-tolls-for-the-whole-of-friday-63-plazas",
+   "title_th": "Three Bangkok expressways waive tolls for October 23 holiday",
+   "published": "2026-10-21T16:27:47+07:00",
+   "related": [],
+   "tags": [
+    "高速公路",
+    "免费通行",
+    "朱拉隆功纪念日",
+    "EXAT"
+   ],
+   "impact": [
+    "交通·事故"
+   ],
+   "for_me": "10月23日在曼谷自驾，三条指定高速公路免收过路费。",
+   "also": [],
+   "issue": null,
+   "quick_replies": [
+    "假期出行提前规划",
+    "免费日车流可能增加",
+    "谢谢提醒"
+   ]
+  }
+ ],
+ "china_top": [],
+ "fx": {
+  "THB_CNY": 0.1994,
+  "source": "open.er-api.com",
+  "note": "THB_CNY 2026-10-21 07:02 BKK"
+ },
+ "generated": "2026-10-21T16:55:46+07:00"
+}

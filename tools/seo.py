@@ -106,6 +106,13 @@ li{margin:6px 0;color:#333D4B}footer{color:#5F6B7A;font-size:14px;padding:10px 2
 """ % {"lang": lang, "title": e(title), "desc": e(desc), "canon": canonical_tag(url), "og": og_block, "botrx": BOT_RX,
        "target_js": json.dumps(target), "target": e(target), "brand": e(brand), "label": e(label or meta.get("label", eid)),
        "brief": brief_html, "arts": "\n".join(arts)}
+    if lang.lower().startswith("zh"):
+        for original, translated in {
+            "이번 판 앱에서 열기 →": "在应用中打开本期 →", "앱에서 보기": "在应用中查看",
+            "브리핑": "本期简报", "출처:": "来源：", "최신 뉴스": "最新新闻",
+            "소개": "关于我们", "연락하기": "联系我们", "개인정보 처리방침": "隐私政策", "이용약관": "使用条款",
+        }.items():
+            page = page.replace(original, translated)
     if "฿" in page or _THAI.search(page):
         raise SystemExit("e/%s: '฿' 또는 태국 글자가 들어감 — 데이터 문구 확인(TRANSLATION_RULES)" % eid)
     return page

@@ -422,22 +422,26 @@ def message(data, meta, chosen, tp, ed_url, main_link=True):
 
 
 def og_tags(title, desc, url, img):
-    return "\n".join([
+    tags = [
         '<meta property="og:type" content="website">',
         '<meta property="og:site_name" content="%s">' % e(TX["brand"]),
         '<meta property="og:locale" content="%s">' % e(TX["og_locale"]),
         '<meta property="og:title" content="%s">' % e(title),
         '<meta property="og:description" content="%s">' % e(desc),
         '<meta property="og:url" content="%s">' % e(url),
-        '<meta property="og:image" content="%s">' % e(img),
+        '<meta property="og:image" content="%s">' % e(img or ""),
         '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">',
         '<meta property="og:image:alt" content="%s">' % e(title),
         '<meta name="twitter:card" content="summary_large_image">',
         '<meta name="twitter:title" content="%s">' % e(title),
         '<meta name="twitter:description" content="%s">' % e(desc),
-        '<meta name="twitter:image" content="%s">' % e(img),
-    ])
+        '<meta name="twitter:image" content="%s">' % e(img or ""),
+    ]
+    if not img:
+        tags = [line for line in tags if "og:image" not in line and "twitter:image" not in line]
+        tags = [line.replace("summary_large_image", "summary") for line in tags]
+    return "\n".join(tags)
 
 
 def edition_page(data, meta, chosen, tp, ed_url, img):

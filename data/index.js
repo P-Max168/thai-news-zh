@@ -1,0 +1,1 @@
+window.NEWS_INDEX = {"latest": "2026-10-21-md", "editions": [{"id": "2026-10-21-md", "date": "2026-10-21", "edition": "md", "label": "10月21日 午间版", "generated": "2026-10-21T16:55:46+07:00", "stories": 6}], "dates": ["2026-10-21-md"]};
