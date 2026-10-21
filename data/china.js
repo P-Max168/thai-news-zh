@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-21T08:10:56+07:00",
+ "updated_at": "2026-10-21T14:37:12+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "刘海星分别会见意大利、阿联酋客人",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
-   "published": "2026-10-20T22:37:38+07:00",
+   "headline": "全国碳排放权交易市场成交量突破10亿吨",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTIjyfOeCdAgBQ0oKFtaAXM261021.shtml",
+   "published": "2026-10-21T11:07:52+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 48.267
+   "score": 48.907
   },
   {
-   "headline": "威胁刺杀特朗普 美国一男子遭逮捕",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718244.shtml",
-   "published": "2026-10-21T06:57:13+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 45.263
-  },
-  {
-   "headline": "胡塞武装称过去24小时也门遭沙特空袭93次",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718222.shtml",
-   "published": "2026-10-21T04:58:41+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.077
-  },
-  {
-   "headline": "长征文物资源家底基本摸清",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718191.shtml",
-   "published": "2026-10-20T21:42:31+07:00",
+   "headline": "谷神星一号海射型遥八运载火箭发射成功",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1TMzdLUTh3UGpmZFBCY2VYdjJvazAxcFRlQi1tUUZKSFNtY3BPdXFXTDhrUlgwRHJIcEJrS2g2VTRsaVoxM2lBNzBPZ3k1dHZSb0d0UzVVVGJiVVgtanVDOFRKMk44bEc2VW5IZldNN3ZvUm9teThN?oc=5",
+   "published": "2026-10-21T11:05:45+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 43.716
+   "score": 44.885
   },
   {
-   "headline": "商务部新闻发言人就美以窃取商业秘密为由制裁中国企业答记者问",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBiLXpDNi1TSk9tMlpqb1c0VWd4WEhvX1U4WVBVWUdNVmxJZUQxOHkwQm84dEtLcmNPcEpNMk5Jd21MN19uT1VzVHExa0pKYmIzN21sSHZfUUNYaFJJMlVYbzZoNmJQNmtwYkV4NXFaZ1d5R3JXaF9peFpCVzlEV00?oc=5",
-   "published": "2026-10-20T21:12:31+07:00",
+   "headline": "内蒙古自治区赤峰市政协副主席郭玉强接受审查调查",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718389.shtml",
+   "published": "2026-10-21T11:57:53+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 44.407
+  },
+  {
+   "headline": "外交部：敦促美方立即停止对古巴的封锁和任何形式的胁迫施压",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718507.shtml",
+   "published": "2026-10-21T14:22:19+07:00",
    "outlets": 3,
-   "hot": true,
-   "score": 40.416
+   "hot": false,
+   "score": 41.851
   },
   {
-   "headline": "医保钱包升级！个人账户资金如何跨省供亲属使用？一文看懂",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/21/ARTIp4wkNNH2bmYnBuurFKHR261021.shtml",
-   "published": "2026-10-21T05:04:43+07:00",
+   "headline": "国台办回应大陆在东沙海域执法巡查",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718399.shtml",
+   "published": "2026-10-21T12:08:00+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 37.138
+   "score": 40.508
   },
   {
-   "headline": "美元指数20日下跌",
+   "headline": "深刻认识中国经济运行的三个突出特点",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTIBkhOZpSbxaMrII2UNdoF261021.shtml",
+   "published": "2026-10-21T10:10:22+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.332
+  },
+  {
+   "headline": "加强文化遗产保护，推动文化遗产事业高质量发展（权威发布·开局起步“十五五”）",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/21/ARTIjTxcPHX1brq7Qo7D7ZYP261021.shtml",
+   "published": "2026-10-21T10:05:16+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.281
+  },
+  {
+   "headline": "约六成台湾青年支持主动与大陆对话谈判 国台办回应",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-21/10718418.shtml",
+   "published": "2026-10-21T12:52:22+07:00",
+   "outlets": 2,
+   "hot": false,
+   "score": 36.952
+  },
+  {
+   "headline": "公安部网安局：“肖某演唱会第一排门票25万元”不实",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aR3hhaFZsLVdtSkYtdkdFRmY4Vm9McmdGZFhtdDhpRDFKd29YWDhFbVQ4YnVHWlVoakVhVDFvbkNqQWQ1VXNmM3huejBuZ2JJSFZ5VjhaeGtrNXJ5NEcwR3pBeVlpdlpXS202UlRDYkVWVHVfMnpV?oc=5",
-   "published": "2026-10-21T02:44:53+07:00",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTNkdvaEE0WHc1dGRNTTdZbmVlWlJhMkMySVY4VkItYkUxeXprU3lLdXZJNlV6QUpPc1ROTWhVUDVJTFNuZDVMaG1DQTFzN3FKdDV6NjFFc3o4eld1bVJOQ094VVVtYUZUZW9ndlU1d2lsMmlRaHRr?oc=5",
+   "published": "2026-10-21T11:08:58+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 36.918
+  },
+  {
+   "headline": "浙江启动海上防台风应急响应",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yd3ZGUjFlZGQ5ZUhYYV8zb1dTVXc5QmphYTlQQWtYUUpJMl90SUZPU3o5R0UxWjR1cXlneENZT0t0eHBPZmRSUlpJcFhvV3R6d1JrUWplVkg1SERSSzJaa3U4bnlVaEozcUFhMG4xQW9vYWY0Qlg3Qm9Ud01HY0k?oc=5",
+   "published": "2026-10-21T10:33:50+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 35.739
-  },
-  {
-   "headline": "【赓续长征精神 奋进复兴征程】传承红色血脉 打好实现建军一百年奋斗目标攻坚战",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/20/ARTIcPvCQgu15kHYFD23RaxQ261020.shtml",
-   "published": "2026-10-20T19:20:44+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.298
-  },
-  {
-   "headline": "习近平致信祝贺中央社会主义学院建院70周年",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/20/ARTIAW4XNUBOgZktPYtr7Mlb261020.shtml",
-   "published": "2026-10-20T18:38:52+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 34.879
-  },
-  {
-   "headline": "中方呼吁加大力度落实生物多样性保护政策--国际",
-   "source": "人民网",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVcU51UlctaW1pQWhTT1k4Um9wN3dRZ09HMEM2VEI1WjE0OWwwWkZiZHRULThiUzVXbXI1MExmWjhHN2s0d3JyT1g1SG9qTHczZjE3Q3hsUmg5Q1lpeTgxc29BbktNOXJvWHBzeg?oc=5",
-   "published": "2026-10-21T05:14:00+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 34.231
+   "score": 36.566
   }
  ]
 };
