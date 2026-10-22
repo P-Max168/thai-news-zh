@@ -71,6 +71,16 @@ def edition_page(data, meta, title, desc, og_block, emoji=None, label=None):
     if isinstance(brief, list) and brief:
         brief_html = '<section class="brief"><h2>브리핑</h2><ul>%s</ul></section>' % "".join(
             "<li>%s</li>" % e((b if isinstance(b, str) else (b.get("text") or b.get("line") or "")).replace("**", "")) for b in brief)
+    # 검색 구조화 데이터(2026-10-18 키워드 정리): 판 = CollectionPage + 기사 목록(ItemList). 언어판도 자기 brand·site_url 로
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "@id": url, "url": url, "name": title, "description": desc,
+          "inLanguage": lang, "isPartOf": {"@type": "WebSite", "@id": site + "#website", "name": brand, "url": site},
+          "publisher": {"@type": "NewsMediaOrganization", "@id": site + "#org", "name": brand, "url": site},
+          "mainEntity": {"@type": "ItemList", "numberOfItems": len(data.get("stories", [])), "itemListElement": [
+              {"@type": "ListItem", "position": i + 1, "url": url + "#" + s["id"], "name": s["headline"]}
+              for i, s in enumerate(data.get("stories", []))]}}
+    if data.get("generated"):
+        ld["datePublished"] = data["generated"]
+    ld_html = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = """<!doctype html>
 <html lang="%(lang)s">
 <head>
@@ -81,6 +91,7 @@ def edition_page(data, meta, title, desc, og_block, emoji=None, label=None):
 <meta name="description" content="%(desc)s">
 %(canon)s
 %(og)s
+%(ld)s
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32.png">
 <!-- 판 전체 정적 페이지(tools/seo.py 가 생성, tools/share_kit.py 가 판마다 부름). 검색 수집기는 이 글을 읽고,
@@ -94,7 +105,8 @@ a{color:#1B64DA}a.btn{display:inline-block;margin:10px 0;background:#1B64DA;colo
 li{margin:6px 0;color:#333D4B}footer{color:#5F6B7A;font-size:14px;padding:10px 20px 30px;max-width:720px;margin:auto}</style>
 <link rel="stylesheet" href="/assets/g-pages.css?v=1">
 <!-- 방문 통계: Cloudflare Web Analytics(쿠키 없음, 2026-10-23 맥스님 승인). 주소별 토큰 -->
-<script>(function(){var t={"tnews.pmaxone.com":"bea5ff7413d34c85b4f9f0df04a87e4e","zh.pmaxone.com":"bb059d024cbc42a99df391388dcae578"}[location.hostname];if(!t)return;var s=document.createElement("script");s.defer=true;s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",JSON.stringify({token:t}));document.head.appendChild(s);})();</script></head>
+<script>(function(){var t={"tnews.pmaxone.com":"bea5ff7413d34c85b4f9f0df04a87e4e","zh.pmaxone.com":"bb059d024cbc42a99df391388dcae578"}[location.hostname];if(!t)return;var s=document.createElement("script");s.defer=true;s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",JSON.stringify({token:t}));document.head.appendChild(s);})();</script>
+</head>
 <body>
 <header><a href="../../">%(brand)s</a></header>
 <main><h1>%(label)s</h1><a class="btn" href="%(target)s">이번 판 앱에서 열기 →</a>
@@ -106,14 +118,7 @@ li{margin:6px 0;color:#333D4B}footer{color:#5F6B7A;font-size:14px;padding:10px 2
 </html>
 """ % {"lang": lang, "title": e(title), "desc": e(desc), "canon": canonical_tag(url), "og": og_block, "botrx": BOT_RX,
        "target_js": json.dumps(target), "target": e(target), "brand": e(brand), "label": e(label or meta.get("label", eid)),
-       "brief": brief_html, "arts": "\n".join(arts)}
-    if lang.lower().startswith("zh"):
-        for original, translated in {
-            "이번 판 앱에서 열기 →": "在应用中打开本期 →", "앱에서 보기": "在应用中查看",
-            "브리핑": "本期简报", "출처:": "来源：", "최신 뉴스": "最新新闻",
-            "소개": "关于我们", "연락하기": "联系我们", "개인정보 처리방침": "隐私政策", "이용약관": "使用条款",
-        }.items():
-            page = page.replace(original, translated)
+       "brief": brief_html, "arts": "\n".join(arts), "ld": ld_html}
     if "฿" in page or _THAI.search(page):
         raise SystemExit("e/%s: '฿' 또는 태국 글자가 들어감 — 데이터 문구 확인(TRANSLATION_RULES)" % eid)
     return page
@@ -136,7 +141,42 @@ def sitemap(root=ROOT):
     out.append("</urlset>")
     txt = "\n".join(out) + "\n"
     (root / "sitemap.xml").write_text(txt, encoding="utf-8")
+    home_edition_links(root, eds)
     return len(out) - 3
+
+
+def home_edition_links(root, editions, limit=14):
+    """Keep real edition links in the home HTML, without requiring JS or a select change."""
+    path = root / "index.html"
+    if not path.exists():
+        return
+    text = path.read_text(encoding="utf-8")
+    start, end = "<!-- edition-links:start -->", "<!-- edition-links:end -->"
+    pattern = re.escape(start) + r".*?" + re.escape(end)
+    _, _, lang = _site()
+    block = ""
+    # Other language builds must not inherit Korean navigation from the shared shell.
+    if lang == "ko":
+        links = []
+        for item in sorted(editions, key=lambda x: x["id"], reverse=True):
+            eid = item["id"]
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}-(am|md|pm|early)", eid):
+                continue
+            if not (root / "e" / eid / "index.html").is_file():
+                continue
+            links.append('<a href="e/%s/">%s</a>' % (e(eid), e(item.get("label") or eid)))
+            if len(links) >= limit:
+                break
+        if links:
+            block = start + '\n    <details><summary>지난 뉴스판</summary><nav aria-label="지난 뉴스판"><p class="footer__links">' + "".join(links) + '</p></nav></details>\n    ' + end
+    if start in text and end in text:
+        text = re.sub(pattern, lambda _: block, text, count=1, flags=re.S)
+    elif block:
+        anchor = '    <p class="footer__small" id="generated"></p>'
+        if anchor not in text:
+            raise ValueError("Home edition links: footer anchor missing")
+        text = text.replace(anchor, "    " + block + "\n" + anchor, 1)
+    path.write_text(text, encoding="utf-8")
 
 
 def _old_head(path):
@@ -151,6 +191,7 @@ def _old_head(path):
 def regen_e(root=ROOT):
     sys.path.insert(0, str(root / "tools"))
     import share_kit
+    site, _, _ = _site()
     idx = json.loads((root / "data/index.json").read_text(encoding="utf-8"))
     n = 0
     for meta in idx.get("editions", []):
@@ -162,7 +203,16 @@ def regen_e(root=ROOT):
         title, desc, og = _old_head(p)
         tp = share_kit.story_topics(data)
         emo = {k: share_kit.TOPICS.get(v["topic"], ("", ""))[1] for k, v in tp.items()}
-        p.write_text(edition_page(data, meta, title, desc, og, emo), encoding="utf-8")
+        # (2026-10-18) 검색 제목·설명 다시 만들기 — 카드에 골랐던 기사는 기존 설명에 든 제목으로 되찾음(og 이미지는 그대로)
+        heads = [(s, share_kit.split_head(s["headline"])[0]) for s in data.get("stories", [])]
+        chosen = sorted([s for s, h in heads if h and h in desc], key=lambda s: desc.find(share_kit.split_head(s["headline"])[0]))
+        h1 = None
+        if chosen:
+            title, desc, h1 = share_kit.seo_meta(data, meta, chosen, tp)
+            img = re.search(r'<meta property="og:image" content="([^"]*)"', og)
+            if img:
+                og = share_kit.og_tags(title, desc, site + "e/%s/" % meta["id"], html.unescape(img.group(1)))
+        p.write_text(edition_page(data, meta, title, desc, og, emo, label=h1), encoding="utf-8")
         n += 1
     return n
 

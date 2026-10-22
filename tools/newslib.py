@@ -2,8 +2,8 @@
 """공용 도우미: 판(edition) 데이터 검증·저장 + data/index 재생성.
 
 파일 이름 규칙 (data/ 폴더)
-  <YYYY-MM-DD>-am   아침판 (매일 07:08 정기 실행)
-  <YYYY-MM-DD>-pm   저녁판 (매일 18:08 정기 실행)
+  <YYYY-MM-DD>-am   아침판 (매일 06:40 정기 실행, 07:00 게시 — 2026-10-23 변경)
+  <YYYY-MM-DD>-pm   저녁판 (매일 17:40 정기 실행, 18:00 게시)
   <YYYY-MM-DD>-early 새벽판 (정기 외 임시판. 2026-09-29-early 한 건만 존재)
 날짜만 있는 파일(<YYYY-MM-DD>.json)은 더 이상 만들지 않는다.
 
@@ -586,6 +586,26 @@ def write_edition(data, merge_discussions=True, keep_generated=False):
         print("점검(경고):", w)
 
 
+# "지연 발행" 라벨은 코드가 자동 판정(2026-10-23 맥스님 결정 — 판 파일의 delayed_publication 손 표시는 쓰지 않음).
+# 예정 게시 시각 + 30분 이 지나서 만들어진(generated) 판만 지연. 10-26 전 판은 옛 예정(07:08·18:08) 기준.
+DELAY_GRACE_MIN = 30
+def _due_hm(date, edition):
+    new = date >= "2026-10-26"
+    return {"am": (7, 0) if new else (7, 8), "pm": (18, 0) if new else (18, 8), "md": (13, 0), "early": None}.get(edition)
+
+
+def is_delayed(date, edition, generated):
+    hm = _due_hm(date, edition)
+    if not hm or not generated:
+        return False
+    try:
+        g = datetime.fromisoformat(generated)
+        due = datetime.fromisoformat("%sT%02d:%02d:00+07:00" % (date, hm[0], hm[1]))
+    except ValueError:
+        return False
+    return (g - due).total_seconds() > DELAY_GRACE_MIN * 60
+
+
 def build_index():
     """data/*.json 을 훑어 index.json / index.js 재생성 (최신 판이 맨 앞 = 기본 화면)."""
     eds = []
@@ -596,7 +616,10 @@ def build_index():
             continue
         d = json.loads(p.read_text(encoding="utf-8"))
         date, ed = m.group(1), m.group(2)
-        eds.append(dict(id=p.stem, date=date, edition=ed, label=label_for(date, ed),
+        label = label_for(date, ed)
+        if is_delayed(date, ed, d.get("generated", "")):
+            label += " · 지연 발행"
+        eds.append(dict(id=p.stem, date=date, edition=ed, label=label,
                         generated=d.get("generated", ""), stories=len(d.get("stories", []))))
     eds.sort(key=lambda e: (e["date"], EDITION_ORDER[e["edition"]], e["generated"]), reverse=True)
     idx = {"latest": eds[0]["id"] if eds else None, "editions": eds, "dates": [e["id"] for e in eds]}
@@ -662,6 +685,16 @@ def build_ads():
         for it in sl.get("items", []):
             for k in ("image", "link"):
                 assert not it.get(k) or str(it[k]).startswith("https://"), ("ads", sl["id"], k, "https:// 만")
+    campaign = ads.get("campaign")
+    if campaign and campaign.get("enabled"):
+        items = campaign.get("items", [])
+        assert len(items) == 6 and len({x["id"] for x in items}) == 6, "campaign: six unique advertisers required"
+        assert {x["id"]: x["weight"] for x in items} == {"dragon": 40, "seven": 12, "suwon": 12, "lounge": 12, "dongwon": 12, "kt": 12}, "campaign: 40/12 weights required"
+        assert all(x.get("approved") is True for x in items), "campaign: unapproved creative"
+        for key in ("creatives_url", "css_url"):
+            path = campaign[key].split("?", 1)[0]
+            assert path.startswith("assets/ads/partners/") and ".." not in path, "campaign: invalid asset path"
+            assert (ROOT / path).is_file(), "campaign: missing " + path
     # 드래곤 스웨디시 배너 데이터(assets/ads/massage/ad.json)를 같이 실어 화면이 바로(동기) 그리게 함 — item.render == "dragon"
     dj = ROOT / "assets/ads/massage/ad.json"
     if dj.exists():

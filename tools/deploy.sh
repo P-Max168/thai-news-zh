@@ -6,6 +6,8 @@
 # - force-push 하지 않는다. 원격이 앞서 있으면 rebase 후 일반 push.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Refuse publication by the other operator during an explicit handoff.
+python3 tools/publisher_guard.py
 # 실행 기록(2026-10-05): 끝나면 /workspace/logs/automation.log 에 deploy ok/fail 한 줄(tools/preflight.sh end) — 실패 원인 추적용, 동작에는 영향 없음
 _deploy_end() { local c=$?; bash tools/preflight.sh end deploy "$([ $c -eq 0 ] && echo ok || echo fail)" "exit=$c $(git rev-parse --short HEAD 2>/dev/null)" >/dev/null 2>&1 || true; }
 trap _deploy_end EXIT
@@ -23,6 +25,8 @@ LATEST=$(python3 -c 'import json;print(json.load(open("data/index.json",encoding
 [ -n "$LATEST" ] || { echo "data/index.json 에 latest 없음" >&2; exit 1; }
 [ -f "data/$LATEST.json" ] && [ -f "data/$LATEST.js" ] || { echo "data/$LATEST.json|js 없음" >&2; exit 1; }
 echo "최신 판: $LATEST"
+# 판 담당 확인(2026-10-23): 이 판을 다른 담당(예: Claude 비상 인수)이 가져갔으면 배포하지 않음
+python3 tools/edition_claim.py check "${TNK_PUBLISHER:-grok}" "$LATEST" || { echo "다른 담당이 $LATEST 를 맡아 배포 중단" >&2; exit 4; }
 
 # 안전장치: 제외 대상이 실수로 추적되고 있으면 중단
 if git ls-files | grep -qE '^(raw|archive|screenshots)/'; then
@@ -36,14 +40,16 @@ KOREA_FILES="data/korea.json data/korea.js data/ticker.json data/ticker.js"
 for f in $KOREA_FILES; do
   if git ls-files --error-unmatch "$f" >/dev/null 2>&1; then git checkout -q -- "$f"; else rm -f "$f"; fi
 done
-# 앱 셸 버전 갱신(assets 가 바뀌었으면 index.html ?v= 와 sw.js VERSION 변경 → 서비스 워커가 새 파일을 받음)
-python3 tools/stamp_assets.py
 # 검색 노출(2026-10-18 R-seo-2): sitemap.xml 을 data/index.json·e/ 에 맞춰 다시 만듦(share_kit 도 만들지만 한 번 더 — 실패해도 배포는 계속)
 python3 tools/seo.py sitemap || echo "경고: sitemap.xml 갱신 실패(배포는 계속)" >&2
+# 홈 뉴스판 링크를 갱신한 뒤 앱 셸 버전을 계산해야 캐시에도 새 링크가 반영됨.
+python3 tools/stamp_assets.py
+# 측정 한 줄(2026-10-23): ops/metrics.jsonl — 실패해도 배포 계속
+python3 tools/metrics.py "$LATEST" || true
 # 사이트 파일만 스테이징 (.gitignore 가 제외 대상 차단)
 # og/(링크 미리보기 이미지)·e/(판별 미리보기 페이지)는 tools/share_kit.py 가 만듦 — 있는 경로만 추가
 PATHS=""
-for p in index.html robots.txt sitemap.xml .nojekyll .gitignore README.md manifest.json sw.js firestore.rules assets data tools og e .github; do
+for p in index.html robots.txt sitemap.xml .nojekyll .gitignore README.md manifest.json sw.js firestore.rules assets data tools og e .github ops/metrics.jsonl; do
   [ -e "$p" ] && PATHS="$PATHS $p"
 done
 git add -A -- $PATHS
@@ -67,6 +73,21 @@ echo "push 완료: $(git rev-parse --short HEAD)"
 
 # 라이브 검증: index.js 에 최신 id 가 반영될 때까지 대기 후 헤드리스 브라우저로 렌더 확인
 deadline=$(( $(date +%s) + TIMEOUT ))
+# (2026-10-23) TNK_LIVE_CHECK=pages: 사이트에 직접 못 붙는 곳(Claude 클라우드 비상 발행)에서는 GitHub Pages 빌드 결과로 확인
+if [ "${TNK_LIVE_CHECK:-curl}" = "pages" ]; then
+  REPO="$(git config --get remote.origin.url | sed -E 's#.*github.com[/:]##; s#\.git$##')"; HEAD_SHA="$(git rev-parse HEAD)"
+  while :; do
+    # pages build and deployment 실행 중 이 커밋(또는 그 뒤 커밋)이 success 면 통과. 뒤 커밋이 덮으면 앞 실행은 cancelled 가 정상.
+    st="$(gh api "repos/$REPO/actions/runs?event=dynamic&per_page=10" --jq '.workflow_runs[]|select(.name=="pages build and deployment")|.head_sha+" "+.status+" "+(.conclusion//"")' 2>/dev/null || true)"
+    mine="$(echo "$st" | grep "^$HEAD_SHA " | head -1)"
+    if echo "$mine" | grep -q " completed success"; then echo "Pages 빌드 완료: ${HEAD_SHA:0:7} (사이트 직접 확인은 생략)"; echo "배포 완료: $LIVE_URL (판 $LATEST)"; exit 0; fi
+    if echo "$mine" | grep -q " completed cancelled" && git merge-base --is-ancestor "$HEAD_SHA" "$(echo "$st" | grep ' completed success' | head -1 | cut -c1-40)" 2>/dev/null; then
+      echo "Pages: 뒤 커밋 빌드가 성공(이 커밋 포함)"; echo "배포 완료: $LIVE_URL (판 $LATEST)"; exit 0; fi
+    echo "$mine" | grep -q " completed failure" && { echo "실패: Pages 빌드 실패 ($mine)" >&2; exit 2; }
+    [ "$(date +%s)" -ge "$deadline" ] && { echo "실패: ${TIMEOUT}s 안에 Pages 빌드 확인 안 됨 ($st)" >&2; exit 2; }
+    sleep 20
+  done
+fi
 while :; do
   ts=$(date +%s)
   # 최신 판 id 뿐 아니라 내용(같은 판을 고쳐 다시 올린 경우)과 앱 코드까지 로컬과 같아야 통과
