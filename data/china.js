@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-23T14:29:47+07:00",
+ "updated_at": "2026-10-23T20:24:22+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "西藏那曲巴青县发生7.0级地震 水利部迅即启动水利抗震救灾调度指挥机制",
+   "headline": "周祖翼当选中共河南省委书记",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/sh/2026/10-23/10719717.shtml",
-   "published": "2026-10-23T13:52:29+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719958.shtml",
+   "published": "2026-10-23T18:20:09+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 52.758
+  },
+  {
+   "headline": "10月23日新闻夜读",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/iframe/2026/10-23/10720064.shtml",
+   "published": "2026-10-23T20:17:44+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 49.934
+  },
+  {
+   "headline": "青海前三季度GDP同比增长5.1%",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/cj/2026/10-23/10720043.shtml",
+   "published": "2026-10-23T20:02:59+07:00",
    "outlets": 5,
    "hot": false,
-   "score": 49.627
+   "score": 49.786
   },
   {
-   "headline": "李乐成当选中共安徽省委书记",
+   "headline": "习近平向2026全球治理论坛（雄安）致信",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719639.shtml",
-   "published": "2026-10-23T12:09:19+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719984.shtml",
+   "published": "2026-10-23T19:11:48+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 48.595
+   "score": 49.274
   },
   {
-   "headline": "台风“蔷琵”影响东部沿海，自然资源部升级海洋灾害应急响应",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719600.shtml",
-   "published": "2026-10-23T10:07:03+07:00",
-   "outlets": 3,
+   "headline": "商务部：敦促美方立即停止对中国科研机构采取歧视性、限制性措施",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcUR5VkQ2cmVOdDJJQmRkaDZKNUQtT3dJWU81Nzk5TlktQzMtMUlLS2ZRZWVDMGx6VXFXczBqMmpMeHdhbGhudXllTF9uNjFVelNfa3BxM2tWQUZYZU52U3JzUEN4cWhBTmNHelVDcmtmbmpSVHFFdWt1T3A2UWc5a3l3?oc=5",
+   "published": "2026-10-23T17:21:48+07:00",
+   "outlets": 2,
    "hot": true,
-   "score": 47.373
+   "score": 41.174
   },
   {
-   "headline": "在新的长征路上奋力创造新的辉煌——论学习贯彻习近平总书记在纪念中国工农红军长征胜利90周年大会上重要讲话",
+   "headline": "西藏巴青发生7.0级地震 国家自然灾害救助应急响应级别提升至三级",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/23/ARTIcTrzWmQoLa89sgBCbiFi261023.shtml",
-   "published": "2026-10-23T10:01:49+07:00",
-   "outlets": 6,
-   "hot": false,
-   "score": 44.32
-  },
-  {
-   "headline": "国家发展改革委紧急安排3000万元中央预算内投资支持西藏巴青7.0级地震灾害灾后应急恢复",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719625.shtml",
-   "published": "2026-10-23T11:25:17+07:00",
+   "url": "https://news.cctv.com/2026/10/23/ARTIsRbQgXXsLqame09Cu0fj261023.shtml",
+   "published": "2026-10-23T16:41:27+07:00",
    "outlets": 4,
    "hot": false,
-   "score": 44.155
+   "score": 40.771
   },
   {
-   "headline": "国务院抗震救灾指挥部办公室、应急管理部将国家地震灾害应急响应提升至三级消防救援队伍已抵达灾区",
+   "headline": "韩国国防部向朝方提议举行韩朝军方会谈",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNjdFOEJmUnQxMmo5OFhRamMyREdpQUNUN0hmdC0zekpzTjAwTkdJTjh6ZnhzMktwbmxmOHdSZjlOazdnREc4TE10RThCQmY0QTZzdTVpS0g0OF8wbXM1M29ZMzgtNjNwd1RNM1oyai0wNGtGUV9oZFUyVlpQYUtueGU5UQ?oc=5",
-   "published": "2026-10-23T07:47:30+07:00",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5vQ0NsVDE4TEJfT1dBYk5mN0xCUXhPU2k1cXpHQW10Q1RldFBWX2pPcEMtS1NFVFl3WWNOQVV4NFQtd244WTczWmVnM0RwR1hDQWhCSjFKb2VlbHVlWEV2UWVOcDZxSTZEaS03c2FWei15QjluakVR?oc=5",
+   "published": "2026-10-23T12:29:45+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 38.977
+   "score": 38.254
   },
   {
-   "headline": "时政微纪录丨弘扬伟大长征精神 走好新的长征路",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/23/ARTIGkCtEXOscJURglwvJEOG261023.shtml",
-   "published": "2026-10-23T11:02:19+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 36.925
-  },
-  {
-   "headline": "李强结束出访回到北京",
-   "source": "中国共产党新闻网",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nZGJmM21tOHlGQWF6eVdrQllfYjVfVlNsdGNtVEdoVEduQlZhV2h4SERucVZQSXFhaU1ROFl4ZzFvR3JQZHNaZWtfV2drSjFsNjdrN0pXSlprSXh5OTE5NW4ySHBoV041ZVE?oc=5",
-   "published": "2026-10-23T07:40:00+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.902
-  },
-  {
-   "headline": "中国足协：女足主帅米利西奇离任",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/23/ARTIeekWQrNxTaWbdpDjKyjT261023.shtml",
-   "published": "2026-10-23T08:55:54+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 35.661
-  },
-  {
-   "headline": "沙特主导联军称拦截也门胡塞武装导弹、无人机",
+   "headline": "中国证监会就私募投资母基金管理规定公开征求意见",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5KY3dZMHpudG1FeUIzYS1pWmktamxqZDQ1dURJd2twYldnbHBxUFR2cERRS3FuZWJjclZUNm4tWnlnQUZrSUhTdmFRWm9LQnhfbnpwNTdOQjJKMGV6SUhvcjJYY0x2dUNUZnVXaU9sUDRMcTdPM2prcU1STDlNdEU?oc=5",
-   "published": "2026-10-23T08:48:26+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxcWZaZk96UFJGWlNBQ0JMdnk3X3U1ZU9wNjkxOVNiSjdKN0JVdmVuNHVJZy0wSGZRQ2FfbFJyNEVuNjZXTzJLUjNGM1RRaGp2eUxyZGhlazlsLUZhTDlTMkNxY2czNTZ6V2NxV0hWUllvWVdJOFJiaGJaZjZBMFU?oc=5",
+   "published": "2026-10-23T19:04:30+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 35.586
+   "score": 38.201
+  },
+  {
+   "headline": "国家发展改革委安排3000万元支持西藏巴青7.0级地震灾害灾后应急恢复",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIWldKM0xMRjNxRVF6aXZseU9qOW1aTGZGYlZBWTBxbUs0c3NmNkh0c3pNOUxKRnR2Ml9zMnpsejZpcTdzZ25uZFpLNGJHM0pnNHZzZnl2U1duZGZyeHBjelF6ZFctVEpiWUZiQ0xYOF9XZkRtaGZF?oc=5",
+   "published": "2026-10-23T12:22:16+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 38.179
+  },
+  {
+   "headline": "习近平总书记在纪念中国工农红军长征胜利90周年大会上的重要讲话引发热烈反响",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/23/ARTIQdrb5FoWrG1PjEjU0hmU261023.shtml",
+   "published": "2026-10-23T18:41:24+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 37.97
   }
  ]
 };
