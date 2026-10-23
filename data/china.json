@@ -1,15 +1,24 @@
 {
- "updated_at": "2026-10-23T04:33:57+07:00",
+ "updated_at": "2026-10-23T08:10:26+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "节目单发布！纪念中国工农红军长征胜利90周年电视文艺晚会《长征颂歌》今晚播出",
+   "headline": "西藏巴青县发生7.0级地震 国家地震灾害应急响应提升至三级",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-22/10719202.shtml",
-   "published": "2026-10-22T16:51:08+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719494.shtml",
+   "published": "2026-10-23T07:46:55+07:00",
    "outlets": 5,
    "hot": true,
-   "score": 50.972
+   "score": 57.765
+  },
+  {
+   "headline": "出版界推出一批纪念中国工农红军长征胜利90周年优秀主题图书",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/22/ARTI1CoyphNbsuT52tWR0mjp261022.shtml",
+   "published": "2026-10-22T20:52:36+07:00",
+   "outlets": 5,
+   "hot": true,
+   "score": 48.222
   },
   {
    "headline": "北京市委常委、副市长夏林茂任上被查",
@@ -18,61 +27,25 @@
    "published": "2026-10-22T18:11:56+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 47.78
+   "score": 45.615
   },
   {
-   "headline": "两部门启动国家地震灾害四级应急响应",
+   "headline": "我国东南沿海将迎强降雨 北方多地气温起伏大",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/sh/2026/10-22/10719441.shtml",
-   "published": "2026-10-22T22:58:24+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 42.644
+   "url": "https://www.chinanews.com.cn/sh/2026/10-23/10719502.shtml",
+   "published": "2026-10-23T08:01:08+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 41.907
   },
   {
-   "headline": "中国地震局对西藏那曲市巴青县地震启动二级应急响应",
+   "headline": "西藏那曲巴青7.0级地震已造成16人遇难46人受伤",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/sh/2026/10-22/10719438.shtml",
-   "published": "2026-10-22T22:30:26+07:00",
-   "outlets": 4,
+   "url": "https://www.chinanews.com.cn/sh/2026/10-23/10719493.shtml",
+   "published": "2026-10-23T07:51:37+07:00",
+   "outlets": 3,
    "hot": false,
-   "score": 42.365
-  },
-  {
-   "headline": "独家视频丨纪念中国工农红军长征胜利90周年大会在京隆重举行 习近平出席大会并发表重要讲话",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/22/ARTIjYAnNYaYHJJq90Zp1nip261022.shtml",
-   "published": "2026-10-22T10:07:24+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 39.934
-  },
-  {
-   "headline": "普京：重启俄美乌三方会谈不是仅为短暂停火",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lZE13YlJpZGVBT3ZqcVFoWmFmVHN2Y2R3RVNFMm9LU2lJQ1NibHFudWlndUJyTEp5MU5XX09zNHRKbHFvSlNsaHpQeW8tQVV0Y3otYnhWZVRtS1MwYTI2djRkcVVocEZSVWJTYnk2eXJWR2ZWNFpZUVNrT2ZBS2s?oc=5",
-   "published": "2026-10-23T03:28:42+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 38.347
-  },
-  {
-   "headline": "国际油价22日上涨",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBDTlhPU2EyQUg1TkdFbTU5UFZvXzdmbWFGZlFIUXZTRTA4ZV82WG05ZnQxS21SUlFYMlRJUUptMzluaVFaellJVW01THIxUzV1RG1xRVpHempaQXV1YkV6Y1BxNXdraTZXVmlTSHdpeEI3bXd6ZHNR?oc=5",
-   "published": "2026-10-23T02:34:27+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.805
-  },
-  {
-   "headline": "国道317线西藏那曲部分路段实施全封闭交通管制",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUThaaXRwNWZJN1l3YkFvT3dINllpcE1yM3J4bk1iOUtZYW9VWE1BQ3VvclpZOHVheW5CT2RkM0VteTEyc2ZuOFNOdTJlTEFrSXdHeWR5akx4WjljemtZS2ZyYkF4QURoODJkVUg2VllkU254SEZ0aWp3UFVWMl9BMVF4NA?oc=5",
-   "published": "2026-10-23T01:53:37+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.397
+   "score": 41.812
   },
   {
    "headline": "伦敦股市22日下跌",
@@ -81,7 +54,25 @@
    "published": "2026-10-23T00:58:19+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 36.844
+   "score": 34.679
+  },
+  {
+   "headline": "沙特首都利雅得多次传出爆炸声",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zLXc3UjlteHg5cXJKem5uUTNlVzlxRVVVUDRaODdBeGR6V1JhamprVjdCZ2JVQWJMeUdhRzc5OFdBZ3RUSkZ1Z2ViVDFsRjJJMWlqbVVEUlVqRDcza0ZKY0JxS2VNLVQyNFV5V3RoZ2ZUc2dXRGkweHN5VnVFdkE?oc=5",
+   "published": "2026-10-23T07:22:22+07:00",
+   "outlets": 2,
+   "hot": false,
+   "score": 34.519
+  },
+  {
+   "headline": "李强结束出访回到北京",
+   "source": "人民网",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rN3BFZnduck5KdWl4RXJteDhUSjJKT0ZpSE1jNnlMWEdTY0lubXJ4OTNxZkxKQWxGLXNrV3JrSHVEejhEQzhMSkRsaFFEYmVYWlJTV3RFc3lsZGFHWnlwLWJ3cFpKeHJRR09QU0hnZw?oc=5",
+   "published": "2026-10-23T05:09:00+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 34.186
   },
   {
    "headline": "《对外投资管理办法》发布 自12月1日起施行",
@@ -90,7 +81,16 @@
    "published": "2026-10-22T16:48:49+07:00",
    "outlets": 4,
    "hot": false,
-   "score": 35.949
+   "score": 33.784
+  },
+  {
+   "headline": "我国对外投资存量连续9年保持世界前三",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/22/ARTIujah6Z3ShJIgL1ILXEpZ261022.shtml",
+   "published": "2026-10-22T14:37:16+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 32.468
   }
  ]
 }
