@@ -1,24 +1,69 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-24T11:33:40+07:00",
+ "updated_at": "2026-10-24T17:56:03+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "王毅出席2026全球治理论坛（雄安）开幕式",
+   "headline": "2026全球治理论坛（雄安）开幕 与会外宾参访感受“未来之城”魅力",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720179.shtml",
-   "published": "2026-10-24T08:15:57+07:00",
-   "outlets": 4,
+   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720307.shtml",
+   "published": "2026-10-24T12:59:37+07:00",
+   "outlets": 5,
    "hot": true,
-   "score": 52.023
+   "score": 55.036
   },
   {
-   "headline": "中欧班列“东通道”跑出“加速度” 年内通行量突破6000列",
+   "headline": "唐登杰当选中共山西省委书记",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/ydyl/2026/10-24/10720232.shtml",
-   "published": "2026-10-24T09:59:57+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720368.shtml",
+   "published": "2026-10-24T15:14:32+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 52.385
+  },
+  {
+   "headline": "第140届广交会第二期：境外采购商扎堆“看房”",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/tp/2026/10-24/10720412.shtml",
+   "published": "2026-10-24T17:21:21+07:00",
+   "outlets": 5,
+   "hot": false,
+   "score": 49.653
+  },
+  {
+   "headline": "云南省委主要负责同志职务调整 莫高义任云南省委书记",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720374.shtml",
+   "published": "2026-10-24T15:44:16+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 49.063
+   "score": 48.682
+  },
+  {
+   "headline": "新华社快讯：青海玉树州杂多县发生5.3级地震",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01VGdqLTVBSmhaQ2VSSE45cEl4MDE3S3lCWGNnNG81cDEzSllJRmZuc2lZMFM1Y0dnYUE0SGpLNXc1UG45b3pXdjIwTEN3bFJldFNVRUZiaUtzV0RfV0dFTlZlR1RrYUY1QV9VbTBseTN3c2ZmQ1pfR2FjNTVTZ3M?oc=5",
+   "published": "2026-10-24T15:56:15+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 45.802
+  },
+  {
+   "headline": "菲律宾2架飞机相撞 4名空军飞行员死亡",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pd2UxNmJOMkhCYzZ1REpkREZqUHdUbGc2anlsOGxQWVBCemxsZ3ZyQU96MFdUX0tQWUppbnBmMzN5NVhnWnJTVXZFNUo0ZjV6ZnFyWVd3UFN2dHNTTUdSX3dscVlEcDZPc2J5ampNbUdjTlkxV1E5c0FWY1B1ZnM?oc=5",
+   "published": "2026-10-24T15:10:11+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 45.341
+  },
+  {
+   "headline": "渝昆高铁全线铺轨完成 乌蒙山区将连片接入高铁网",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aXzkyMVRmclFlWkR6NjJNVjJrYlMwQjdCQnF2MzlJT2d0Mks2ZEM2bzJHT3hOdTd0VEN6bmktMGNlVGdfTFF2Tno0SFhJWE1QTGQyMFZSMlpuQ0hoY0JhQ1Q4ZVJQbUlRajBhcHFrd3c5Y2l2NjhF?oc=5",
+   "published": "2026-10-24T14:44:07+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 45.081
   },
   {
    "headline": "全国秋粮收获过八成",
@@ -27,25 +72,16 @@ window.CHINA_NEWS = {
    "published": "2026-10-24T02:14:21+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 45.407
+   "score": 41.583
   },
   {
-   "headline": "国家疾控局：西藏巴青地震灾区灾后卫生防疫力量已实现全覆盖",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/sh/2026/10-24/10720250.shtml",
-   "published": "2026-10-24T10:26:44+07:00",
+   "headline": "2026全球治理论坛（雄安）开幕 中方发布八项务实举措落实全球治理倡议",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/24/ARTIgNKiSg8cEQCBU4Q3W4mw261024.shtml",
+   "published": "2026-10-24T13:53:16+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 45.331
-  },
-  {
-   "headline": "湖南省委主要负责同志职务调整",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720204.shtml",
-   "published": "2026-10-24T09:02:44+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.491
+   "score": 40.572
   },
   {
    "headline": "特朗普：美国可能会对伊朗发动小规模“史诗怒火”",
@@ -54,43 +90,7 @@ window.CHINA_NEWS = {
    "published": "2026-10-24T10:42:26+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 42.488
-  },
-  {
-   "headline": "周祖翼当选中共河南省委书记",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/24/ARTI548Q9IhoI6z9vsNvvRvx261024.shtml",
-   "published": "2026-10-24T03:45:28+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 42.318
-  },
-  {
-   "headline": "新疆：降雪降温来袭 全力保障民生",
-   "source": "央视新闻",
-   "url": "https://photo.cctv.com/2026/10/24/PHOAbfSFYU666TDpLJN9OmO1261024.shtml",
-   "published": "2026-10-24T09:22:34+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 41.689
-  },
-  {
-   "headline": "河北井陉：山乡迎来柿子丰收季",
-   "source": "人民网",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KN1VPSnhtN1JCNDI2V2ZGRzZDWVFHZFNPbk1PSy1IeTBmV1FrcUo4RlR5ZVFHN1JBWE9OdEtsN0ZqM1RrU3R4enR2b1BGQVJvOW1GREhSZnh4Q2YxY1VlcU5UaWJvOGVWYl9scF9n?oc=5",
-   "published": "2026-10-24T08:10:00+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 37.963
-  },
-  {
-   "headline": "第140届广交会二期开展！近64万件绿色低碳产品亮相",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/24/ARTIVCvqqlYHfgQy9EOCJCxX261024.shtml",
-   "published": "2026-10-24T08:50:21+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 37.367
+   "score": 38.664
   }
  ]
 };
