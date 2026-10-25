@@ -1,5 +1,5 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-25T18:41:56+07:00",
+ "updated_at": "2026-10-25T23:14:58+07:00",
  "lang": "zh-Hans",
  "items": [
   {
@@ -7,90 +7,90 @@ window.CHINA_NEWS = {
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720768.shtml",
    "published": "2026-10-25T17:42:41+07:00",
-   "outlets": 7,
+   "outlets": 6,
    "hot": true,
-   "score": 57.407
+   "score": 54.677
   },
   {
-   "headline": "《台湾光复纪念日》纪念邮票发行",
+   "headline": "习近平同比利时国王菲利普就中比建交55周年互致贺信",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720703.shtml",
-   "published": "2026-10-25T14:35:06+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720753.shtml",
+   "published": "2026-10-25T17:00:58+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 47.532
-  },
-  {
-   "headline": "中国发射卫星互联网低轨28组卫星",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720640.shtml",
-   "published": "2026-10-25T12:56:13+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 46.543
-  },
-  {
-   "headline": "【中国人民志愿军抗美援朝出国作战76周年】铁血誓言续写永不迷航的精神坐标",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTISxNHb6TpUlm2ewAmd0x9261025.shtml",
-   "published": "2026-10-25T16:03:06+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 45.412
+   "score": 46.26
   },
   {
    "headline": "机车上演“水上漂”，张雪在家乡麻阳刷新吉尼斯纪录",
    "source": "新华网",
    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpRjJUSzczQ0pKRl9ETjdtUWhrZ2dFSzhJWVpudmdOeW9Yc2M3aTdwSThtVDN2LV9XdnNGeThqM2VFREpDUTZUcm5YTEkwYzlQczRnS1ZTbnk4OC1YelZJNUJrbFJISHlyc2pkSjY1VjdTaDI2bXBlc1FBMjdpM3M?oc=5",
    "published": "2026-10-25T14:32:51+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 45.779
+  },
+  {
+   "headline": "西藏那曲市巴青县7.0级地震抢险救援有序进行",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/25/ARTI4fQHlHAlX8knWpScfasn261025.shtml",
+   "published": "2026-10-25T19:16:55+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 44.509
+   "score": 44.619
   },
   {
-   "headline": "76年了，我们永远不能忘记！",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720667.shtml",
-   "published": "2026-10-25T13:08:36+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 42.667
-  },
-  {
-   "headline": "日本小笠原群岛西部海域发生7.0级地震",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaLWxCancyUlZhOWNYVWs2WlF4ZHRGdXpnZXdDSG1VelhMSWZKQTl6QXdvcDRMMUU2ME5ueTVQbEVvVG9HYnlEWnZmdkxDVjJLWVdTckNRbU1OUmVnNFlPcUxQdDE5VWkzU2hkdC1aNnBKdjBfdWFwR0FjUjM0M28?oc=5",
-   "published": "2026-10-25T09:52:17+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 41.703
-  },
-  {
-   "headline": "第五届亚残运会闭幕",
+   "headline": "以青春之志 在新长征路上续写奋斗篇章——习近平总书记在纪念中国工农红军长征胜利90周年大会上的重要讲话引发热烈反响",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTI0bxuXDu5UbrRe7rt195l261025.shtml",
-   "published": "2026-10-25T05:26:39+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 39.047
+   "url": "https://news.cctv.com/2026/10/25/ARTI8dyoj8gOjOJxe2mTFvAU261025.shtml",
+   "published": "2026-10-25T19:08:29+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 44.535
   },
   {
-   "headline": "新华社快讯：巴西总统选举第二轮投票开始",
+   "headline": "新华社快讯：西藏那曲市巴青县发生5.7级地震",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBrYVlIY3ctYUFSNDkzTGpsSUFvaWhMR21nUFo4Tzc5MkxaX3F5U3dtUXJJdWlyRzBCS0RSOWhFREYtSEFRQUVVdFF4VXYxWW9jLV9FWHRXUDFGMmpEelpuWGFTNV9RMEgtNTlYeTctWWxnQ2wzY2JF?oc=5",
-   "published": "2026-10-25T18:00:52+07:00",
-   "outlets": 1,
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE03cjA0U0llcm9RMFE5b2lLTjVYS0x4cFpFcG1PMlJIcGVZNXlPQXU4dGV1dkROcWlQemFlaUhBdTNuMG1ZVjNaOFI0ZTZDM2t6cHRSTlg2NmVDX3EydFg0M2xPcVhCVjBacHZIYlFQZV93eFVuX3pv?oc=5",
+   "published": "2026-10-25T18:41:39+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 38.589
+   "score": 44.267
   },
   {
-   "headline": "第33届中国杨凌农高会聚焦新质生产力赋能农业现代化",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jdGFLU0owNVhpZ2p2TEc4bG5FSF9JaFR2X0h0YVFNbDUzWHFTVHdFczlBMWFwS0ZiZk5VbGNVQVFac19BbFRqWDFoMmpjZ2d1SU5Rbl9FNkJQa0tLVzlhT19HbFFIbWhuZk5IdmUtQkZqZml2endndFFyQk9ORkk?oc=5",
-   "published": "2026-10-25T17:11:17+07:00",
+   "headline": "渝昆高铁全线铺轨完成 预计明年上半年具备通车条件",
+   "source": "新华网重庆",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50YVpkX090U1d1NkQ0NFJVXzFpMWxkeGotZUsyN1FFWlhvUy1QLTZMbVk0TGtjZ0pRRmRzbVFSVzlKNEo0WlFwVFphNDRTaTdBeDFKcUVkS0ozdkx5cXdVTHJtOTQzRXVOQlJNNXZrbGNXd3lra0E?oc=5",
+   "published": "2026-10-25T08:45:45+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 42.308
+  },
+  {
+   "headline": "乒乓球亚锦赛：中国队4金4银收官",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720866.shtml",
+   "published": "2026-10-25T22:56:36+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.093
+   "score": 41.816
+  },
+  {
+   "headline": "记者直击丨巴西总统选举决选投票开始 选情胶着",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1qOGxkWjdEZlVZSG1LenVkZnF0cmxObXJNMHd2YzRkUUtTQ0JGbjhQcU10N1RfY2pPVEFLOGRhQkdIZ0kzZnd5TFFzb0tJdVg0bkpfT1dIazdlSGdXMVVNSTJIUEx0U19pZmN5MEs5Mk9LZ2ptUm80?oc=5",
+   "published": "2026-10-25T20:21:10+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 41.262
+  },
+  {
+   "headline": "三天三次发射任务，圆满成功！",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/25/ARTII8uRIdGjUNb0QyIPBf5W261025.shtml",
+   "published": "2026-10-25T19:41:02+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.861
   }
  ]
 };
