@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T02:04:16+07:00",
+ "updated_at": "2026-10-26T05:32:08+07:00",
  "lang": "zh-Hans",
  "items": [
   {
@@ -7,36 +7,36 @@
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720768.shtml",
    "published": "2026-10-25T17:42:41+07:00",
-   "outlets": 7,
+   "outlets": 8,
    "hot": true,
-   "score": 52.984
+   "score": 50.905
   },
   {
-   "headline": "《台湾光复纪念日》纪念邮票发行",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720703.shtml",
-   "published": "2026-10-25T14:35:06+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 47.108
-  },
-  {
-   "headline": "习近平同比利时国王菲利普就中比建交55周年互致贺信",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720753.shtml",
-   "published": "2026-10-25T17:00:58+07:00",
+   "headline": "武契奇承认前进党在塞尔维亚议会选举中败选",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSZlBPLWI0WmdnckQ3cDBIc3lhMmNQeWhRcmJQVXR0bDNBRlBlbkFSSTVpdC1yNmw4RzltZDVZTmpiWWxDcGN6akttMkw1TnhDX19wd2xUVm9IaEI4RDJJTXdZVFpOTElaNlRlX3dLd21BN3RJTm90X0NvTXpkSzg?oc=5",
+   "published": "2026-10-26T05:04:05+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 44.567
+   "score": 46.719
   },
   {
-   "headline": "机车上演“水上漂”，张雪在家乡麻阳刷新吉尼斯纪录",
+   "headline": "塞尔维亚“学生名单－学生获胜”宣布议会选举获胜",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpRjJUSzczQ0pKRl9ETjdtUWhrZ2dFSzhJWVpudmdOeW9Yc2M3aTdwSThtVDN2LV9XdnNGeThqM2VFREpDUTZUcm5YTEkwYzlQczRnS1ZTbnk4OC1YelZJNUJrbFJISHlyc2pkSjY1VjdTaDI2bXBlc1FBMjdpM3M?oc=5",
-   "published": "2026-10-25T14:32:51+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2Tmd1dHk0TTRxazNTZ29BTDBST2twSzRFV0NTbWtkeGVwZWRscDZ2YVNZM2t2RnVHdjZ0X1hMeG5vbmRMbGpubUI3RFlobEVUX1BWQ1gxdmJoZVdCSDlwWUxQUlNSUzcyZHVIR2M3YXRFbGV5QzVTbFVlZVNlaUU?oc=5",
+   "published": "2026-10-26T04:10:03+07:00",
    "outlets": 4,
+   "hot": false,
+   "score": 42.179
+  },
+  {
+   "headline": "中朝举行中国人民志愿军烈士陵园修缮工程竣工仪式",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10720870.shtml",
+   "published": "2026-10-26T05:25:37+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 44.086
+   "score": 41.935
   },
   {
    "headline": "津巴布韦总统呼吁西方国家无条件解除制裁",
@@ -45,34 +45,43 @@
    "published": "2026-10-25T22:43:29+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 43.992
+   "score": 41.913
   },
   {
-   "headline": "沙特利雅得机场部分恢复运营",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VRVc5ekk5aV9LeENJVldVX0F4djhVdVF2QWdmZklTODB3cWczNjZFMVRmWXJON1VxNTZISjA4Z1RxSUZhQVp2MXFldndGbHdheUhtam5FbU92MTZubGk0SHVhWERyaG5WSjVkWWF5UWs1WkNCLWQ1ZnpYSmdmbHM?oc=5",
-   "published": "2026-10-25T12:53:32+07:00",
-   "outlets": 4,
+   "headline": "法国极右翼领导人勒庞正式启动总统竞选活动",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720868.shtml",
+   "published": "2026-10-26T05:07:12+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 43.093
+   "score": 41.751
   },
   {
-   "headline": "记者直击丨巴西总统选举决选投票开始 选情胶着",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YVjVMdExsUGdKWU0ydVRTU2NuOFI0azFUamt6T3pPcXBhZWxudHZvSVBnN3JwRERXdzBuaEo4dEhvT1Z4MTEzX2MwZnZrX3NycXNEUEtlMF9SZ2M1eHV4T09BZlFCUmREdVAzWkxJTXNBR1BWd1pxSF9ha2JpaDQ?oc=5",
-   "published": "2026-10-25T20:21:13+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 39.569
-  },
-  {
-   "headline": "三天三次发射任务，圆满成功！",
+   "headline": "西藏那曲市巴青县7.0级地震抢险救援有序进行",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTII8uRIdGjUNb0QyIPBf5W261025.shtml",
-   "published": "2026-10-25T19:41:02+07:00",
-   "outlets": 2,
+   "url": "https://news.cctv.com/2026/10/25/ARTI4fQHlHAlX8knWpScfasn261025.shtml",
+   "published": "2026-10-25T19:16:55+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 39.168
+   "score": 40.848
+  },
+  {
+   "headline": "巴西总统选举第二轮投票结束",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85SjV2Q1BtaDlkc085c2drcmdmSTFBT3JLMFVTdEc0NDZjYUk4SFA3UmNpTVFRcnZVQVRxQnVyRXpyMWxzbVVIa2M1T1o4anRkb0lDNjFjSjRTZ05KalM4NnRxcVZjVHBybUhkOHJUV3dWNlFNUjhEVGFxUDVTZDA?oc=5",
+   "published": "2026-10-26T05:25:11+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 38.93
+  },
+  {
+   "headline": "机车上演“水上漂”，张雪在家乡麻阳刷新吉尼斯纪录",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpRjJUSzczQ0pKRl9ETjdtUWhrZ2dFSzhJWVpudmdOeW9Yc2M3aTdwSThtVDN2LV9XdnNGeThqM2VFREpDUTZUcm5YTEkwYzlQczRnS1ZTbnk4OC1YelZJNUJrbFJISHlyc2pkSjY1VjdTaDI2bXBlc1FBMjdpM3M?oc=5",
+   "published": "2026-10-25T14:32:51+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 38.007
   },
   {
    "headline": "【持之以恒推进全面从严治党】用党的创新理论凝心铸魂",
@@ -81,16 +90,7 @@
    "published": "2026-10-25T19:08:26+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 38.842
-  },
-  {
-   "headline": "【新中国恢复联合国合法席位55周年】筑文明之桥 同球共济守护地球家园",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTIuoWrSozOmgo0LZzFqZSb261025.shtml",
-   "published": "2026-10-25T16:04:36+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 37.003
+   "score": 36.763
   }
  ]
 }
