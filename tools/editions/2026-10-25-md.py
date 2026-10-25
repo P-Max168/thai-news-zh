@@ -1,0 +1,166 @@
+# -*- coding: utf-8 -*-
+"""2026-10-25 午间版 — Claude 비상 발행(중국어판 정기 담당 없음). 원문 확인한 8건."""
+import json, pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from newslib import write_edition, B, KR
+
+stories = [
+dict(id="cn1", topic="cn", secondary=["north", "society"], region="缅甸掸邦—泰北边境",
+ headline="缅甸掸邦一诈骗窝点被捣毁，99名中国人被捕，距清莱约250公里",
+ summary=[
+  "据报道，缅甸当局10月21日突袭掸邦东部一处秘密据点，抓获99名中国籍人员（男95人、女4人），随后又在莱卡（Lai-Hka）一带另抓获3人。",
+  "现场查获一体机电脑13台、手机193部、星链（Starlink）卫星接收器2台，以及办公桌23张、椅子92把。报道将该行动与掸邦东部的孟萨（Mong Hsat）联系起来，当地与泰国清迈府芳县、湄艾县接壤，距清莱约250公里。",
+  "被捕者将先在缅甸接受讯问，之后遣返中国受审。泰国警方表示正在加强北部边境巡逻。"
+ ],
+ context="💡 报道称有诈骗团伙从大其力一带转移到更远的地区。以“高薪工作”为名的境外招聘务必核实。",
+ source="Chiang Rai Times（清莱时报）", url="https://www.chiangraitimes.com/chiang-rai/myanmar-chinese-scam-gang/",
+ title_th="Myanmar Military Takes Down Chinese Scam Call Center",
+ published="2026-10-25T03:42:00+07:00",
+ related=[], tags=["电诈园区", "缅甸掸邦", "孟萨", "泰北边境", "遣返"],
+ impact=["治安"],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["又一个窝点被端", "高薪招聘别轻信", "边境要管严"]),
+
+dict(id="cn2", topic="cn", secondary=["east", "society"], region="春武里邦拉蒙",
+ headline="泰国移民局在春武里抓获持柬埔寨护照藏身的中国籍加密货币诈骗嫌犯",
+ summary=[
+  "泰国移民局第三分局指挥春武里和北榄移民警察，10月22日约14:30在春武里府邦拉蒙县农勃乡一处住所抓获一名47岁中国男子，外号“藏身龙”。",
+  "他持有柬埔寨第二国籍，在被通缉期间以柬埔寨护照在泰国居住。曼谷北部初审法院（Phra Nakhon Nuea）已对其发出诈骗逮捕令。",
+  "警方称，他与同伙以高回报为诱饵，引诱中国受害者投资加密货币，但实际并无投资，损失超过1亿泰铢（约1982万元）。嫌犯已被押送曼谷华马（Hua Mak）警察局依法处理。"
+ ],
+ context="💡 承诺“稳赚高回报”的加密货币投资要格外警惕。",
+ source="MGR Online（经理人在线）", url="https://mgronline.com/crime/detail/9690000102328",
+ title_th="รวบ “มังกรซ่อนกาย” หนุ่มจีนถือพาสปอร์ตกัมพูชาพรางตัว หนีหมายจับคดีตุ๋นคริปโต เสียหายกว่า 100 ล้าน",
+ published="2026-10-23T15:23:00+07:00",
+ related=[], tags=["移民局", "加密货币", "诈骗", "柬埔寨护照", "春武里"],
+ impact=["治安"],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["换了护照也跑不掉", "加密投资要小心", "受害者能追回钱吗？"]),
+
+dict(id="cn3", topic="cn", secondary=["bangkok", "society"], region="曼谷",
+ headline="泰国移民局在曼谷素坤逸公寓抓获涉嫌走私逃税的中国女商人",
+ summary=[
+  "泰国移民局10月23日在曼谷空堤县帕卡隆乡素坤逸一带的一处公寓，抓获中国女商人吴某。信息由中国驻泰国大使馆和泰国警察总署外事处转交。",
+  "据报道，吴某与同伙在上海设立服装进出口公司作掩护，涉嫌虚报商品编码和原产地、伪造文件、走私、破坏海关封志及骗取出口退税，损失超过5亿泰铢（约9909万元）。中国方面已对其发出违反海关法的逮捕令，她随后逃到曼谷藏匿。",
+  "泰方将先依泰国法律处理，再依法遣返中国。"
+ ],
+ context="",
+ source="Thai PBS（泰国公共电视台）", url="https://www.thaipbs.or.th/news/content/571539",
+ title_th="ตม.รวบสาวนักธุรกิจจีนคาคอนโดฯ สุขุมวิท หนีหมายจับคดีโกงภาษี",
+ published="2026-10-23T14:07:00+07:00",
+ related=[], tags=["移民局", "走私", "出口退税", "遣返", "素坤逸"],
+ impact=["治安"],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["跑到泰国也没用", "中泰合作抓人", "会很快遣返吗？"]),
+
+dict(id="cn4", topic="cn", secondary=["east", "visa"], region="芭提雅",
+ headline="芭提雅被捕红色通缉中国男子案牵出“假泰国父亲”，女儿登记为泰国籍",
+ summary=[
+  "37岁中国男子李某（Jianlu Li）因被国际刑警组织红色通缉，9月15日在芭提雅家中被泰国移民局抓获。中方指控他经营的非法赌博案造成损失超过15亿泰铢（约2.97亿元）。",
+  "警方在住所发现其33岁妻子王某（Yourui Wang）和2岁女儿。女儿持有泰国国籍，出生证明上登记的父亲是一名22岁泰国男子，但DNA检测显示两人并无血缘关系，生父为李某。王某以照顾孩子的名义获准在泰临时居留。",
+  "警方10月21日公布案情：王某可能因使用虚假文件取得居留而被起诉，泰国男子也可能被追究法律责任；当局将着手撤销女孩的泰国国籍，并追查其他涉案人员。"
+ ],
+ context="💡 泰国内政部和警方7月曾开展专项行动，发出40份逮捕令，发现1000多名未成年人疑似持有双重国籍。",
+ source="Thaiger（泰格新闻）", url="https://thethaiger.com/news/pattaya/chinese-suspects-arrest-uncovers-thai-citizenship-fraud-in-pattaya",
+ title_th="Chinese gambling suspect, wife and fake Thai father charged with citizenship fraud in Pattaya",
+ published="2026-10-22T11:44:00+07:00",
+ related=[], tags=["红色通缉", "芭提雅", "国籍造假", "DNA", "非法赌博"],
+ impact=["签证·居留", "治安"],
+ for_me="以虚假亲子关系取得泰国国籍或居留，可能被追究法律责任。",
+ also=[], issue=None,
+ quick_replies=["手段真多", "国籍也能造假？", "查得好"]),
+
+dict(id="pe1", topic="poleco", secondary=["cn", "travel"], region="全国",
+ headline="泰国汇商银行研究中心下调今年外国游客预测至3160万人次，中国游客占17%",
+ summary=[
+  "泰国汇商银行经济情报中心（SCB EIC）将2026年外国游客预测从3250万人次下调至3160万人次。今年迄今约2440万人次，预计2027年回升至3340万人次，增长约5.9%。",
+  "今年迄今客源中，东盟占26%、欧洲25%、中国17%、东北亚13%、南亚9%、美洲5%、中东2%。中国游客在国庆黄金周后明显放缓。",
+  "下调原因包括：中东冲突推高油价和航油成本；中国驻泰国大使馆10月16日发布安全提醒，2026年9月一项调查中43%的中国游客认为泰国“不安全”；欧洲多国生活成本危机引发的动荡也可能影响旺季出行。"
+ ],
+ context="",
+ source="AEC10NEWS", url="https://aec10news.com/hot-news/301331/",
+ title_th="SCB EIC หั่นเป้านักท่องเที่ยวปี 2026 เหลือ 31.6 ล้านคน คาดปี 2027 ฟื้นตัว",
+ published="2026-10-24T20:29:00+07:00",
+ related=[], tags=["旅游业", "游客预测", "中国游客", "SCB EIC", "安全提醒"],
+ impact=[],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["中国游客变少了", "安全最重要", "明年会好吗？"]),
+
+dict(id="wt1", topic="weather", secondary=["south", "bangkok"], region="全国",
+ headline="泰国气象厅第4号警报：南部10月25日至28日大到暴雨，曼谷将有雷雨大风",
+ summary=[
+  "泰国气象厅10月25日05:00发布第4号警报：来自中国的高压（冷空气）覆盖泰国上部和南海，偏东风带来南海和泰国湾的水汽，南部季风槽同时增强。",
+  "10月25日至28日南部持续降雨，多地大雨、局部暴雨，坡地、河道附近和低洼地区须防山洪和径流。10月25日至27日泰国上部有雷雨、强阵风和雷击，东北部先受影响，随后是北部、中部、曼谷及周边和东部。",
+  "安达曼海和泰国湾有雷雨的海域浪高超过2米。"
+ ],
+ context="💡 南部出行或出海前请留意最新预报，雷雨时远离大树和广告牌。",
+ source="Daily News（每日新闻）", url="https://www.dailynews.co.th/news/6302273/",
+ title_th="อุตุฯ เตือนฉบับที่ 4 อากาศแปรปรวน 25-28 ต.ค. ภาคใต้ฝนตกหนักมาก-เหนือ-อีสาน-กทม. ระวังลมกระโชกแรง",
+ published="2026-10-25T07:22:00+07:00",
+ related=[], tags=["气象厅", "暴雨", "南部", "雷雨", "山洪"],
+ impact=["天气·灾害"],
+ for_me="住在南部或计划去普吉、苏梅等地的朋友，请关注山洪和海浪预警。",
+ also=[], issue=None,
+ quick_replies=["曼谷又要下雨了", "南部注意安全", "出海要小心"]),
+
+dict(id="bk1", topic="bangkok", secondary=["poleco", "weather"], region="曼谷",
+ headline="洪灾补助之争：泰国防灾厅长否认施压曼谷市政府出资2亿泰铢（约3963万元）",
+ summary=[
+  "曼谷人民党议员素帕纳称，曼谷市政府被施压为洪灾补助出资2亿泰铢（约3963万元）。泰国防灾减灾厅厅长尼拉回应说并无施压，出资是按预算局标准执行，因为曼谷市政府是全国最大、财力最强的地方政府，年度预算近1000亿泰铢（约198亿元），2亿只占很小一部分。",
+  "政府为受灾家庭发放5000泰铢（约991元）和9000泰铢（约1784元）两档补助。曼谷市政府当天上午10:30把款项转给防灾厅，下午转入政府储蓄银行，每天都在发放；首批资金已用完，如有需要可再申请。"
+ ],
+ context="💡 据曼谷市长差猜10月21日表示，补助申请截止日已延长至11月30日，可到各区办事处现场办理或通过LINE OA申请；提交虚假信息属刑事犯罪。",
+ source="Nation TV（民族电视台）", url="https://www.nationtv.tv/news/current-issue/378985255",
+ title_th="อธิบดี ปภ. สวน ศุภณัฐ ปมเงินเยียวยาน้ำท่วม กทม. ยันไม่ได้บีบ",
+ published="2026-10-25T04:38:00+07:00",
+ related=[], tags=["洪灾补助", "曼谷市政府", "防灾减灾厅", "政府储蓄银行"],
+ impact=["天气·灾害"],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["补助什么时候到？", "申请的人太多了", "排队太久"]),
+
+dict(id="st1", topic="south", secondary=["travel"], region="普吉",
+ headline="普吉加强查处无证住宿，芭东等地两处场所将被起诉",
+ summary=[
+  "普吉府副府尹罗木东（Romdon Haji Awae）10月23日率地方行政官员、警方等检查两处场所，分别位于普吉直辖县威集乡和卡图县芭东乡。",
+  "两处场所都把建筑用于许可以外的用途，没有酒店营业执照，却提供按天短住和按月出租，通过网站接受预订，接待泰国和外国客人。官员正在整理证据和文件，准备提起法律诉讼。"
+ ],
+ context="💡 在泰订房尽量选择有正规执照的住宿，遇到纠纷更有保障。",
+ source="The Phuket Express（普吉快报）", url="https://thephuketexpress.com/2026/10/24/phuket-tightens-oversight-of-hotel-operations-after-inspections-uncover-unlicensed-venues-in-patong/",
+ title_th="Phuket Tightens Oversight of Hotel Operations After Inspections Uncover Unlicensed Venues in Patong",
+ published="2026-10-24T19:48:00+07:00",
+ related=[], tags=["普吉", "芭东", "无证酒店", "住宿", "执法"],
+ impact=[],
+ for_me="",
+ also=[], issue=None,
+ quick_replies=["网上订房要看清", "早该管了", "长租也受影响吗？"]),
+]
+
+briefing = [
+  B("cn", "缅甸掸邦诈骗窝点被捣毁，**99名中国人**被捕", "cn1"),
+  B("cn", "持柬埔寨护照藏身的中国籍加密诈骗嫌犯在春武里落网，损失超**1亿泰铢（约1982万元）**", "cn2"),
+  B("cn", "曼谷素坤逸抓获涉嫌走私逃税的中国女商人，损失超**5亿泰铢（约9909万元）**", "cn3"),
+  B("poleco", "SCB EIC下调今年外国游客预测至**3160万人次**", "pe1"),
+  B("weather", "气象厅第4号警报：南部**10月25日至28日**大到暴雨", "wt1"),
+  B("bangkok", "洪灾补助两档：**5000泰铢（约991元）**和**9000泰铢（约1784元）**", "bk1"),
+]
+
+china_top = []
+
+fx = dict(THB_CNY=0.19817, source="open.er-api.com（data/ticker.json）", note="THB_CNY 2026-10-25 07:02 BKK")
+
+data = dict(
+  id="2026-10-25-md", date="2026-10-25", edition="md", edition_label="午间版",
+  weekday="星期日", timezone="Asia/Bangkok (UTC+7)",
+  coverage="2026年10月22日至10月25日08:00（曼谷时间）发布的泰国新闻；本期为应急版，候选取自10月25日07:54收集批次，仅收录已核对原文的8篇报道。",
+  previous="2026-10-24-md",
+  briefing=briefing,
+  highlights=["cn1", "pe1", "wt1"],
+  stories=stories, china_top=china_top, fx=fx)
+
+if __name__ == "__main__":
+    write_edition(data)
