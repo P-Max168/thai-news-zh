@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-25T23:14:58+07:00",
+ "updated_at": "2026-10-26T02:04:16+07:00",
  "lang": "zh-Hans",
  "items": [
   {
@@ -7,9 +7,18 @@
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720768.shtml",
    "published": "2026-10-25T17:42:41+07:00",
-   "outlets": 6,
+   "outlets": 7,
    "hot": true,
-   "score": 54.677
+   "score": 52.984
+  },
+  {
+   "headline": "《台湾光复纪念日》纪念邮票发行",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720703.shtml",
+   "published": "2026-10-25T14:35:06+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 47.108
   },
   {
    "headline": "习近平同比利时国王菲利普就中比建交55周年互致贺信",
@@ -18,7 +27,7 @@
    "published": "2026-10-25T17:00:58+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 46.26
+   "score": 44.567
   },
   {
    "headline": "机车上演“水上漂”，张雪在家乡麻阳刷新吉尼斯纪录",
@@ -27,61 +36,34 @@
    "published": "2026-10-25T14:32:51+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 45.779
+   "score": 44.086
   },
   {
-   "headline": "西藏那曲市巴青县7.0级地震抢险救援有序进行",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTI4fQHlHAlX8knWpScfasn261025.shtml",
-   "published": "2026-10-25T19:16:55+07:00",
-   "outlets": 3,
+   "headline": "津巴布韦总统呼吁西方国家无条件解除制裁",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-25/10720864.shtml",
+   "published": "2026-10-25T22:43:29+07:00",
+   "outlets": 2,
    "hot": true,
-   "score": 44.619
+   "score": 43.992
   },
   {
-   "headline": "以青春之志 在新长征路上续写奋斗篇章——习近平总书记在纪念中国工农红军长征胜利90周年大会上的重要讲话引发热烈反响",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTI8dyoj8gOjOJxe2mTFvAU261025.shtml",
-   "published": "2026-10-25T19:08:29+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 44.535
-  },
-  {
-   "headline": "新华社快讯：西藏那曲市巴青县发生5.7级地震",
+   "headline": "沙特利雅得机场部分恢复运营",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE03cjA0U0llcm9RMFE5b2lLTjVYS0x4cFpFcG1PMlJIcGVZNXlPQXU4dGV1dkROcWlQemFlaUhBdTNuMG1ZVjNaOFI0ZTZDM2t6cHRSTlg2NmVDX3EydFg0M2xPcVhCVjBacHZIYlFQZV93eFVuX3pv?oc=5",
-   "published": "2026-10-25T18:41:39+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 44.267
-  },
-  {
-   "headline": "渝昆高铁全线铺轨完成 预计明年上半年具备通车条件",
-   "source": "新华网重庆",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50YVpkX090U1d1NkQ0NFJVXzFpMWxkeGotZUsyN1FFWlhvUy1QLTZMbVk0TGtjZ0pRRmRzbVFSVzlKNEo0WlFwVFphNDRTaTdBeDFKcUVkS0ozdkx5cXdVTHJtOTQzRXVOQlJNNXZrbGNXd3lra0E?oc=5",
-   "published": "2026-10-25T08:45:45+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VRVc5ekk5aV9LeENJVldVX0F4djhVdVF2QWdmZklTODB3cWczNjZFMVRmWXJON1VxNTZISjA4Z1RxSUZhQVp2MXFldndGbHdheUhtam5FbU92MTZubGk0SHVhWERyaG5WSjVkWWF5UWs1WkNCLWQ1ZnpYSmdmbHM?oc=5",
+   "published": "2026-10-25T12:53:32+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 42.308
-  },
-  {
-   "headline": "乒乓球亚锦赛：中国队4金4银收官",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720866.shtml",
-   "published": "2026-10-25T22:56:36+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 41.816
+   "score": 43.093
   },
   {
    "headline": "记者直击丨巴西总统选举决选投票开始 选情胶着",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1qOGxkWjdEZlVZSG1LenVkZnF0cmxObXJNMHd2YzRkUUtTQ0JGbjhQcU10N1RfY2pPVEFLOGRhQkdIZ0kzZnd5TFFzb0tJdVg0bkpfT1dIazdlSGdXMVVNSTJIUEx0U19pZmN5MEs5Mk9LZ2ptUm80?oc=5",
-   "published": "2026-10-25T20:21:10+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YVjVMdExsUGdKWU0ydVRTU2NuOFI0azFUamt6T3pPcXBhZWxudHZvSVBnN3JwRERXdzBuaEo4dEhvT1Z4MTEzX2MwZnZrX3NycXNEUEtlMF9SZ2M1eHV4T09BZlFCUmREdVAzWkxJTXNBR1BWd1pxSF9ha2JpaDQ?oc=5",
+   "published": "2026-10-25T20:21:13+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 41.262
+   "score": 39.569
   },
   {
    "headline": "三天三次发射任务，圆满成功！",
@@ -90,7 +72,25 @@
    "published": "2026-10-25T19:41:02+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 40.861
+   "score": 39.168
+  },
+  {
+   "headline": "【持之以恒推进全面从严治党】用党的创新理论凝心铸魂",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/25/ARTIIz9vBPvLJop0Q8BPAyG3261025.shtml",
+   "published": "2026-10-25T19:08:26+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 38.842
+  },
+  {
+   "headline": "【新中国恢复联合国合法席位55周年】筑文明之桥 同球共济守护地球家园",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/25/ARTIuoWrSozOmgo0LZzFqZSb261025.shtml",
+   "published": "2026-10-25T16:04:36+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 37.003
   }
  ]
 }
