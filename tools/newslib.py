@@ -56,7 +56,7 @@ _BL = None
 #   issue         : {id, title} — 이어지는 이슈(tools/issues.json 등록부의 id 만)   quick_replies[] : 추천 댓글 3~4개
 IMPACTS = ["비자·체류", "환율·물가", "교통·사고", "치안", "날씨·재해"]
 if LANG != "ko":
-    IMPACTS = list(SITE.get("impacts") or IMPACTS)
+    IMPACTS = list(SITE["impacts"]) if SITE.get("impacts") is not None else IMPACTS   # 빈 목록 = 영향 태그 안 씀(태국어판 kstar)
 ISSUES_FILE = ROOT / "tools" / "issues.json"
 ISSUE_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,60}$")
 THAI_RE = re.compile(r"[\u0E00-\u0E7F]")
@@ -87,7 +87,10 @@ THAI_SHOWN_RE = re.compile(r"[\u0E00-\u0E3E\u0E40-\u0E7F]+")
 
 def thai_check(data):
     """화면에 보이는 필드(기사 제목·요약·배경·후속·지역·그래서 나는?·추천 댓글·키워드·매체 이름·이슈 이름·오늘의 질문·브리핑·한국 뉴스 제목)에
-    태국 문자나 '฿' 가 있으면 예외. 기관 약칭은 한국어(+로마자)로: 예 สตม. → 태국 이민국, ปภ. → 재난방지청(DDPM)."""
+    태국 문자나 '฿' 가 있으면 예외. 기관 약칭은 한국어(+로마자)로: 예 สตม. → 태국 이민국, ปภ. → 재난방지청(DDPM).
+    태국어판(validate.forbid_scripts 에 'thai' 없음)은 화면 글이 태국어라 건너뜀(2026-10-25)."""
+    if not siteconf.forbids("thai", SITE):
+        return
     def chk(where, v):
         for t in (v if isinstance(v, list) else [v]):
             m = THAI_SHOWN_RE.search(t) if isinstance(t, str) else None
@@ -237,19 +240,77 @@ def cny_check(data):
                       ["%s: '%s' ← …%s…" % (w, a, c) for w, a, c in miss])
 
 
+# ---- 원 → 바트 환산(태국어판 kstar, 2026-10-25 Claude) — 한국 연예 기사 금액(วอน)마다 '(ประมาณ N บาท)' · 판 환율 fx.KRW_THB ----
+_TNUM = r"\d[\d,]*(?:\.\d+)?"
+_TMUL = r"(?:ล้านล้าน|แสนล้าน|หมื่นล้าน|พันล้าน|ร้อยล้าน|สิบล้าน|ล้าน|แสน|หมื่น|พัน)"
+THB_WON_RE = re.compile(r"(?<![\d,.])%s\s*%s?(?:\s*[~\-–]\s*%s\s*%s?)?\s*วอน" % (_TNUM, _TMUL, _TNUM, _TMUL))
+THB_AFTER_RE = re.compile(r"\**\s*[（(]\s*(?:ประมาณ|ราว|~)\s*[\d,.~\-–\s]*(?:ล้านล้าน|แสนล้าน|หมื่นล้าน|พันล้าน|ล้าน|แสน|หมื่น|พัน)?\s*บาท")
+TH_MUL = {"ล้านล้าน": 1e12, "แสนล้าน": 1e11, "หมื่นล้าน": 1e10, "พันล้าน": 1e9, "ร้อยล้าน": 1e8, "สิบล้าน": 1e7, "ล้าน": 1e6, "แสน": 1e5, "หมื่น": 1e4, "พัน": 1e3}
+
+
+def th_amount(s):
+    """'1,500 ล้าน' → 1.5e9 (숫자 + 태국어 단위)."""
+    m = re.match(r"\s*(%s)\s*(%s)?" % (_TNUM, _TMUL), s)
+    return float(m.group(1).replace(",", "")) * TH_MUL.get(m.group(2) or "", 1) if m else 0.0
+
+
+def thb_text(v):
+    """바트 금액을 태국어 표기로: 1,234 / 12.5 ล้าน / 1,200 ล้าน."""
+    if v >= 1e6:
+        x = v / 1e6
+        return ("{:,.1f}".format(x).rstrip("0").rstrip(".") if x < 100 else "{:,}".format(int(round(x)))) + " ล้าน"
+    return "{:,}".format(int(round(v)))
+
+
+def thb_for(amount_text, rate):
+    """'5 ล้าน' 원 → 'ประมาณ 0.1 ล้าน บาท' 식 글(괄호 없이)."""
+    parts = re.split(r"\s*[~\-–]\s*", amount_text.strip())
+    vals = [th_amount(p) for p in parts if re.search(r"\d", p)]
+    if len(vals) == 2 and re.search(_TMUL + r"\s*$", parts[1]) and not re.search(_TMUL, parts[0]):
+        vals[0] *= TH_MUL[re.search("(" + _TMUL + r")\s*$", parts[1]).group(1)]
+    x = "~".join(thb_text(v * rate) for v in vals)
+    return "ประมาณ " + x + ("บาท" if x.endswith("ล้าน") else " บาท")   # '12.7 ล้านบาท' · '191 บาท'
+
+
+def thb_missing(data):
+    rate = (data.get("fx") or {}).get("KRW_THB")
+    out = []
+    for where, t in _shown_texts(data):
+        for m in THB_WON_RE.finditer(t):
+            if THB_AFTER_RE.match(t, m.end()):
+                continue
+            out.append((where, m.group(0), ("(" + thb_for(m.group(0)[:-3], rate) + ")") if rate else "(환율 fx.KRW_THB 없음)", t[max(0, m.start() - 10):m.end() + 10]))
+    return out
+
+
+def thb_check(data):
+    miss = thb_missing(data)
+    assert not miss, ("วอน 금액 %d건에 바트 환산 없음 — 판 환율 fx.KRW_THB 로 'วอน' 바로 뒤에 (ประมาณ N บาท)" % len(miss),
+                      ["%s: '%s' 뒤에 '%s' ← …%s…" % (w, a, g, c) for w, a, g, c in miss])
+
+
 def money_check(data):
-    """판 글 금액 환산 검사 — 언어판 설정 currency.check(ko=krw_check, zh=cny_check)."""
-    return cny_check(data) if SITE.get("currency", {}).get("check") == "cny_check" else krw_check(data)
+    """판 글 금액 환산 검사 — 언어판 설정 currency.check(ko=krw_check, zh=cny_check, th=thb_check)."""
+    ck = SITE.get("currency", {}).get("check")
+    return cny_check(data) if ck == "cny_check" else thb_check(data) if ck == "thb_check" else krw_check(data)
 
 
 def money_ok(text):
-    """한 문장 검사(for_me·quick_replies): ko=바트(약 N원), zh=泰铢（约N元）."""
-    if SITE.get("currency", {}).get("check") == "cny_check":
+    """한 문장 검사(for_me·quick_replies): ko=바트(약 N원), zh=泰铢（约N元）, th=วอน (ประมาณ N บาท)."""
+    ck = SITE.get("currency", {}).get("check")
+    if ck == "cny_check":
         return not cny_missing({"briefing": [{"text": text}]})
+    if ck == "thb_check":
+        return not thb_missing({"briefing": [{"text": text}]})
     return baht_ok(text)
 
 
 HANGUL_RE = re.compile(r"[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]")
+
+
+def thai_bad(text):
+    """한 문장에 태국 글자가 있고, 이 언어판이 태국 글자를 막는지(태국어판은 항상 False)."""
+    return bool(siteconf.forbids("thai", SITE) and THAI_RE.search(text or ""))
 
 
 def script_check(data):
@@ -261,9 +322,12 @@ def script_check(data):
         def chk(where, v):
             for t in (v if isinstance(v, list) else [v]):
                 m = HANGUL_RE.search(t) if isinstance(t, str) else None
-                assert not m, (where, "중국어판 글에 한글 금지 — 中文으로 고칠 것", t[max(0, m.start() - 12):m.end() + 8])
+                assert not m, (where, "이 언어판 글에 한글 금지(번역 잔재) — 화면 언어로 고칠 것", t[max(0, m.start() - 12):m.end() + 8])
         for where, t in _shown_texts(data):
             chk(where, t)
+        for s in data.get("stories", []):   # 키워드·매체 이름도 화면에 보임
+            for k in ("tags", "source"):
+                if k in s: chk((s.get("id"), k), s[k])
 
 
 # 추천 댓글은 독자 본인이 올리는 문장 — 겪지 않은 경험을 지어내게 만드는 표현 금지
@@ -304,7 +368,7 @@ def validate_extras(s):
     if "for_me" in s:
         fm = s["for_me"]
         assert isinstance(fm, str) and len(fm) <= 160, (sid, "for_me 는 한 문장(160자 이하) 문자열, 의미 없으면 \"\"")
-        assert not THAI_RE.search(fm), (sid, "for_me 에 태국 글자 금지")
+        assert not thai_bad(fm), (sid, "for_me 에 태국 글자 금지")
         assert not blocked(fm) and money_ok(fm), (sid, "for_me 차단 키워드 또는 바트 금액에 (약 N원) 없음")
     if "also" in s:
         al = s["also"]
@@ -318,7 +382,7 @@ def validate_extras(s):
     if s.get("issue") is not None:
         iss = s["issue"]
         assert isinstance(iss, dict) and ISSUE_ID_RE.match(str(iss.get("id", ""))) and iss.get("title"), (sid, "issue = {id(영문 소문자·숫자·-), title}", iss)
-        assert not THAI_RE.search(iss["title"]) and len(iss["title"]) <= 40, (sid, "issue.title 은 한국어 40자 이하")
+        assert not thai_bad(iss["title"]) and len(iss["title"]) <= 40, (sid, "issue.title 은 한국어 40자 이하")
         reg = issue_registry()
         assert iss["id"] in reg, (sid, "issue id '%s' 가 tools/issues.json 에 없음 — 새 이슈면 등록부에 먼저 추가" % iss["id"])
     if "quick_replies" in s:
@@ -326,7 +390,7 @@ def validate_extras(s):
         assert isinstance(qr, list) and (len(qr) == 0 or 3 <= len(qr) <= 4), (sid, "quick_replies 는 3~4개(없으면 빈 목록)")
         for q in qr:
             assert isinstance(q, str) and 2 <= len(q.strip()) <= 40, (sid, "quick_replies 한 줄 2~40자", q)
-            assert not THAI_RE.search(q) and not LINK_RE.search(q) and not blocked(q), (sid, "quick_replies 태국 글자·링크·차단 키워드 금지", q)
+            assert not thai_bad(q) and not LINK_RE.search(q) and not blocked(q), (sid, "quick_replies 태국 글자·링크·차단 키워드 금지", q)
             assert not FAKE_EXP_RE.search(q), (sid, "quick_replies 에 겪지 않은 경험을 꾸미는 표현 금지('저도 거기 살아요' 등)", q)
             assert money_ok(q), (sid, "quick_replies 바트 금액엔 (약 N원)", q)
 
@@ -504,10 +568,10 @@ def coverage_report(data):
         warn.append("기사 %d건 (목표 %d~%d건, 실제 뉴스가 없으면 적어도 됨)" % (len(st), lo, hi))
     any_ = lambda t: sum(1 for s in st if t in topics_of(s))
     v = any_("visa"); lo, hi = TARGETS["visa"]
-    if v < lo or v > 8:
+    if "visa" in TOPICS and (v < lo or v > 8):
         warn.append("외국인·비자 %d건 (목표 %d~%d, 최대 8)" % (v, lo, hi))
     for t in TARGETS["places"] + TARGETS["want"]:
-        if not any_(t):
+        if t in TOPICS and not any_(t):   # 이 언어판에 없는 주제는 건너뜀(태국어판 kstar = 연예 주제만)
             warn.append("%s 기사 0건 — 실제 뉴스가 있으면 1건 이상" % TOPICS[t])
     return warn
 

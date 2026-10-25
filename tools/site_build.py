@@ -27,6 +27,11 @@ FLAGS = {  # 홈 나라 국기(index.html 의 data-site-flag 자리) — 한국�
           '<circle cx="10" cy="2" r=".9"/><circle cx="12" cy="4" r=".9"/><circle cx="12" cy="7" r=".9"/><circle cx="10" cy="9" r=".9"/></g></svg>',
 }
 
+LOCAL_FLAGS = {  # 현지 나라 국기(index.html 맨 앞 태국 국기 자리)
+    "vn": '<svg class="flag" viewBox="0 0 30 20" width="30" height="20" role="img" aria-label="베트남 국기" data-i18n-aria="a11y.flag_th">'
+          '<rect width="30" height="20" fill="#DA251D"/><polygon fill="#FFFF00" points="15,4 16.18,7.64 20,7.64 16.91,9.88 18.09,13.52 15,11.27 11.91,13.52 13.09,9.88 10,7.64 13.82,7.64"/></svg>',
+}
+
 
 def flat(d, pre=""):
     out = {}
@@ -42,7 +47,7 @@ def flat(d, pre=""):
 
 def site_js(c, i18n):
     keep = {k: c.get(k) for k in ("lang", "htmlLang", "brand", "brand_sub", "site_url", "currency", "home_section", "hidden_sections",
-                                  "firestore_prefix", "admins_doc", "slots", "edition_label", "share") if k in c}
+                                  "firestore_prefix", "admins_doc", "slots", "edition_label", "share", "wx_coords", "origin_hide_rx") if k in c}
     keep["i18n"] = i18n
     keep["topics"] = {k: v for k, v in (c.get("topics") or {}).items() if not k.startswith("_") and k != "REGION_PATTERNS"}
     keep["impacts_ui"] = [{"k": k, "e": IMPACT_UI[i % 5][0], "c": IMPACT_UI[i % 5][1]} for i, k in enumerate(c.get("impacts") or [])]
@@ -81,11 +86,14 @@ def patch_index(t, c, i18n):
          "inLanguage": c.get("htmlLang", c["lang"]), "publisher": {"@id": url + "#org"}},
         {"@type": "NewsMediaOrganization", "@id": url + "#org", "name": c["brand"], "url": url,
          "logo": {"@type": "ImageObject", "url": url + "assets/icons/icon-512.png", "width": 512, "height": 512},
-         "areaServed": "TH", "knowsLanguage": c.get("htmlLang", c["lang"])}]}
+         "areaServed": c.get("area", "TH"), "knowsLanguage": c.get("htmlLang", c["lang"])}]}
     ldj = json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     t = re.sub(r'<script type="application/ld\+json" id="tn-ld">.*?</script>(<!--.*?-->)?',
                lambda _: '<script type="application/ld+json" id="tn-ld">%s</script>' % ldj, t, count=1, flags=re.S)
     t = re.sub(r'(<h1 class="sr-only" id="tn-h1">).*?(</h1>)', lambda m: m.group(1) + html.escape(seo.get("h1") or title, quote=False) + m.group(2), t, count=1, flags=re.S)
+    # 검색 차단 판(site/<lang>.json noindex=true, 2026-10-25 Claude — 베트남판·kstar 공개 승인 전): robots 메타를 noindex 로
+    if c.get("noindex"):
+        t = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex, nofollow, noarchive">', t)
     # data/site.js — 앱 코드보다 먼저(topics.js 가 TN_SITE 를 읽음). 한 번만
     if 'src="data/site.js"' not in t:
         t = t.replace('<script src="data/index.js"></script>', '<script src="data/site.js"></script>\n<script src="data/index.js"></script>', 1)
@@ -101,6 +109,10 @@ def patch_index(t, c, i18n):
     t = re.sub(r'<style id="tn-site-hide">.*?</style>\n?', "", t, flags=re.S)
     if css:
         t = t.replace("</head>", '<style id="tn-site-hide">%s</style>\n</head>' % "".join(css), 1)
+    # 현지 나라 국기(맨 앞 태국 국기 자리, 2026-10-25 Claude — 베트남판 local_flag=vn)
+    lf = LOCAL_FLAGS.get(c.get("local_flag", ""))
+    if lf:
+        t = re.sub(r'<svg class="flag" viewBox="0 0 30 20"[^>]*data-i18n-aria="a11y.flag_th">.*?</svg>', lambda _: lf, t, count=1, flags=re.S)
     # 홈 나라 국기
     fl = FLAGS.get((c.get("home_section") or {}).get("flag", ""))
     if fl:
@@ -121,6 +133,8 @@ def patch_index(t, c, i18n):
     t = re.sub(r'<(\w+)\b[^>]*\sdata-i18n-aria="([\w.]+)"[^>]*>', repa, t)
     # aria-label 의 브랜드
     t = t.replace('aria-label="태국 뉴스 한눈에 홈"', 'aria-label="%s"' % _attr(f.get("brand_home", c["brand"])))
+    # 한국판 '지난 뉴스판' 링크 묶음(tools/seo.py home_edition_links)은 언어판에선 비움 — 한국판 판 목록·한국어 글이 따라오지 않게(2026-10-25)
+    t = re.sub(r"(<!-- edition-links:start -->).*?(<!-- edition-links:end -->)", r"\1\2", t, count=1, flags=re.S)
     return t
 
 
@@ -153,7 +167,7 @@ def main():
     mf = root / "manifest.json"
     if mf.exists():
         outs[mf] = patch_manifest(mf.read_text(encoding="utf-8"), c)
-    bad = [p.name for p, v in outs.items() if re.search(r"[\u0E00-\u0E3E\u0E40-\u0E7F]", v)]
+    bad = [p.name for p, v in outs.items() if re.search(r"[\u0E00-\u0E3E\u0E40-\u0E7F]", v)] if "thai" in (c.get("validate") or {}).get("forbid_scripts", ["thai", "cjk"]) else []   # 태국어판은 화면 글이 태국어
     if bad:
         sys.exit("site_build: 태국 글자 들어감 — %s" % ", ".join(bad))
     for p, v in outs.items():
