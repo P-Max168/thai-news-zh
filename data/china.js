@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-25T11:38:20+07:00",
+ "updated_at": "2026-10-25T18:41:56+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "福建省终止防台风应急响应 陆续恢复海上生产",
+   "headline": "二十届中央第七轮巡视完成反馈",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/sh/2026/10-25/10720598.shtml",
-   "published": "2026-10-25T09:54:05+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720768.shtml",
+   "published": "2026-10-25T17:42:41+07:00",
+   "outlets": 7,
+   "hot": true,
+   "score": 57.407
+  },
+  {
+   "headline": "《台湾光复纪念日》纪念邮票发行",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720703.shtml",
+   "published": "2026-10-25T14:35:06+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 48.957
+   "score": 47.532
   },
   {
-   "headline": "日本小笠原群岛地区发生6.5级地震 震源深度480千米",
+   "headline": "中国发射卫星互联网低轨28组卫星",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-25/10720596.shtml",
-   "published": "2026-10-25T09:34:34+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720640.shtml",
+   "published": "2026-10-25T12:56:13+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 46.543
+  },
+  {
+   "headline": "【中国人民志愿军抗美援朝出国作战76周年】铁血誓言续写永不迷航的精神坐标",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/25/ARTISxNHb6TpUlm2ewAmd0x9261025.shtml",
+   "published": "2026-10-25T16:03:06+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 45.412
+  },
+  {
+   "headline": "机车上演“水上漂”，张雪在家乡麻阳刷新吉尼斯纪录",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpRjJUSzczQ0pKRl9ETjdtUWhrZ2dFSzhJWVpudmdOeW9Yc2M3aTdwSThtVDN2LV9XdnNGeThqM2VFREpDUTZUcm5YTEkwYzlQczRnS1ZTbnk4OC1YelZJNUJrbFJISHlyc2pkSjY1VjdTaDI2bXBlc1FBMjdpM3M?oc=5",
+   "published": "2026-10-25T14:32:51+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 44.509
+  },
+  {
+   "headline": "76年了，我们永远不能忘记！",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720667.shtml",
+   "published": "2026-10-25T13:08:36+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 42.667
+  },
+  {
+   "headline": "日本小笠原群岛西部海域发生7.0级地震",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaLWxCancyUlZhOWNYVWs2WlF4ZHRGdXpnZXdDSG1VelhMSWZKQTl6QXdvcDRMMUU2ME5ueTVQbEVvVG9HYnlEWnZmdkxDVjJLWVdTckNRbU1OUmVnNFlPcUxQdDE5VWkzU2hkdC1aNnBKdjBfdWFwR0FjUjM0M28?oc=5",
+   "published": "2026-10-25T09:52:17+07:00",
    "outlets": 5,
    "hot": false,
-   "score": 48.762
-  },
-  {
-   "headline": "云南省委主要负责同志职务调整 莫高义任云南省委书记",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720374.shtml",
-   "published": "2026-10-24T15:44:16+07:00",
-   "outlets": 5,
-   "hot": true,
-   "score": 46.059
-  },
-  {
-   "headline": "永葆赶考清醒 赢得历史主动——以习近平同志为核心的党中央引领新时代全面从严治党纪实",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720595.shtml",
-   "published": "2026-10-25T09:39:12+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.809
-  },
-  {
-   "headline": "渝昆高铁全线铺轨完成 乌蒙山区将连片接入高铁网",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aXzkyMVRmclFlWkR6NjJNVjJrYlMwQjdCQnF2MzlJT2d0Mks2ZEM2bzJHT3hOdTd0VEN6bmktMGNlVGdfTFF2Tno0SFhJWE1QTGQyMFZSMlpuQ0hoY0JhQ1Q4ZVJQbUlRajBhcHFrd3c5Y2l2NjhF?oc=5",
-   "published": "2026-10-24T14:44:07+07:00",
-   "outlets": 6,
-   "hot": true,
-   "score": 42.458
-  },
-  {
-   "headline": "老剧院成为“新客厅” 湖南南县打造县域消费新场景",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/25/ARTIoVQ3UFfoAQMZs4Q8xYzY261025.shtml",
-   "published": "2026-10-25T09:56:52+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 41.985
+   "score": 41.703
   },
   {
    "headline": "第五届亚残运会闭幕",
    "source": "央视新闻",
    "url": "https://news.cctv.com/2026/10/25/ARTI0bxuXDu5UbrRe7rt195l261025.shtml",
    "published": "2026-10-25T05:26:39+07:00",
-   "outlets": 4,
+   "outlets": 5,
    "hot": false,
-   "score": 39.283
+   "score": 39.047
   },
   {
-   "headline": "新疆双口岸今年已通行中欧（亚）班列超1.5万列",
+   "headline": "新华社快讯：巴西总统选举第二轮投票开始",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5nZGlVRU5WS0FudE9VUVBBREZMUGZoU1JvdC0xVkh3d2ZpUDNlNnBwS2NsbEZXaVVBQmxEU0JwVnlkUTZUTWtMT2xZX1NyUDBaV2UwN1lRTjlTQ0JsNHZGam1DVVFTNllIb1BjbHB3eC1jX21QbmZsbDduZlVadFE?oc=5",
-   "published": "2026-10-25T11:14:52+07:00",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBrYVlIY3ctYUFSNDkzTGpsSUFvaWhMR21nUFo4Tzc5MkxaX3F5U3dtUXJJdWlyRzBCS0RSOWhFREYtSEFRQUVVdFF4VXYxWW9jLV9FWHRXUDFGMmpEelpuWGFTNV9RMEgtNTlYeTctWWxnQ2wzY2JF?oc=5",
+   "published": "2026-10-25T18:00:52+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.765
+   "score": 38.589
   },
   {
-   "headline": "张雪在家乡刷新吉尼斯纪录",
+   "headline": "第33届中国杨凌农高会聚焦新质生产力赋能农业现代化",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObTRNQkt6Sks1TC15aThfdHd4LTU1bE5PRC14Smw5YlAzMWtZOHRXYmt3Q044QmcxS0prSmRTcFpwZ1loQkw0NnVvVjdpdEtlUDRIZ3loVWFKT0VROFpvMUQ4WFVEVEhhYUlDNlF2V0t3TFhPSDhMSVlLcjBWY055WA?oc=5",
-   "published": "2026-10-25T10:41:44+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jdGFLU0owNVhpZ2p2TEc4bG5FSF9JaFR2X0h0YVFNbDUzWHFTVHdFczlBMWFwS0ZiZk5VbGNVQVFac19BbFRqWDFoMmpjZ2d1SU5Rbl9FNkJQa0tLVzlhT19HbFFIbWhuZk5IdmUtQkZqZml2endndFFyQk9ORkk?oc=5",
+   "published": "2026-10-25T17:11:17+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.434
-  },
-  {
-   "headline": "新华社快讯：日本小笠原群岛附近海域发生7.0级地震",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zTEdUcHRrc01DV1lRLV9CVVNNWDNaNHM4M2RTbk00UG9vaFFBdFBSSTVnNlpyM3NhbGF3aVJrTGlzamRYWlA2dzhtZmx5YkpzNUt3M1QyY21yOGdpQ0taZ01FVnlKUDF1dlE4QzlPRjdhZG9ORmdJTkl2M19ESDA?oc=5",
-   "published": "2026-10-25T09:22:15+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.639
+   "score": 38.093
   }
  ]
 };
