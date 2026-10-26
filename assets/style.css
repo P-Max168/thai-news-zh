@@ -951,3 +951,17 @@ body.drawer-open{overflow:hidden}
 .tk-fit5 .ticker{flex-wrap:wrap;overflow-x:visible;row-gap:3px}
 .tk-fit5 .ticker>.tk-tile{flex:1 1 calc(50% - 2px)}
 .tk-chg{display:none}
+/* LINE 로그인 버튼(2026-10-25) — 판 설정 login.line 이 있는 판만 나타남. LINE 초록 */
+html .gbtn.gbtn--line,html.th-modern .gbtn.gbtn--line{background:#06C755;border:1px solid #06C755;color:#fff}
+html .gbtn.gbtn--line:hover,html.th-modern .gbtn.gbtn--line:hover{background:#05B04B;border-color:#05B04B}
+.login-btns{display:inline-flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.acct-box__row--2{flex-wrap:wrap;gap:8px}
+.acct-menu__h{display:block;margin:0 0 10px}
+.acct-menu--login .login-btns{display:flex;flex-direction:column;align-items:stretch}
+.acct-menu--login .gbtn{justify-content:center;padding:10px 14px;font-size:.9375rem}
+/* 2026-10-26 Claude: 폰에서 아래로 스크롤하면 환율 패널·내 주변 줄을 아래쪽부터 잘라 숨김(제목 줄만 고정) → 상단 배너·기사가 큰 헤더에 가려지지 않게. 위로 스크롤하면 다시 나옴. 레이아웃 높이는 그대로(clip-path)라 화면이 튀지 않음. 로직: assets/ticker.js 끝 */
+.masthead{transition:clip-path .22s ease,box-shadow .22s ease;clip-path:inset(0 0 0 0)}
+html.mh-tuck .masthead{clip-path:inset(0 0 var(--mh-tuck,0px) 0);box-shadow:none}
+@media (prefers-reduced-motion:reduce){.masthead{transition:none}}
+/* 라이브 바(ticker.js 끝)는 G 테마(g.css)에서만 보임 */
+.lb{display:none}
