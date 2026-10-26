@@ -1,0 +1,68 @@
+# 한국어 검수 미러(/zh1/) 백필. 중국어 판 발행(gemini-edition)과는 별도다.
+# - 이 파일이나 ops/zh1_mirror.py 가 main 에 들어가면 최근 3개 판을 한 번 채운다(이미 Gemini 로 옮긴 판은 다시 부르지 않음).
+# - 매일 발행 직후 번역은 gemini-edition.yml 이 같은 스크립트를 부른다. 그쪽이 실패해도 중국어 판 배포는 이미 끝난 뒤다.
+# 끄기: 저장소 Variable ZH1_MIRROR=off (이 워크플로와 gemini-edition 의 미러 단계가 함께 쉰다).
+name: zh1-mirror
+
+on:
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "최근 몇 판까지 번역할지"
+        required: false
+        default: "3"
+      force:
+        description: "이미 Gemini 로 옮긴 판도 다시 번역"
+        type: boolean
+        required: false
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - ops/zh1_mirror.py
+      - .github/workflows/zh1-mirror.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zh1-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    if: vars.ZH1_MIRROR != 'off'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 의존성
+        run: pip install --quiet requests
+      - name: 최근 판 번역
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZH1_MIRROR: ${{ vars.ZH1_MIRROR }}
+        run: |
+          n="${{ inputs.backfill || '3' }}"
+          extra=""
+          if [ "${{ inputs.force }}" = "true" ]; then extra="--force"; fi
+          python3 ops/zh1_mirror.py run --backfill "$n" $extra || echo "::warning::zh1 번역이 끝나지 않음(exit $?). 있는 화면은 그대로 둡니다."
+      - name: 커밋·push (force 없음). 실패해도 중국어 판과는 무관
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zh1
+          git add ops/gemini-usage.jsonl 2>/dev/null || true
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "zh1: 최근 판 한국어 검수 미러"
+          ok=""
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash -q origin main || { echo "::warning::zh1 rebase 실패"; exit 0; }
+            if git push origin HEAD:main; then ok=1; break; fi
+            echo "push 재시도 $i"; sleep $((i * 5))
+          done
+          if [ -z "$ok" ]; then echo "::warning::zh1 push 실패"; exit 1; fi
