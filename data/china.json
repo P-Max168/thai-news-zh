@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-27T02:56:17+07:00",
+ "updated_at": "2026-10-27T06:51:14+07:00",
  "lang": "zh-Hans",
  "items": [
   {
@@ -9,43 +9,61 @@
    "published": "2026-10-26T23:34:27+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 51.982
+   "score": 49.632
   },
   {
-   "headline": "习近平《在纪念中国工农红军长征胜利90周年大会上的讲话》单行本出版",
+   "headline": "泽连斯基签署法案 延长国家战时状态和总动员令90天",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721224.shtml",
-   "published": "2026-10-26T16:31:08+07:00",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721438.shtml",
+   "published": "2026-10-27T05:48:21+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 43.748
+   "score": 49.371
   },
   {
-   "headline": "美官员透露称美军已准备好再次大规模打击伊朗",
+   "headline": "中期选举倒计时 特朗普称举报选举舞弊可获100万美元",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-26/10721428.shtml",
-   "published": "2026-10-26T21:37:18+07:00",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721441.shtml",
+   "published": "2026-10-27T06:16:27+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 42.81
+   "score": 45.652
   },
   {
-   "headline": "前三季度中国国内居民出游人次超53亿",
+   "headline": "10月27日新闻早报",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721407.shtml",
-   "published": "2026-10-26T21:03:40+07:00",
+   "url": "https://www.chinanews.com.cn/iframe/2026/10-27/10721439.shtml",
+   "published": "2026-10-27T05:58:14+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 45.47
+  },
+  {
+   "headline": "12306上线新功能 买团体票更方便",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/27/ARTIH2UOZ4VTqCdo66qxHXWx261026.shtml",
+   "published": "2026-10-27T02:22:37+07:00",
    "outlets": 4,
    "hot": false,
-   "score": 42.474
+   "score": 40.314
   },
   {
-   "headline": "中国共产党第二十届中央委员会第五次全体会议在北京开始举行",
+   "headline": "从AI监测到办理“飞行护照” 各地为候鸟迁徙保驾护航",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/26/ARTIxPWUHyCbMMf75L0c9AT8261026.shtml",
-   "published": "2026-10-26T11:08:50+07:00",
-   "outlets": 3,
+   "url": "https://news.cctv.com/2026/10/27/ARTIZIzQkpYU8YgGLYIM6vGR261026.shtml",
+   "published": "2026-10-26T23:29:59+07:00",
+   "outlets": 1,
    "hot": true,
-   "score": 37.525
+   "score": 34.587
+  },
+  {
+   "headline": "新闻1+1丨人工智能时代，如何减缓岗位替代？",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/27/ARTIddHPUOg3bu1izcSQht4K261027.shtml",
+   "published": "2026-10-27T05:15:38+07:00",
+   "outlets": 2,
+   "hot": false,
+   "score": 34.044
   },
   {
    "headline": "马克龙：本周末示威活动仍存暴力冲突风险",
@@ -54,43 +72,25 @@
    "published": "2026-10-26T21:48:08+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 35.918
+   "score": 33.569
   },
   {
-   "headline": "中国地震局：追踪调查首次发现西藏巴青7.0级地震地表破裂带",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/26/ARTI1ICNI4d5brbW4w0Fhjir261026.shtml",
-   "published": "2026-10-26T14:44:59+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.687
-  },
-  {
-   "headline": "12306上线新功能 买团体票更方便",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/27/ARTIH2UOZ4VTqCdo66qxHXWx261026.shtml",
-   "published": "2026-10-27T02:22:37+07:00",
-   "outlets": 2,
-   "hot": false,
-   "score": 34.663
-  },
-  {
-   "headline": "第九届进博会首批展品进馆",
+   "headline": "“核心价值观百场讲坛”第174场在陕西吴起举办 宣讲弘扬伟大长征精神走好新的长征路",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdk5uQk1ldndfdEFwekdhY21GSHhYeGNUTjB4eG5SRkRHSWRKcTVLQUxmNEc4dkN3cERhWmJvckVDQ2dNOUlhVlBfUTlYY3p0TU9ZeUNpYjlFTUZqV2ZDYW92Mm1JODY3VFRQRExGQmN1SUZDVjhHN1E0MVlQOTR3Z3VYUQ?oc=5",
-   "published": "2026-10-26T19:33:07+07:00",
-   "outlets": 1,
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNDNHVnVvbVBKUTVfd2Z5dnR6MHRxdWQzdlhyN2hUdG85c3ZsZDVDMnpYa1BKTnJrTUgyYVN6NHI1bHNON0VyOUhPVzlEMXg5bEtZaTloZGtHaUdWTUdwdmx2OV9SMFdEX0JfNGd1TzZCY0FrUHdZUlZUSVNScGNjQVJpMA?oc=5",
+   "published": "2026-10-26T13:17:54+07:00",
+   "outlets": 2,
    "hot": true,
-   "score": 34.568
+   "score": 32.467
   },
   {
-   "headline": "【持之以恒推进全面从严治党】加强党的组织建设 夯实兴党强党根基",
+   "headline": "金秋好“丰”景！智能农机助力多地秋收跑出“加速度”",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/26/ARTI5wcEc6swm1BH4zYLQPOc261026.shtml",
-   "published": "2026-10-26T18:51:53+07:00",
-   "outlets": 3,
+   "url": "https://news.cctv.com/2026/10/27/ARTISqjI8ViqQaFVicSAI9HL261026.shtml",
+   "published": "2026-10-27T00:40:16+07:00",
+   "outlets": 2,
    "hot": false,
-   "score": 34.156
+   "score": 31.29
   }
  ]
 }
