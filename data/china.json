@@ -1,42 +1,42 @@
 {
- "updated_at": "2026-10-26T19:58:15+07:00",
+ "updated_at": "2026-10-27T02:56:17+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "驻华使节参观纪念中国工农红军长征胜利90周年主题展览",
+   "headline": "德国总统施泰因迈尔抵达安徽开始访华",
    "source": "中国新闻网",
-   "url": "http://www.chinanews.com.cn/tp/hd2011/2026/10-26/1208944.shtml",
-   "published": "2026-10-26T19:11:35+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721432.shtml",
+   "published": "2026-10-26T23:34:27+07:00",
+   "outlets": 4,
+   "hot": true,
+   "score": 51.982
+  },
+  {
+   "headline": "习近平《在纪念中国工农红军长征胜利90周年大会上的讲话》单行本出版",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721224.shtml",
+   "published": "2026-10-26T16:31:08+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 49.533
+   "score": 43.748
   },
   {
-   "headline": "国家能源局：我国风光累计装机容量突破20亿千瓦",
+   "headline": "美官员透露称美军已准备好再次大规模打击伊朗",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721128.shtml",
-   "published": "2026-10-26T14:06:54+07:00",
-   "outlets": 5,
+   "url": "https://www.chinanews.com.cn/gj/2026/10-26/10721428.shtml",
+   "published": "2026-10-26T21:37:18+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.81
+  },
+  {
+   "headline": "前三季度中国国内居民出游人次超53亿",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721407.shtml",
+   "published": "2026-10-26T21:03:40+07:00",
+   "outlets": 4,
    "hot": false,
-   "score": 46.486
-  },
-  {
-   "headline": "李强签署国务院令 公布《事业单位登记管理条例》",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721222.shtml",
-   "published": "2026-10-26T16:31:10+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 43.929
-  },
-  {
-   "headline": "中方祝贺卢拉在巴西总统大选中获胜",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721154.shtml",
-   "published": "2026-10-26T14:44:08+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 42.859
+   "score": 42.474
   },
   {
    "headline": "中国共产党第二十届中央委员会第五次全体会议在北京开始举行",
@@ -45,7 +45,16 @@
    "published": "2026-10-26T11:08:50+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 41.706
+   "score": 37.525
+  },
+  {
+   "headline": "马克龙：本周末示威活动仍存暴力冲突风险",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0NXQwaF81Y0RjQnloUzZUREtFd2Q2R3FRNGh6TzNEUHJyMm8yTmVjbHB2ZWFCX3NhTHdfQko5S3JxN0FjUEplVXZrN3plZkVKcFF3bXhmSllSalJsWVJGeVBiaG9oRm0teTJMMnJuWjJZUnRhR0dRdG5fbmJyYzA?oc=5",
+   "published": "2026-10-26T21:48:08+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 35.918
   },
   {
    "headline": "中国地震局：追踪调查首次发现西藏巴青7.0级地震地表破裂带",
@@ -54,7 +63,16 @@
    "published": "2026-10-26T14:44:59+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 39.867
+   "score": 35.687
+  },
+  {
+   "headline": "12306上线新功能 买团体票更方便",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/27/ARTIH2UOZ4VTqCdo66qxHXWx261026.shtml",
+   "published": "2026-10-27T02:22:37+07:00",
+   "outlets": 2,
+   "hot": false,
+   "score": 34.663
   },
   {
    "headline": "第九届进博会首批展品进馆",
@@ -63,7 +81,7 @@
    "published": "2026-10-26T19:33:07+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.749
+   "score": 34.568
   },
   {
    "headline": "【持之以恒推进全面从严治党】加强党的组织建设 夯实兴党强党根基",
@@ -72,25 +90,7 @@
    "published": "2026-10-26T18:51:53+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 38.336
-  },
-  {
-   "headline": "外媒：“麦加协议”三国高官将与伊朗官员会晤",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBEZzY5NXVndW1FZk5ybUFKdzNna1NLazJiNVlmdG9tX1d5THNHTVUtYTVzUzd5TzVJZ2hKdlhWakw5Y2dXU3NkRzJNLUZHQXFkQ0xjUTl6a3ByUHg5OGx1U0NfRXZRX2tiekJmN29CTGNGMWZ2Q0ZB?oc=5",
-   "published": "2026-10-26T10:39:18+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 37.41
-  },
-  {
-   "headline": "“北大仓”加强秋粮产后管理",
-   "source": "央视新闻",
-   "url": "https://photo.cctv.com/2026/10/26/PHOA3QUjPqHvclGaobkBxAQg261026.shtml",
-   "published": "2026-10-26T10:30:36+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 37.323
+   "score": 34.156
   }
  ]
 }
