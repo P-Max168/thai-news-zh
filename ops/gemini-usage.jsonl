@@ -1,0 +1,3 @@
+{"at": "2026-10-26T16:49:11+07:00", "edition": "2026-10-26-md", "task": "zh1-ko", "model": "gemini-3.8-flash", "published": 0, "seconds": 0, "error": "gemini 실패: http_503", "calls": 3, "prompt": 0, "output": 0, "thinking": 0, "total": 0}
+{"at": "2026-10-26T16:53:37+07:00", "edition": "2026-10-25-md", "task": "zh1-ko", "model": "gemini-3.8-flash", "published": 0, "seconds": 0, "error": "gemini 실패: http_503", "calls": 6, "prompt": 0, "output": 0, "thinking": 0, "total": 0}
+{"at": "2026-10-26T16:58:30+07:00", "edition": "2026-10-24-md", "task": "zh1-ko", "model": "gemini-3.8-flash", "published": 0, "seconds": 0, "error": "gemini 실패: http_503", "calls": 9, "prompt": 0, "output": 0, "thinking": 0, "total": 0}
