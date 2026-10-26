@@ -31,7 +31,8 @@ concurrency:
 jobs:
   edition:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 30분이면 Pages 대기(최대 15분) 뒤에 미러 번역이 잘릴 수 있다. 중국어 push 는 deploy.sh 안에서 먼저 끝난다.
+    timeout-minutes: 45
     env:
       TZ: Asia/Bangkok
     steps:
@@ -94,8 +95,27 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TNK_PUBLISHER: grok
           TNK_LIVE_CHECK: pages
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ZH1_MIRROR: ${{ vars.ZH1_MIRROR }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ops/gemini-usage.jsonl 2>/dev/null || true
           bash tools/deploy.sh
+          # 중국어 판 push 가 끝난 뒤에만 미러를 만든다. 여기부터는 실패해도 방금 배포를 되돌리지 않는다.
+          # 끄기: 저장소 Variable ZH1_MIRROR=off
+          set +e
+          if [ "${ZH1_MIRROR:-}" = "off" ]; then exit 0; fi
+          python3 ops/zh1_mirror.py run "${{ steps.ed.outputs.id }}" --backfill 3 || echo "::warning::zh1 번역 실패(중국어 판은 이미 배포됨)"
+          git add zh1
+          git add ops/gemini-usage.jsonl 2>/dev/null || true
+          if git diff --cached --quiet; then echo "zh1 변경 없음"; exit 0; fi
+          git commit -m "zh1: ${{ steps.ed.outputs.id }} 한국어 검수 미러" || { echo "::warning::zh1 커밋 실패"; exit 0; }
+          ok=""
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash -q origin main || { echo "::warning::zh1 rebase 실패(중국어 판은 이미 배포됨)"; exit 0; }
+            if git push origin HEAD:main; then ok=1; break; fi
+            echo "zh1 push 재시도 $i"; sleep $((i * 5))
+          done
+          if [ -z "$ok" ]; then echo "::warning::zh1 push 실패(중국어 판은 이미 배포됨)"; fi
+          exit 0
