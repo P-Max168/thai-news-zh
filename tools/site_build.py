@@ -9,7 +9,7 @@
 
 읽는 것(언어판 저장소): site/<lang>.json · site/topics.<lang>.json · i18n/<lang>.json
 만드는 것/고치는 것(언어판 저장소 안에서만):
-  data/site.js   window.TN_SITE = {lang, brand, i18n, topics, currency, home_section, hidden_sections, firestore_prefix, admins_doc, impacts_ui}
+  data/site.js   window.TN_SITE = {lang, brand, i18n, topics, currency, home_section, hidden_sections, firestore_prefix, admins_doc, impacts_ui, login(LINE 로그인 경로)}
   index.html     <html lang>, <title>·description·og·canonical·앱 이름, data/site.js 넣기, data-i18n 글자, 홈 나라 국기, 숨길 코너 CSS
   manifest.json  name·short_name·lang·description
 같은 파일에 여러 번 돌려도 결과가 같음(멱등). sync_core.sh 가 한국판 index.html 을 덮어쓴 뒤 → 이 스크립트 → deploy.
@@ -47,7 +47,7 @@ def flat(d, pre=""):
 
 def site_js(c, i18n):
     keep = {k: c.get(k) for k in ("lang", "htmlLang", "brand", "brand_sub", "site_url", "currency", "home_section", "hidden_sections",
-                                  "firestore_prefix", "admins_doc", "slots", "edition_label", "share", "wx_coords", "origin_hide_rx") if k in c}
+                                  "firestore_prefix", "admins_doc", "slots", "edition_label", "share", "wx_coords", "origin_hide_rx", "login") if k in c}
     keep["i18n"] = i18n
     keep["topics"] = {k: v for k, v in (c.get("topics") or {}).items() if not k.startswith("_") and k != "REGION_PATTERNS"}
     keep["impacts_ui"] = [{"k": k, "e": IMPACT_UI[i % 5][0], "c": IMPACT_UI[i % 5][1]} for i, k in enumerate(c.get("impacts") or [])]
@@ -57,6 +57,9 @@ def site_js(c, i18n):
 
 def _attr(s):
     return html.escape(s, quote=True)
+
+
+ROOT_FOR_SKIN = []
 
 
 def patch_index(t, c, i18n):
@@ -133,6 +136,14 @@ def patch_index(t, c, i18n):
     t = re.sub(r'<(\w+)\b[^>]*\sdata-i18n-aria="([\w.]+)"[^>]*>', repa, t)
     # aria-label 의 브랜드
     t = t.replace('aria-label="태국 뉴스 한눈에 홈"', 'aria-label="%s"' % _attr(f.get("brand_home", c["brand"])))
+    # 판 전용 겉모습(skin, 2026-10-25 — KSTAR): site/<lang>.json skin_css 가 있으면 배포본 assets/skin.css 를 맨 뒤에 연결(엔진·기능은 그대로, 색·글꼴만)
+    sk = c.get("skin_css")
+    t = re.sub(r'\n?<link rel="stylesheet" href="assets/skin\.css[^"]*" id="tn-skin">', "", t)
+    if sk:
+        import hashlib
+        sp = ROOT_FOR_SKIN[0] / sk if ROOT_FOR_SKIN else None
+        v = hashlib.sha256(sp.read_bytes()).hexdigest()[:8] if sp and sp.exists() else "1"
+        t = t.replace("</body>", '<link rel="stylesheet" href="assets/skin.css?v=%s" id="tn-skin">\n</body>' % v, 1)
     # 한국판 '지난 뉴스판' 링크 묶음(tools/seo.py home_edition_links)은 언어판에선 비움 — 한국판 판 목록·한국어 글이 따라오지 않게(2026-10-25)
     t = re.sub(r"(<!-- edition-links:start -->).*?(<!-- edition-links:end -->)", r"\1\2", t, count=1, flags=re.S)
     return t
@@ -154,6 +165,7 @@ def main():
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 바뀔지만 출력")
     a = ap.parse_args()
     root = pathlib.Path(a.root).resolve()
+    ROOT_FOR_SKIN[:] = [root]
     lg = siteconf.lang(root)
     if lg == "ko":
         print("site_build: 한국판(ko) — 건너뜀(화면은 index.html 그대로)")

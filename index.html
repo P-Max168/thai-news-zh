@@ -6,8 +6,8 @@
 <meta name="robots" content="index, follow, max-image-preview:large"><!-- 2026-10-18 검색 노출 허용(민구님 승인 05:30·08:00) -->
 <link rel="canonical" href="https://zh.pmaxone.com/"><!-- ?ed=<판> 으로 열면 app.js 가 /e/<판>/ 으로 바꿈 -->
 <title>泰国新闻速览 — 每天中文整理泰国本地新闻</title>
-<link rel="alternate" type="application/rss+xml" title="RSS" href="https://zh.pmaxone.com/feed.xml">
 <meta name="google-site-verification" content="DtP2tEd0o62MViKUUJFR5BhgfuvsxQvf3omU1z25nzk">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://tnews.pmaxone.com/feed.xml">
 <meta name="description" content="泰国本地媒体新闻中文整理：曼谷·芭提雅·清迈·普吉等地消息，签证·移民、生活·物价、天气·交通，以及涉华新闻。">
 <!-- 링크 미리보기(카카오톡 등). 판별 미리보기는 e/<판 id>/ (tools/share_kit.py) -->
 <meta property="og:type" content="website"><meta property="og:site_name" content="泰国新闻速览"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="泰国新闻速览 — 每天中文整理泰国本地新闻"><meta property="og:description" content="泰国本地媒体新闻中文整理：曼谷·芭提雅·清迈·普吉等地消息，签证·移民、生活·物价、天气·交通，以及涉华新闻。"><meta property="og:url" content="https://zh.pmaxone.com/"><meta property="og:image" content="https://zh.pmaxone.com/og/latest.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://zh.pmaxone.com/og/latest.png">
@@ -155,7 +155,7 @@ var u=location.href.replace(/([?&])theme=(g|modern|classic)(&|(?=#)|$)/,function
     <p class="footer__about" data-i18n="footer.about">把泰国媒体报道整理成中文的个人项目，详情请看原文链接。</p>
     <p><strong data-i18n="brand">泰国新闻速览</strong> <span data-i18n="footer.copyright">· 原文版权归各媒体所有 ·</span> <button type="button" class="linkbtn linkbtn--light" data-open-settings data-i18n="footer.settings">🧩 我的分类·偏好设置</button></p>
     <p class="footer__links"><a href="about.html" data-i18n="drawer.about">关于我们</a><a href="contact.html" data-i18n="drawer.contact">联系我们</a><a href="privacy.html" data-i18n="drawer.privacy">隐私政策</a><a href="terms.html" data-i18n="drawer.terms">使用条款</a></p>
-    
+    <!-- edition-links:start --><!-- edition-links:end -->
     <p class="footer__small" id="generated"></p>
   </div>
 </footer>
@@ -176,7 +176,7 @@ var u=location.href.replace(/([?&])theme=(g|modern|classic)(&|(?=#)|$)/,function
 <!-- 헤더 빠른 정보 칩(맨 위에 보이는 값이라 보통 우선순위 — 17:45 낮췄더니 첫 기사 카드 때 칩이 비어 있어서 되돌림). 아래 로그인·내 주변은 fetchpriority="low" = 판 데이터·app.js·CSS 를 먼저 받게(실행 순서는 그대로) -->
 <script src="assets/ticker.js?v=101db80f"></script>
 <!-- 선택 기능(Google 로그인·동기화·댓글): 못 불러와도 사이트는 그대로 동작 -->
-<script src="assets/social.js?v=412033d9" fetchpriority="low"></script>
+<script src="assets/social.js?v=3ea27aba" fetchpriority="low"></script>
 <!-- 📍 내 주변(헤더 셋째 줄 + #nearby/<id> 화면). defer = 드래곤 광고 스크립트 다음에 실행 -->
 <script src="assets/nearby.js?v=31624c97" fetchpriority="low" defer></script>
 <!-- 속도(2026-10-03 17:05): 쪽 화면(하트·승인함·가게 카드 등) 스크립트는 첫 기사 카드가 그려진 뒤 받음 — 느린 망에서 판 데이터와 대역을 나눠 쓰지 않게.
