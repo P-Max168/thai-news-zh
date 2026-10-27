@@ -172,7 +172,9 @@
   "title": "泰国新闻速览 — 每天中文整理泰国本地新闻",
   "description": "泰国本地媒体新闻中文整理：曼谷·芭提雅·清迈·普吉等地消息，签证·移民、生活·物价、天气·交通，以及涉华新闻。",
   "og_locale": "zh_CN",
-  "verification": {}
+  "verification": {
+   "google-site-verification": "DtP2tEd0o62MViKUUJFR5BhgfuvsxQvf3omU1z25nzk"
+  }
  },
  "_schedule_note": "2026-10-27 맥스님: 하루 3판(am/md/pm). 시험(test md만) 종료."
 }
