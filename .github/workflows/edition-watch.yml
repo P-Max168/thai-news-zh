@@ -9,10 +9,10 @@
 name: edition-watch
 
 on:
-  # schedule:
-    # (zh) 13:00 점심판 빌드 루틴이 생기면 켬 — 지금 켜면 판이 없어서 매일 이슈가 열림(2026-10-18 Grok)
-    # - cron: "50 * * * *"
-    # - cron: "41 1,12 * * *"
+  schedule:
+    # 2026-10-27 맥스님: 하루 3판 — 매시 :50 + 허용 직후 체크
+    - cron: "50 * * * *"
+    - cron: "41 1,5,12 * * *"   # 08:41·12:41·19:41 BKK 근처
   workflow_dispatch:
     inputs:
       dry_run:

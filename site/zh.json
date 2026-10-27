@@ -7,31 +7,30 @@
  "domain": "zh.pmaxone.com",
  "repo": "P-Max168/thai-news-zh",
  "schedule": {
-  "test": [
-   {
-    "slot": "md",
-    "build": "13:00",
-    "push_by": "13:50",
-    "hard_stop": "17:50"
-   }
-  ],
   "full": [
    {
     "slot": "am",
-    "build": "06:00"
+    "build": "07:20",
+    "push_by": "08:10",
+    "hard_stop": "10:00"
    },
    {
     "slot": "md",
-    "build": "12:30"
+    "build": "12:20",
+    "push_by": "13:10",
+    "hard_stop": "15:00"
    },
    {
     "slot": "pm",
-    "build": "19:00"
+    "build": "18:20",
+    "push_by": "19:10",
+    "hard_stop": "21:00"
    }
   ],
   "no_push_windows": [
-   "07:00-08:10",
-   "18:00-18:40"
+   "07:20-08:30",
+   "12:20-13:30",
+   "18:20-19:30"
   ],
   "tz": "Asia/Bangkok"
  },
@@ -147,9 +146,19 @@
  "label_format": "{m}月{d}日 {slot}",
  "watch_slots": [
   [
+   "am",
+   7,
+   20
+  ],
+  [
    "md",
-   13,
-   0
+   12,
+   20
+  ],
+  [
+   "pm",
+   18,
+   20
   ]
  ],
  "impacts": [
@@ -164,5 +173,6 @@
   "description": "泰国本地媒体新闻中文整理：曼谷·芭提雅·清迈·普吉等地消息，签证·移民、生活·物价、天气·交通，以及涉华新闻。",
   "og_locale": "zh_CN",
   "verification": {}
- }
+ },
+ "_schedule_note": "2026-10-27 맥스님: 하루 3판(am/md/pm). 시험(test md만) 종료."
 }
