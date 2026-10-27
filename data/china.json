@@ -1,96 +1,96 @@
 {
- "updated_at": "2026-10-27T12:00:35+07:00",
+ "updated_at": "2026-10-27T19:30:29+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "甘浙特高压长江大跨越完成架线",
-   "source": "央视新闻",
-   "url": "https://photo.cctv.com/2026/10/27/PHOARWEMtz4NYtNbXISu7hq1261027.shtml",
-   "published": "2026-10-27T08:13:08+07:00",
+   "headline": "习近平向日本前首相福田康夫遗属致唁电",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721788.shtml",
+   "published": "2026-10-27T18:03:53+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 48.725
+   "score": 53.134
   },
   {
-   "headline": "上海市委统战部系统离退休干部纪念中国工农红军长征胜利90周年主题书画展举办",
+   "headline": "外交部：高度关注中东海湾和红海、非洲之角地区局势变化",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/txy/2026/10-27/10721479.shtml",
-   "published": "2026-10-27T11:53:27+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 45.929
-  },
-  {
-   "headline": "中印尼“利刃-2026”陆军反恐联合训练举行开训仪式",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721546.shtml",
-   "published": "2026-10-27T10:27:57+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721680.shtml",
+   "published": "2026-10-27T14:48:47+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 45.074
+   "score": 43.183
   },
   {
-   "headline": "德国总统施泰因迈尔抵达安徽开始访华",
+   "headline": "外交部：中国愿同全世界爱好和平的国家和人民一道坚定守护历史真相",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721432.shtml",
-   "published": "2026-10-26T23:34:27+07:00",
-   "outlets": 3,
+   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721688.shtml",
+   "published": "2026-10-27T14:44:21+07:00",
+   "outlets": 2,
    "hot": true,
-   "score": 42.539
+   "score": 43.139
   },
   {
-   "headline": "日本防灾大臣拟发“紧急呼吁” 敦促民众做好防灾准备",
+   "headline": "习言道｜持之以恒推进全面从严治党",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/27/ARTIW4uEBqWr1A7wr7KofMnF261027.shtml",
+   "published": "2026-10-27T19:06:44+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.762
+  },
+  {
+   "headline": "思想如炬，照亮新的赶考路——习近平党建思想书写马克思主义建党学说中国化时代化新篇章",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/27/ARTIqdL7721R5xHR24ym8ki3261027.shtml",
+   "published": "2026-10-27T18:49:47+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 42.593
+  },
+  {
+   "headline": "汪顺、叶诗文走进北工大 讲述“泳”者成长路",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721557.shtml",
-   "published": "2026-10-27T11:29:04+07:00",
+   "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721845.shtml",
+   "published": "2026-10-27T19:10:17+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 41.685
+   "score": 41.798
   },
   {
-   "headline": "人民日报 2026年10月27日 星期二",
-   "source": "人民日报",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5LSEEyVllOOWpiLVZaLXFVMWZPY0hhS1FRSHVsa0dpWS1mVElNN0UxZkNyc1NZaHdrVW53NzByUU5nM2Zka0JldWhyM3gtdk04MVFhMnFjSFl2YnMzUW8zWTRpbFZWSlRzZ1FxS19TWWhPTDg?oc=5",
-   "published": "2026-10-27T05:11:39+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.911
-  },
-  {
-   "headline": "“一带一路”绿色创新大会2026在港开幕 共商全球南方绿色转型",
+   "headline": "蒙古国总理将东部保护区大火定性为严重生态事件",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE03QVdzY29reEtuRzhDblZJUGxTQUN2a2ZhLUF6b05jMS1UWGo0YU43Tk9IM21jTTZERzU3QWxMd25IUTZRRzhQQ0h2Uk80VXJ0ckxmclNBd3V6Um43M0l6R2tDSGJ3TWFNR3BiWVFMZGxYUEtEZnow?oc=5",
-   "published": "2026-10-26T23:12:54+07:00",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1YVDFwUFVpSndMa0ZsVkRrUmdGelV0NUlLV0ZhRGI0LThaQlgwdWlsRTJzeUhCWkZXNmRHbnNUNy1oU0F0dHFYUy1sVHBvU2t1STFubEF3NGZJdkU1S3VtT0J5RnZWUEl4NE5FdTBRdEswaFFOWld6NzcxZHJfUEk?oc=5",
+   "published": "2026-10-27T11:29:20+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 35.323
+   "score": 38.188
   },
   {
-   "headline": "致敬“城市美容师” 天津2.3万名环卫工人迎来第三十届环卫工人节",
-   "source": "人民网",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UU1JGVkZ2VjVrYl9ZNkxxck1fTklvNThDM3NCSlBsaGdSeFlLVXVhTkxRalUtSEQ1bDFja1FrY3Z3allFZTlJT21YWmhfdmZWVVdzamItNGVMZ0dZWi1pWHRMQlpUYlpjcFE?oc=5",
-   "published": "2026-10-27T09:04:00+07:00",
+   "headline": "韩国大法院签发对金建希的延长羁押令",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LeWJ1RFM0aGtLRUpLUmo5Qy1YVURaUEFjYmtpT2UtN0VIdW9vSENodUdOU2UxZ3YxeVRGVlhKVUpqQS05NXpQdl9vd1A2Zzg1YWdhUGN4RjNzSFFoelNBTGxSYTVfWXNBYi1sNTJ2cW5FaF9lcmxJ?oc=5",
+   "published": "2026-10-27T16:41:56+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 34.234
+   "score": 37.314
   },
   {
-   "headline": "希望的田野上一幅秋粮抢收画卷正徐徐展开 秸秆“二次增收”走出共赢新路径",
+   "headline": "习言道｜这样的苹果，习近平说“现在也不能吃”",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/27/ARTIPGGUC6QoOagiUJf4AvPK261027.shtml",
-   "published": "2026-10-27T10:29:09+07:00",
-   "outlets": 2,
-   "hot": false,
-   "score": 34.086
+   "url": "https://news.cctv.com/2026/10/27/ARTIQQNokP8nblzTzPrbXAIG261027.shtml",
+   "published": "2026-10-27T14:57:16+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 36.268
   },
   {
-   "headline": "“良机良技+田间服务”为秋种保驾护航 为来年夏粮丰收打下坚实根基",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/27/ARTIh5Pkj8XDOfxUalLpQw1r261027.shtml",
-   "published": "2026-10-27T09:57:53+07:00",
-   "outlets": 2,
-   "hot": false,
-   "score": 33.773
+   "headline": "慢火车不挣钱，为什么还要开？",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSk53czZKNkZ6ZHFnTGl5dm8ycFF2SFZ0akppSzdNRlZVbE1KMm9raXF0eDU0VWV6TUdBUTFXOXE5V1FWOGpOakl6VWUzb285bVY3WDRjcTdMb3hPRDIxQTVvdEN4NW9WYWhBcU5tZnIxMHFHM1AzMTNhU0lTaFhfeWRUNA?oc=5",
+   "published": "2026-10-27T14:46:38+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 36.161
   }
  ]
 }
