@@ -4,3 +4,4 @@
 {"edition": "2026-10-26-md", "publisher": "claude", "candidates": null, "candidate_chars": 242811, "stories": 8, "generated": "2026-10-26T13:42:58+07:00", "recorded": "2026-10-26T13:43:45+07:00", "claims": "2026-10-26-md: claude"}
 {"edition": "2026-10-26-md", "publisher": "claude", "candidates": null, "candidate_chars": null, "stories": 8, "generated": "2026-10-26T13:42:58+07:00", "recorded": "2026-10-26T18:41:14+07:00", "claims": "2026-10-26-md: claude"}
 {"edition": "2026-10-27-md", "publisher": "claude", "candidates": null, "candidate_chars": null, "stories": 7, "generated": "2026-10-27T13:42:15+07:00", "recorded": "2026-10-27T13:42:48+07:00", "claims": "2026-10-27-md: claude, grok"}
+{"edition": "2026-10-28-am", "publisher": "grok", "candidates": 1336, "candidate_chars": null, "stories": 22, "generated": "2026-10-28T10:00:59+07:00", "recorded": "2026-10-28T10:01:02+07:00", "claims": "2026-10-28-am: grok"}
