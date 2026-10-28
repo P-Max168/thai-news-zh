@@ -107,7 +107,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ops/gemini-usage.jsonl 2>/dev/null || true
+          git add ops/gemini-usage.jsonl ops/gemini-spend.json 2>/dev/null || true
           bash tools/deploy.sh
           # 중국어 판 push 가 끝난 뒤에만 미러를 만든다. 여기부터는 실패해도 방금 배포를 되돌리지 않는다.
           # 끄기: 저장소 Variable ZH1_MIRROR=off
@@ -115,7 +115,7 @@ jobs:
           if [ "${ZH1_MIRROR:-}" = "off" ]; then exit 0; fi
           python3 ops/zh1_mirror.py run "${{ steps.ed.outputs.id }}" --backfill 3 || echo "::warning::zh1 번역 실패(중국어 판은 이미 배포됨)"
           git add zh1
-          git add ops/gemini-usage.jsonl 2>/dev/null || true
+          git add ops/gemini-usage.jsonl ops/gemini-spend.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "zh1 변경 없음"; exit 0; fi
           git commit -m "zh1: ${{ steps.ed.outputs.id }} 한국어 검수 미러" || { echo "::warning::zh1 커밋 실패"; exit 0; }
           ok=""
@@ -139,7 +139,7 @@ jobs:
           if [ ! -f ops/edition-fail.json ]; then
             printf '%s\n' "{\"at\":\"$(TZ=Asia/Bangkok date +%Y-%m-%dT%H:%M:%S+07:00)\",\"edition\":\"${eid}\",\"error\":\"workflow_failure_no_edition_fail_file\"}" > ops/edition-fail.json
           fi
-          git add ops/edition-fail.json ops/gemini-usage.jsonl 2>/dev/null || true
+          git add ops/edition-fail.json ops/gemini-usage.jsonl ops/gemini-spend.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "커밋할 실패 기록 없음"; exit 0; fi
           git commit -m "ops: edition-fail ${eid} (gemini 실패 기록)" || exit 0
           git fetch -q origin main
