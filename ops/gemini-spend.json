@@ -1,7 +1,7 @@
 {
   "day": "2026-10-28",
   "tz": "Asia/Bangkok",
-  "cap_thb": 200,
+  "cap_thb": 200.0,
   "usd_thb": 34.0,
   "pricing_source": "https://ai.google.dev/gemini-api/docs/pricing",
   "pricing_read": "2026-10-28",
@@ -15,8 +15,50 @@
       "output": 3.75
     }
   },
-  "spent_thb": 0.0,
-  "spent_usd": 0.0,
-  "entries": [],
-  "note": "Shared Gemini daily spend tally (project-wide). Day resets 00:00 Asia/Bangkok. Cap is code-enforced; Google budgets only alert."
+  "spent_thb": 5.019808,
+  "spent_usd": 0.1476414,
+  "entries": [
+    {
+      "id": "usage:P-Max168/thai-news-kr:2026-10-28-am",
+      "at": "2026-10-28T07:29:54+07:00",
+      "day": "2026-10-28",
+      "repo": "P-Max168/thai-news-kr",
+      "edition": "2026-10-28-am",
+      "model": "gemini-3.5-flash-lite",
+      "prompt": 36034,
+      "output": 15228,
+      "thinking": 0,
+      "cost_usd": 0.0488802,
+      "cost_thb": 1.661927,
+      "source": "usage_jsonl"
+    },
+    {
+      "id": "usage:P-Max168/vn-news-kr:2026-10-28-am",
+      "at": "2026-10-28T08:41:42+07:00",
+      "day": "2026-10-28",
+      "repo": "P-Max168/vn-news-kr",
+      "edition": "2026-10-28-am",
+      "model": "gemini-3.5-flash-lite",
+      "prompt": 32751,
+      "output": 9889,
+      "thinking": 0,
+      "cost_usd": 0.0345478,
+      "cost_thb": 1.174625,
+      "source": "usage_jsonl"
+    },
+    {
+      "id": "usage:P-Max168/thai-news-zh:2026-10-28-am",
+      "at": "2026-10-28T10:00:59+07:00",
+      "day": "2026-10-28",
+      "repo": "P-Max168/thai-news-zh",
+      "edition": "2026-10-28-am",
+      "model": "gemini-3.5-flash-lite",
+      "prompt": 59353,
+      "output": 18563,
+      "thinking": 0,
+      "cost_usd": 0.0642134,
+      "cost_thb": 2.183256,
+      "source": "usage_jsonl"
+    }
+  ]
 }
