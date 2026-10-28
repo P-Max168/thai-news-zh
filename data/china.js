@@ -1,96 +1,96 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-28T08:30:14+07:00",
+ "updated_at": "2026-10-28T15:27:17+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "习近平致电祝贺卢拉当选连任巴西总统",
+   "headline": "中方：对中东地区局势持续紧张深表关切 反对攻击民用目标",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721787.shtml",
-   "published": "2026-10-27T18:02:07+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-28/10722222.shtml",
+   "published": "2026-10-28T14:40:09+07:00",
    "outlets": 4,
    "hot": true,
-   "score": 45.319
+   "score": 53.529
   },
   {
-   "headline": "特朗普夫人：“俄乌奥列什基停火提前生效，范围已扩大”",
+   "headline": "蔡康永称“没有支持过‘台独’” 国台办回应",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-28/10721974.shtml",
-   "published": "2026-10-28T06:43:55+07:00",
-   "outlets": 2,
+   "url": "https://www.chinanews.com.cn/gn/2026/10-28/10722173.shtml",
+   "published": "2026-10-28T13:45:20+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 44.937
+   "score": 48.98
   },
   {
-   "headline": "美军在东太平洋对一艘“贩毒船”实施打击 已致5人死亡",
+   "headline": "澳大利亚向中方返还2件流失文物",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-28/10721971.shtml",
-   "published": "2026-10-28T06:21:40+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 44.714
-  },
-  {
-   "headline": "中方：对英警方任意、过度执法行为强烈不满、严重关切",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721665.shtml",
-   "published": "2026-10-27T14:31:04+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 43.208
-  },
-  {
-   "headline": "巴西自由党众议员称弗拉维奥·博索纳罗已前往美国",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XbmM2Q3JuWmNKVzBoSUNrNXdXWi1mTVdkcm9LTGJkVjV1cGJRejRqTmt5bC1CRGRlNnlyYUo4TG5nNGRNS2hQYk9DbUtFcU1GNHVRTWhzVkpWZUhCNVRhRWNuWmZYUlBEWlVlOEtmc05pY0FHZjFRLVpRTnVDRWc?oc=5",
-   "published": "2026-10-28T04:55:44+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 40.855
-  },
-  {
-   "headline": "国开行：已完成今年3650亿元新型政策性金融工具投放任务",
-   "source": "央视新闻",
-   "url": "https://jingji.cctv.com/2026/10/28/ARTIhpck8iy4lNX1hflNvm7X261027.shtml",
-   "published": "2026-10-28T04:22:25+07:00",
-   "outlets": 4,
+   "url": "https://www.chinanews.com.cn/gj/2026/10-28/10722195.shtml",
+   "published": "2026-10-28T14:27:46+07:00",
+   "outlets": 3,
    "hot": false,
-   "score": 40.522
+   "score": 41.405
   },
   {
-   "headline": "东北地区气温多波动 明夜起西藏等地将现强降雪",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/28/ARTIz9ioRi4tJHr9gNzc4R08261028.shtml",
-   "published": "2026-10-28T07:17:21+07:00",
+   "headline": "每月生产300枚导弹、1万架无人机？伊朗加紧战备工作",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-28/10722129.shtml",
+   "published": "2026-10-28T14:26:48+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.271
+   "score": 41.395
   },
   {
-   "headline": "以色列议会选举投票率达77.7% 创27年来新高",
+   "headline": "首单水利设施发电不动产投资信托基金上市 重点用于重大水利工程建设",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/28/ARTIbTshwQJeuSaXR0mrJYr9261028.shtml",
+   "published": "2026-10-28T14:44:10+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 38.569
+  },
+  {
+   "headline": "8位在韩中国人民志愿军烈士身份被确认",
    "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uRU9UT2l5bmVublQ5dTBhX1VmMTkxY1pVbWRLa0FYX2h0VkNGREpMT1FUSDdkQ19PSzl4cUhrSmMxcy1Qc2hNNHlTTEJnQ3ctRm9FNWJldlQ1a29WRlBOZTlFVUwzbFg5c2Z6NEtqTlN3RjJjTUxWWm43UEI3MlE?oc=5",
-   "published": "2026-10-28T07:10:00+07:00",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9WcHZCRGU5OC1wdVB0Tm9SSEN5aHhaYU9JX2tHQXNwaEt0X0NDSnBxbkJ2Z2VPLTZsMjRfUm94dW1FcTd5TUFheGpRV0lYLU5IODhkYmtTWlVQUzM0R3ltUVpfLTcyN3Z1SDhLSWdJTm1FWlQ4NDNn?oc=5",
+   "published": "2026-10-28T11:54:20+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 36.87
+  },
+  {
+   "headline": "第140届广交会第二期圆满收官",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE04UENNZkZJd05VRy13Mk5IMU52cDlsNVhIQ24zTFFTWGhQLVJVcTVaOWNqRVZIVVdDcEtBQmhvU3V3dnB2ZDFMME9aejVlUGN1M19FZ09fMU15MER5ZTM5SWxWUnA1a0ZENE9hamVBZHZnYUd2STEw?oc=5",
+   "published": "2026-10-28T10:20:00+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 35.927
+  },
+  {
+   "headline": "河北曹妃甸：秋盐收获忙",
+   "source": "央视新闻",
+   "url": "https://photo.cctv.com/2026/10/28/PHOAnLOTY10Sh4YHxadvqQYC261028.shtml",
+   "published": "2026-10-28T09:35:10+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 35.479
+  },
+  {
+   "headline": "新疆阜康：天山天池风光如画",
+   "source": "央视新闻",
+   "url": "https://photo.cctv.com/2026/10/28/PHOAmALBzosDdmK49q5Fz9z6261028.shtml",
+   "published": "2026-10-28T09:18:07+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 35.308
+  },
+  {
+   "headline": "美疾控中心：19种病原体每年致美国超5万人死亡",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5OYjdXU2IxMjlfdkFFNC1QMXhNSzVLUkpGb3QxMXlzckJjMG54MFNuQng4MEJZUTFaeWRINWVndzY4Y1AyMktLTmt0aDFIOFBwUU5JVGI4UTVSYlA2eGRaajNwNnE5elJkRTIyaFk3TzlyN1ZWeU45U29ZWGN3NDA?oc=5",
+   "published": "2026-10-28T09:10:39+07:00",
    "outlets": 1,
    "hot": true,
-   "score": 38.198
-  },
-  {
-   "headline": "突出三大特色 第十二届中国曲艺节在四川广安开幕",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Vb2ZxbGZLcXo4UmZyenc4SmZXSmdFNGYyVW1fSFJuYURCV3dDZHJZcnZ0a0s0LVA1ckpHSmtKWVJLUnRDUTNFQTdMTjVRTWtXb2t5cTBqMzJ5OGNwZ0Zua1hmQlBMRlhzelotZWpGLVZDR1ItWUYyN2pTdjJRYzQ?oc=5",
-   "published": "2026-10-27T21:46:45+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 36.565
-  },
-  {
-   "headline": "习言道｜持之以恒推进全面从严治党",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/27/ARTIW4uEBqWr1A7wr7KofMnF261027.shtml",
-   "published": "2026-10-27T19:06:44+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 34.965
+   "score": 35.234
   }
  ]
 };
