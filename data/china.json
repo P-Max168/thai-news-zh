@@ -1,42 +1,15 @@
 {
- "updated_at": "2026-10-29T19:57:20+07:00",
+ "updated_at": "2026-10-30T02:37:19+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "受权发布丨中国共产党第二十届中央委员会第五次全体会议公报",
+   "headline": "“中国蓝色海湾整治行动”获评2026年联合国“世界生态恢复旗舰项目”",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10722853.shtml",
-   "published": "2026-10-29T16:59:07+07:00",
-   "outlets": 4,
-   "hot": true,
-   "score": 52.218
-  },
-  {
-   "headline": "西班牙列车相撞事故死亡人数升至69人",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9QV0Fka19PU2k5V0t1UUlxZ2ozeVVydWZHRGVwOUFydUFXeTdXX2lSbmI2VDlpc1hfaUsyU3lMeURHbEdYZWUtVVZucFBDSk1OZF9TRTBYUHJJNE9oX1kycXhUeUtwMWl4VWRwWjdtWGpDUnpEcl9N?oc=5",
-   "published": "2026-10-29T19:42:58+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 46.856
-  },
-  {
-   "headline": "今年以来以旧换新带动相关品类销售额超2万亿元",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/29/ARTIpmIYqA8HBO2zB8LjogAS261029.shtml",
-   "published": "2026-10-29T19:05:29+07:00",
-   "outlets": 5,
-   "hot": false,
-   "score": 46.481
-  },
-  {
-   "headline": "伊朗伊斯兰革命卫队称捕获一架美军间谍无人机",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-29/10722963.shtml",
-   "published": "2026-10-29T19:13:18+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723076.shtml",
+   "published": "2026-10-29T22:43:20+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 45.56
+   "score": 43.66
   },
   {
    "headline": "前三季度我国跨区域人员流动量超512亿人次",
@@ -45,43 +18,70 @@
    "published": "2026-10-29T15:50:01+07:00",
    "outlets": 3,
    "hot": true,
-   "score": 44.527
+   "score": 40.527
   },
   {
-   "headline": "中共中央将于30日上午举行新闻发布会 介绍和解读党的二十届五中全会精神",
+   "headline": "2026年中国贵金属论坛在昆明举行 AI与贵金属“双向奔赴”成焦点",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10722856.shtml",
-   "published": "2026-10-29T17:02:17+07:00",
+   "url": "https://www.chinanews.com.cn/cj/2026/10-29/10723082.shtml",
+   "published": "2026-10-29T22:51:56+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 39.746
+  },
+  {
+   "headline": "天津开展巾帼宣讲员风采展示活动 讲好巾帼建功奋斗故事",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723069.shtml",
+   "published": "2026-10-29T22:34:19+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 39.57
+  },
+  {
+   "headline": "王毅同冰岛外长贡纳尔斯多蒂尔会谈",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723067.shtml",
+   "published": "2026-10-29T22:33:35+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 39.563
+  },
+  {
+   "headline": "今年以来以旧换新带动相关品类销售额超2万亿元",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/29/ARTIpmIYqA8HBO2zB8LjogAS261029.shtml",
+   "published": "2026-10-29T19:05:29+07:00",
    "outlets": 4,
    "hot": false,
-   "score": 44.249
+   "score": 38.482
   },
   {
-   "headline": "党的二十届五中全会审议通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-29/10722854.shtml",
-   "published": "2026-10-29T17:01:39+07:00",
-   "outlets": 4,
+   "headline": "武契奇：塞尔维亚前进党将启动改革计划",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03bjZlZG1CUXRaNHVkdFNuSzlTT1dZd2lQeXd4em5BLVM0Y21vR21YUDNLSnBzYThtZWNLWGVZcGh1QVdMYXdWWDBOTlU0OHpWb0FNa2wzR3dzeWZPNk8zZ1dkRUJITUFIRnRXeWNHeFhWZEVMRGdkNDFYTmxYM0k?oc=5",
+   "published": "2026-10-29T22:05:41+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 36.284
+  },
+  {
+   "headline": "海南自贸港跨境贸易投资便利化水平持续提升",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTd0E5dGZLMXdFQVByUjNQX19Ec3ZXRkNBbTMwTlg3TjlsTGQzemt3QXVCU2FwdHFaSXhreXplSzZFRk9QWjFUTEJ6enpHcXRjM3IzT25rdVZ1U05iWTdzOVhWZmgydVZrUHJyWkY5SFVpckRRQy1z?oc=5",
+   "published": "2026-10-29T19:55:42+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 34.984
+  },
+  {
+   "headline": "习近平就西班牙高速列车追尾脱轨事故向西班牙国王致慰问电 李强向西班牙首相致慰问电",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/29/ARTIktsYmi8hV9ei3NrU6RZ1261029.shtml",
+   "published": "2026-10-29T18:45:14+07:00",
+   "outlets": 3,
    "hot": false,
-   "score": 44.243
-  },
-  {
-   "headline": "商务部：如欧方对中国产品采取歧视性限制措施，中方必将采取一切必要措施",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/29/ARTI1JNvJeEjodverGDuGwdK261029.shtml",
-   "published": "2026-10-29T14:28:57+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 43.716
-  },
-  {
-   "headline": "商务部等四部门：进一步提高海南自由贸易港贸易自由化便利化水平",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/29/ARTI3WsIFt074gipzsmD6VvU261029.shtml",
-   "published": "2026-10-29T10:46:34+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 41.492
+   "score": 34.279
   },
   {
    "headline": "外交部：日本始终存在一股势力企图丑化、抹黑中国",
@@ -90,7 +90,7 @@
    "published": "2026-10-29T17:27:19+07:00",
    "outlets": 3,
    "hot": false,
-   "score": 37.5
+   "score": 33.5
   }
  ]
 }
