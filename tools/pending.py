@@ -55,7 +55,8 @@ def discussion_items(start_no):
 
 
 def main():
-    md = (ROOT / "PENDING_APPROVAL.md").read_text(encoding="utf-8")
+    src = ROOT / "PENDING_APPROVAL.md"
+    md = src.read_text(encoding="utf-8") if src.exists() else ""  # zh 저장소엔 표 파일이 없음 — 빈 목록으로 진행
     items = parse(md)
     items += discussion_items(max([x["no"] for x in items] or [0]) + 1)
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7))).strftime("%Y-%m-%dT%H:%M:%S+07:00")

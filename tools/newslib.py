@@ -186,7 +186,11 @@ def krw_text(won):
 
 def cny_text(yuan):
     """인민폐 금액 → 약 3유효숫자 + 万/亿. 예: 70 / 1.23万 / 123亿 (뒤에 '元'은 호출측에서)."""
-    w = _round_sig(abs(yuan), 3)
+    a = abs(yuan)
+    if a < 1:   # 2026-10-29: 1元 미만을 정수로 반올림하면 '约0元' — 소수로 쓴다(0.2 / 0.04)
+        t = ("%.1f" % a) if round(a, 1) >= 0.1 else ("%.2f" % max(a, 0.01))
+        return t[:-2] if t.endswith(".0") else t
+    w = _round_sig(a, 3)
     if w >= 10 ** 8:
         return _fmt_coef(w / 10 ** 8) + "亿"
     if w >= 10 ** 4:
