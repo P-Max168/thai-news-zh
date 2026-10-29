@@ -44,6 +44,9 @@ jobs:
       - name: 최근 판 번역
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          SPEND_HUB_TOKEN: ${{ secrets.SPEND_HUB_TOKEN }}
+          # SPEND_HUB_TOKEN: zh/vn은 thai-news-kr 허브 쓰기용 PAT 필요. 없으면 유료 호출 차단(상한 도달로 간주).
           ZH1_MIRROR: ${{ vars.ZH1_MIRROR }}
         run: |
           n="${{ inputs.backfill || '3' }}"

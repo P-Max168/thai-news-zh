@@ -79,6 +79,11 @@ UI = {
 }
 USAGE = {"calls": 0, "prompt": 0, "output": 0, "thinking": 0, "total": 0}
 
+# 일일 200바트 상한(예약-후-호출). tools/gemini_spend.py
+import sys as _sys
+_sys.path.insert(0, str(ROOT / "tools"))
+import gemini_spend  # noqa: E402
+
 
 def off():
     return os.environ.get("ZH1_MIRROR", "").strip().lower() in ("0", "off", "false", "no")
@@ -253,27 +258,45 @@ def prompt_for(src, label):
     )
 
 
-def call_gemini(prompt, key, model):
+def call_gemini(prompt, key, model, meta=None):
     import requests
     payload_g = {"contents": [{"parts": [{"text": prompt}]}],
                  "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1, "maxOutputTokens": 16000,
                                       "thinkingConfig": {"thinkingLevel": "low"}}}
     last = "unknown"
+    meta = dict(meta or {}, task="zh1-ko")
     for attempt in range(3):
+        rsv = None
+        try:
+            rsv = gemini_spend.guard_or_raise(ROOT, model, prompt, meta=meta)
+        except (gemini_spend.SpendCapExceeded, gemini_spend.LedgerUnavailable) as ex:
+            raise RuntimeError("spend_cap:%s" % ex)
         USAGE["calls"] += 1
         try:
             r = requests.post(API % model, headers={"x-goog-api-key": key, "Content-Type": "application/json"},
                               json=payload_g, timeout=180)
         except Exception as ex:
             last = "transport_" + type(ex).__name__
+            try:
+                gemini_spend.release(ROOT, rsv, reason=last)
+            except Exception:
+                pass
             time.sleep(8)
             continue
         if r.status_code in (429, 500, 503):
             last = "http_%d" % r.status_code
+            try:
+                gemini_spend.release(ROOT, rsv, reason=last)
+            except Exception:
+                pass
             time.sleep(20 * (attempt + 1))
             continue
         if r.status_code != 200:
             last = "http_%d" % r.status_code
+            try:
+                gemini_spend.release(ROOT, rsv, reason=last)
+            except Exception:
+                pass
             raise RuntimeError("gemini http %d" % r.status_code)
         d = r.json()
         u = d.get("usageMetadata") or {}
@@ -281,6 +304,10 @@ def call_gemini(prompt, key, model):
         USAGE["output"] += int(u.get("candidatesTokenCount") or 0)
         USAGE["thinking"] += int(u.get("thoughtsTokenCount") or 0)
         USAGE["total"] += int(u.get("totalTokenCount") or 0)
+        try:
+            gemini_spend.record_usage(ROOT, model, u, meta=meta, call_i=USAGE["calls"], reservation=rsv)
+        except Exception as _sx:
+            print("zh1 spend 기록 실패(예약 TTL 확정): %s" % type(_sx).__name__, flush=True)
         c = (d.get("candidates") or [{}])[0]
         text = "".join(p.get("text", "") for p in (c.get("content") or {}).get("parts", []) if not p.get("thought")).strip()
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
@@ -386,7 +413,7 @@ def translate_one(eid, key, model, usage_file):
         raise RuntimeError("중국어 판 없음")
     label = index_label_of(eid)
     t0 = time.time()
-    out = call_gemini(prompt_for(src, label), key, model)
+    out = call_gemini(prompt_for(src, label), key, model, meta={"edition": eid})
     ov = overlay_from_model(src, out, label)
     write_ko(eid, src, ov, "gemini", model)
     log_usage(eid, model, len(src.get("stories") or []), time.time() - t0, usage_file=usage_file)
