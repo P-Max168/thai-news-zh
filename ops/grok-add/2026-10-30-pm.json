@@ -1,0 +1,30 @@
+{
+  "edition": "2026-10-30-pm",
+  "by": "grok",
+  "at": "2026-10-30T17:09:00+07:00",
+  "big_event": null,
+  "add": [
+    {
+      "url": "https://www.thaiheadlines.com/194416/",
+      "source": "泰国头条新闻",
+      "title": "3名中国男子被同胞骗来泰国，遭捆绑封嘴险被转运缅甸！泰国警方紧急营救",
+      "published": "2026-10-30T14:15:52+07:00",
+      "topic": "외국인 사건사고",
+      "why": "X 중국어권에서 '메솟 인근 중국인 3명 결박·납치, 미얀마 사기단지로 이송 시도' 글과 사기단지 경고 글이 퍼지는 중, 泰国头条新闻 기사로 확인",
+      "angle": ""
+    },
+    {
+      "url": "https://www.thaiheadlines.com/194408/",
+      "source": "泰国头条新闻",
+      "title": "泰国部长：正常赴泰游客不太可能无故被绑走！",
+      "published": "2026-10-29T17:17:10+07:00",
+      "topic": "중국인 관광객 안전",
+      "why": "X에서 '태국 장관, 중국인 관광객 안전 언급' 글이 오늘도 공유되고 '태국은 왜 중국인만 사고가 나나' 질문 글이 도는 중, 泰国头条新闻 기사로 확인",
+      "angle": ""
+    }
+  ],
+  "boost": [
+    { "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNXgtN3NIdm1kR1pDSVgxcy1TTWhnYWVaM0tnRWdGNVZmTVFjdFRPRDZkS0NXUTRyNXNfY3NnSzZvZldlTExSVDRXSkVEWjlOSUdqc2VkcXJla2t1MTk0VnZwQUktZGVXd0pXZlM5QnRJcE5tY2FVUURhUXRRaU9YZnppdW91TTBsWnQtWXFQMkE2UjV2SlN3bGlVaVlfU2FOb1pjZlVYQkNVeHp6c0tVazZEQ1J1SnNKSFliMVJwaw?oc=5", "why": "X 중국어권에서 태국 여행 안전·중국인 관광객 감소 이야기가 뜨는 중 (Pattaya Mail: ATTA 중국인 관광객 50% 감소 경고)" }
+  ],
+  "none_reason": ""
+}
