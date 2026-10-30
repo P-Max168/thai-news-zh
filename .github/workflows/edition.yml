@@ -7,9 +7,9 @@ name: edition
 on:
   schedule:
     # CORE-PULL-KEEP: 아래 cron 줄은 사이트 고유 — core-pull 이 덮어쓰지 않음
-    - cron: "5 0 * * *"
-    - cron: "5 5 * * *"
-    - cron: "5 11 * * *"
+    - cron: "45 0 * * *"
+    - cron: "45 5 * * *"
+    - cron: "45 11 * * *"
   push:
     paths: ["ops/picks/*.json"]
   workflow_dispatch:
