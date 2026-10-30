@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zh.pmaxone.com/</loc><lastmod>2026-10-30T07:38:45+07:00</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://zh.pmaxone.com/</loc><lastmod>2026-10-30T12:30:23+07:00</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>
   <url><loc>https://zh.pmaxone.com/about.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://zh.pmaxone.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://zh.pmaxone.com/privacy.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://zh.pmaxone.com/terms.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://zh.pmaxone.com/e/2026-10-30-md/</loc><lastmod>2026-10-30T12:30:23+07:00</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://zh.pmaxone.com/e/2026-10-30-am/</loc><lastmod>2026-10-30T07:38:45+07:00</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://zh.pmaxone.com/e/2026-10-29-pm/</loc><lastmod>2026-10-29T18:31:37+07:00</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://zh.pmaxone.com/e/2026-10-29-md/</loc><lastmod>2026-10-29T12:33:26+07:00</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
