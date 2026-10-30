@@ -1,0 +1,73 @@
+# 📥 중국어판 자체 수집(2026-10-24 Claude) — 한국어판 수집(thai-news-kr collect.yml)이 늦거나 빠져도 중국어판이 같이 멈추지 않게 분리.
+# 하는 일: 한국어판 저장소의 태국 매체 목록(tools/sources.json, 공개 저장소에서 읽기만) + 이 저장소 tools/sources.zh.json 보강 매체를 합쳐
+#   tools/collect.py 로 후보를 모아 이 저장소 'candidates' 브랜치(candidates/latest.{json,md}, meta.json)에 둔다. main 은 건드리지 않음.
+# 시각(방콕): 11:47 + 백업 12:37 (GitHub 예약은 늦거나 빠짐 — 정각·20분 같은 붐비는 분을 피함). 비상 발행이 수집이 낡았으면 workflow_dispatch 로 직접 실행.
+# 판이 쓰는 법: git fetch origin candidates && git show origin/candidates:candidates/latest.md
+name: collect
+
+on:
+  schedule:
+    - cron: "47 4 * * *"     # 11:47 BKK
+    - cron: "37 5 * * *"     # 12:37 BKK (백업)
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "최근 몇 시간 후보(기본 26 — 하루 1판)"
+        default: "26"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TZ: Asia/Bangkok
+    steps:
+      - uses: actions/checkout@v5
+      - name: 한국어판 매체 목록 받기(읽기만)
+        run: curl -fsSL https://raw.githubusercontent.com/P-Max168/thai-news-kr/main/tools/sources.json -o /tmp/ko-sources.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 의존성
+        run: pip install --quiet requests feedparser
+      - name: 매체 목록 합치기(한국어판 공유 + zh 보강)
+        run: |
+          python3 - <<'PY'
+          import json
+          cfg = json.load(open("/tmp/ko-sources.json", encoding="utf-8"))
+          ex = json.load(open("tools/sources.zh.json", encoding="utf-8")).get("thai_news_zh", {}).get("sources", [])
+          add = [dict(s, language=s.get("language", "zh"), topics=s.get("topics", []), group="lang-zh") for s in ex if s.get("type") in ("rss", "gnews", "sitemap")]
+          cfg["sources"] = cfg["sources"] + add
+          json.dump(cfg, open("/tmp/zh-sources.json", "w", encoding="utf-8"), ensure_ascii=False)
+          print("수집 소스: 한국판 공유 %d + zh 보강 %d" % (len(cfg["sources"]) - len(add), len(add)))
+          PY
+      - name: 후보 수집(tools/collect.py)
+        continue-on-error: true
+        run: python3 tools/collect.py --sources /tmp/zh-sources.json --hours "${{ inputs.hours || '26' }}" --out out/candidates 2>&1 | tail -n 40 | tee out_collect.log
+      - name: candidates 브랜치에 올리기
+        run: |
+          set -e
+          [ -f out/candidates/latest.json ] || { echo "수집 결과 없음 — 올리지 않음"; exit 1; }
+          python3 - <<'PY'
+          import json, os, datetime
+          c = json.load(open("out/candidates/latest.json", encoding="utf-8"))
+          now = datetime.datetime.now().astimezone()
+          meta = {"edition": now.strftime("%Y-%m-%d") + "-md", "collected_at": now.isoformat(timespec="seconds"),
+                  "run": os.environ.get("GITHUB_RUN_ID"), "items": c.get("candidates"), "sources_ok": c.get("sources_ok"),
+                  "log_tail": open("out_collect.log", encoding="utf-8").read()[-1500:]}
+          json.dump(meta, open("out/meta.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print(meta["edition"], meta["items"])
+          PY
+          cd out
+          rm -f candidates/[0-9]*.json candidates/[0-9]*.md 2>/dev/null || true   # latest 만
+          git init -q -b candidates
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "candidates zh $(date '+%m-%d %H:%M') BKK"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" candidates
