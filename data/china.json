@@ -1,42 +1,51 @@
 {
- "updated_at": "2026-10-31T19:30:24+07:00",
+ "updated_at": "2026-11-01T01:33:15+07:00",
  "lang": "zh-Hans",
  "items": [
-  {
-   "headline": "第140届广交会第三期开展 “智慧医疗”专区展示“智能健康”趋势",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/tp/2026/10-31/10723969.shtml",
-   "published": "2026-10-31T17:47:29+07:00",
-   "outlets": 3,
-   "hot": true,
-   "score": 48.971
-  },
-  {
-   "headline": "中国海警位中国台湾岛以东海域依法开展常态化执法巡查",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10724013.shtml",
-   "published": "2026-10-31T18:39:22+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 45.49
-  },
   {
    "headline": "原中国石油化工集团公司董事长傅成玉被查",
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723998.shtml",
    "published": "2026-10-31T18:05:28+07:00",
    "outlets": 4,
-   "hot": false,
-   "score": 45.151
+   "hot": true,
+   "score": 49.522
+  },
+  {
+   "headline": "中国海警位中国台湾岛以东海域依法开展常态化执法巡查",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10724111.shtml",
+   "published": "2026-10-31T21:28:03+07:00",
+   "outlets": 3,
+   "hot": true,
+   "score": 47.548
   },
   {
    "headline": "2026世界顶尖科学家论坛在沪开幕 聚焦未来十年科学突破",
    "source": "中国新闻网",
    "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723955.shtml",
    "published": "2026-10-31T16:45:32+07:00",
-   "outlets": 4,
-   "hot": false,
-   "score": 44.351
+   "outlets": 3,
+   "hot": true,
+   "score": 44.723
+  },
+  {
+   "headline": "新闻人物丨阿曼苏丹海赛姆",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xeWlsRW9GWFZOazdBeW9KSlBfR0xLMkJjeUFYem9GNktVaVVKSHRyVExuYVNQOTR1YlFERjUzSWluOVoyVkJGVDhMc3JuN2ZibkpOaENBQTBQd29wdExHdUlQazZNUGk4OWVnVzBfUFpYb0VUS2dFYXU0MUR6V1k?oc=5",
+   "published": "2026-10-31T23:06:57+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 41.537
+  },
+  {
+   "headline": "泰国着手制定第四个国家旅游发展计划",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724123.shtml",
+   "published": "2026-10-31T22:23:46+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 40.105
   },
   {
    "headline": "国产卫星互联网打通全球通信“最后的盲区”",
@@ -45,52 +54,43 @@
    "published": "2026-10-31T08:42:43+07:00",
    "outlets": 5,
    "hot": false,
-   "score": 40.523
+   "score": 36.895
   },
   {
-   "headline": "《考古工作“十五五”规划》印发 明确7方面重点任务",
+   "headline": "姚家平水利枢纽工程成功截流 进入主体施工阶段",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTIjQtor6FJUz9reeFgj1dk261031.shtml",
-   "published": "2026-10-31T15:13:28+07:00",
+   "url": "https://news.cctv.com/2026/10/31/ARTI6ciPIOOBiTivJ2otRCUO261031.shtml",
+   "published": "2026-10-31T15:13:41+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 40.431
+   "score": 36.804
   },
   {
-   "headline": "西藏那曲市巴青县发生3.8级地震 震源深度10公里",
+   "headline": "东北地区货物贸易进出口规模创历史同期新高 进出口双向协同 均衡发展",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTIhE0WzEfj4AgSMDR2VgCz261031.shtml",
-   "published": "2026-10-31T13:15:55+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 39.255
+   "url": "https://news.cctv.com/2026/10/31/ARTI5kbNjYTqJq5xpzUtfOJR261031.shtml",
+   "published": "2026-10-31T19:48:09+07:00",
+   "outlets": 3,
+   "hot": false,
+   "score": 35.549
   },
   {
-   "headline": "第140届广交会第三期线下展开展 一批新品集中亮相",
+   "headline": "第九届进博会首批展品开箱 硬核装备抢先看",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTI705YJLIEudtvGqSF5jjr261031.shtml",
-   "published": "2026-10-31T11:13:20+07:00",
+   "url": "https://news.cctv.com/2026/11/01/ARTIqLwgf26LMwDNfoKobYvs261031.shtml",
+   "published": "2026-11-01T01:03:17+07:00",
    "outlets": 2,
-   "hot": true,
-   "score": 38.029
+   "hot": false,
+   "score": 34.7
   },
   {
-   "headline": "伊朗最高领袖：要对敌方威胁作出立即有力回应",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB3cmx0cXRsRGVTdTZ3eTQ3dWFaQklFcS1mVzVvcWtIc0FIRXNtOEkwZzc4bG1XWVBMVDNiNzRnWldhcm1sZFVVVy1vSlZTMUl0SGFSQ296SFFtallDSHM2WjNHcllrQy1wQUdsUVdiOFVnclBTay1HZm9ueHZ0dlU?oc=5",
-   "published": "2026-10-31T17:40:44+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 37.903
-  },
-  {
-   "headline": "APEC工商领导人峰会筹办工作进展顺利 中外企业踊跃报名",
+   "headline": "“四线”高配+4条接驳线+25处停车场 收好进博出行指南",
    "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTIpUJrCdusjmb6NxBVpVpi261031.shtml",
-   "published": "2026-10-31T09:22:01+07:00",
+   "url": "https://news.cctv.com/2026/11/01/ARTIlwxftDKx3ZGeQR7XXbkP261031.shtml",
+   "published": "2026-11-01T00:45:43+07:00",
    "outlets": 2,
-   "hot": true,
-   "score": 36.916
+   "hot": false,
+   "score": 34.525
   }
  ]
 }
