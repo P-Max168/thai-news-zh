@@ -1,42 +1,87 @@
 window.CHINA_NEWS = {
- "updated_at": "2026-10-31T13:30:24+07:00",
+ "updated_at": "2026-10-31T19:30:24+07:00",
  "lang": "zh-Hans",
  "items": [
   {
-   "headline": "李强会见德国总统施泰因迈尔",
+   "headline": "第140届广交会第三期开展 “智慧医疗”专区展示“智能健康”趋势",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723715.shtml",
-   "published": "2026-10-30T23:29:07+07:00",
-   "outlets": 5,
+   "url": "https://www.chinanews.com.cn/tp/2026/10-31/10723969.shtml",
+   "published": "2026-10-31T17:47:29+07:00",
+   "outlets": 3,
    "hot": true,
-   "score": 49.587
+   "score": 48.971
   },
   {
-   "headline": "习近平会见瑞士联邦主席帕姆兰",
+   "headline": "中国海警位中国台湾岛以东海域依法开展常态化执法巡查",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gn/2026/10-30/10723657.shtml",
-   "published": "2026-10-30T22:28:12+07:00",
-   "outlets": 6,
-   "hot": true,
-   "score": 48.978
-  },
-  {
-   "headline": "突发：美国加州一处购物中心发生枪击事件 至少7人受伤",
-   "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/gj/2026/10-31/10723875.shtml",
-   "published": "2026-10-31T12:48:21+07:00",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10724013.shtml",
+   "published": "2026-10-31T18:39:22+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 45.579
+   "score": 45.49
   },
   {
-   "headline": "10月中国制造业PMI回落至49.3%",
+   "headline": "原中国石油化工集团公司董事长傅成玉被查",
    "source": "中国新闻网",
-   "url": "https://www.chinanews.com.cn/cj/2026/10-31/10723856.shtml",
-   "published": "2026-10-31T12:13:37+07:00",
-   "outlets": 3,
+   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723998.shtml",
+   "published": "2026-10-31T18:05:28+07:00",
+   "outlets": 4,
    "hot": false,
-   "score": 41.232
+   "score": 45.151
+  },
+  {
+   "headline": "2026世界顶尖科学家论坛在沪开幕 聚焦未来十年科学突破",
+   "source": "中国新闻网",
+   "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723955.shtml",
+   "published": "2026-10-31T16:45:32+07:00",
+   "outlets": 4,
+   "hot": false,
+   "score": 44.351
+  },
+  {
+   "headline": "国产卫星互联网打通全球通信“最后的盲区”",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wa0RmLXpNVkZGamd1ekFpWF9ad2xzZFZVQTkzQmoxdUFGUXFYbl9LcHNUVkJWOGtleUI2ZlVVUFh4VDU0Y2dfRXdxNmdZakdod1N5YTVDS3VCT1ZTTno5eXlQYTB2R1RieFBqQnNBSnJVTGYxdktMTXFkOWVidw?oc=5",
+   "published": "2026-10-31T08:42:43+07:00",
+   "outlets": 5,
+   "hot": false,
+   "score": 40.523
+  },
+  {
+   "headline": "《考古工作“十五五”规划》印发 明确7方面重点任务",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/31/ARTIjQtor6FJUz9reeFgj1dk261031.shtml",
+   "published": "2026-10-31T15:13:28+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 40.431
+  },
+  {
+   "headline": "西藏那曲市巴青县发生3.8级地震 震源深度10公里",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/31/ARTIhE0WzEfj4AgSMDR2VgCz261031.shtml",
+   "published": "2026-10-31T13:15:55+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 39.255
+  },
+  {
+   "headline": "第140届广交会第三期线下展开展 一批新品集中亮相",
+   "source": "央视新闻",
+   "url": "https://news.cctv.com/2026/10/31/ARTI705YJLIEudtvGqSF5jjr261031.shtml",
+   "published": "2026-10-31T11:13:20+07:00",
+   "outlets": 2,
+   "hot": true,
+   "score": 38.029
+  },
+  {
+   "headline": "伊朗最高领袖：要对敌方威胁作出立即有力回应",
+   "source": "新华网",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB3cmx0cXRsRGVTdTZ3eTQ3dWFaQklFcS1mVzVvcWtIc0FIRXNtOEkwZzc4bG1XWVBMVDNiNzRnWldhcm1sZFVVVy1vSlZTMUl0SGFSQ296SFFtallDSHM2WjNHcllrQy1wQUdsUVdiOFVnclBTay1HZm9ueHZ0dlU?oc=5",
+   "published": "2026-10-31T17:40:44+07:00",
+   "outlets": 1,
+   "hot": true,
+   "score": 37.903
   },
   {
    "headline": "APEC工商领导人峰会筹办工作进展顺利 中外企业踊跃报名",
@@ -45,52 +90,7 @@ window.CHINA_NEWS = {
    "published": "2026-10-31T09:22:01+07:00",
    "outlets": 2,
    "hot": true,
-   "score": 40.516
-  },
-  {
-   "headline": "我国铼、金、镍、锆等保有资源量大幅增加",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTI8IBo4hSczrtMVjxSbMr1261031.shtml",
-   "published": "2026-10-31T11:12:51+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 37.624
-  },
-  {
-   "headline": "“最北滑雪场”开板迎客",
-   "source": "新华网",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZcHFnaExJVnk3aEkyMXF3aFpiTjZhcHdGajhNTFBmMm03aTRQTVUzQl9YaFJIWHZ1UkRZZE9WdzJKNVVBQnVOc3V1MmlCRnhXZlh5ZHMwYnoyLU4zRVNaWmwycGN3aDFpUW5hY0l2bmR6X0NHNVVtTVBMRTdZX0U?oc=5",
-   "published": "2026-10-31T09:22:07+07:00",
-   "outlets": 1,
-   "hot": true,
-   "score": 36.517
-  },
-  {
-   "headline": "11月起，这些新规将影响你我生活！",
-   "source": "央视新闻",
-   "url": "https://news.cctv.com/2026/10/31/ARTIDyZq3nkSmr5WZPCABnRZ261031.shtml",
-   "published": "2026-10-31T08:57:13+07:00",
-   "outlets": 3,
-   "hot": false,
-   "score": 36.268
-  },
-  {
-   "headline": "“智慧大脑”赋能物流枢纽 邮路跑出降本增效加速度",
-   "source": "央视新闻",
-   "url": "https://jingji.cctv.com/2026/10/31/ARTIWQ8UHokhjZ2VJkXo4Cja261031.shtml",
-   "published": "2026-10-31T01:04:46+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.544
-  },
-  {
-   "headline": "谢卫江任湖南省代省长",
-   "source": "人民网",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE12UVlzTEczel9vOWVvc3RxX2JkZkhQbFlON1J1ek1xNEFYN1JiWHJlU3V1QzIzYmdGSmpwTDdxTGpYNUQ2X3M5VTlDSWNYTDdYOFNGUFdfYm90a3lFNTJ6TkhNZ24yWHlMeUZ1dHVpZw?oc=5",
-   "published": "2026-10-31T05:13:00+07:00",
-   "outlets": 2,
-   "hot": true,
-   "score": 35.026
+   "score": 36.916
   }
  ]
 };
